@@ -1,0 +1,451 @@
+ticker,company_name,sector,year,cda_found,pay_innovation,pay_integrity_ethics,pay_customer_focus,pay_collaboration_teamwork,pay_performance_results,pay_respect_people,pay_diversity_inclusion,pay_environment_sustainability,pay_community_social_impact,pay_employee_wellbeing_development,pay_safety
+AAPL,Apple,Technology,2016,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+AAPL,Apple,Technology,2017,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+AAPL,Apple,Technology,2018,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+AAPL,Apple,Technology,2019,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+AAPL,Apple,Technology,2020,True,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+AAPL,Apple,Technology,2021,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+AAPL,Apple,Technology,2022,True,0.0,0.0,0.0,0.0,2.0,0.0,1.0,1.0,1.0,0.0,0.0
+AAPL,Apple,Technology,2023,True,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0
+AAPL,Apple,Technology,2024,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+ABBV,AbbVie,Healthcare,2016,True,2.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+ABBV,AbbVie,Healthcare,2017,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+ABBV,AbbVie,Healthcare,2018,True,1.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0
+ABBV,AbbVie,Healthcare,2019,True,2.0,0.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+ABBV,AbbVie,Healthcare,2020,True,2.0,1.0,0.0,0.0,2.0,0.0,1.0,1.0,0.0,1.0,0.0
+ABBV,AbbVie,Healthcare,2021,True,2.0,1.0,0.0,0.0,2.0,0.0,1.0,1.0,0.0,1.0,0.0
+ABBV,AbbVie,Healthcare,2022,True,2.0,1.0,1.0,0.0,2.0,0.0,1.0,2.0,0.0,1.0,0.0
+ABBV,AbbVie,Healthcare,2023,True,2.0,1.0,1.0,1.0,2.0,0.0,1.0,2.0,1.0,1.0,0.0
+ABBV,AbbVie,Healthcare,2024,True,2.0,1.0,1.0,0.0,2.0,0.0,1.0,2.0,0.0,0.0,0.0
+ABT,Abbott Laboratories,Healthcare,2016,True,2.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,2.0,0.0
+ABT,Abbott Laboratories,Healthcare,2017,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+ABT,Abbott Laboratories,Healthcare,2018,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+ABT,Abbott Laboratories,Healthcare,2019,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+ABT,Abbott Laboratories,Healthcare,2020,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+ABT,Abbott Laboratories,Healthcare,2021,True,1.0,1.0,1.0,0.0,2.0,0.0,1.0,1.0,0.0,1.0,1.0
+ABT,Abbott Laboratories,Healthcare,2022,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+ABT,Abbott Laboratories,Healthcare,2023,True,1.0,1.0,0.0,0.0,2.0,0.0,2.0,1.0,0.0,2.0,0.0
+ABT,Abbott Laboratories,Healthcare,2024,True,1.0,1.0,0.0,0.0,2.0,0.0,2.0,1.0,0.0,2.0,0.0
+AMZN,Amazon,Consumer Discretionary,2016,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+AMZN,Amazon,Consumer Discretionary,2017,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+AMZN,Amazon,Consumer Discretionary,2018,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+AMZN,Amazon,Consumer Discretionary,2019,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+AMZN,Amazon,Consumer Discretionary,2020,True,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+AMZN,Amazon,Consumer Discretionary,2021,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+AMZN,Amazon,Consumer Discretionary,2022,True,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+AMZN,Amazon,Consumer Discretionary,2023,True,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+AMZN,Amazon,Consumer Discretionary,2024,True,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+AVGO,Broadcom,Technology,2016,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0
+AVGO,Broadcom,Technology,2017,True,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+AVGO,Broadcom,Technology,2018,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+AVGO,Broadcom,Technology,2019,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+AVGO,Broadcom,Technology,2020,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0
+AVGO,Broadcom,Technology,2021,True,1.0,0.0,2.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+AVGO,Broadcom,Technology,2022,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+AVGO,Broadcom,Technology,2023,True,1.0,1.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+AVGO,Broadcom,Technology,2024,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+AXP,American Express,Financials,2016,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+AXP,American Express,Financials,2017,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+AXP,American Express,Financials,2018,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+AXP,American Express,Financials,2019,True,1.0,0.0,2.0,1.0,2.0,0.0,2.0,0.0,0.0,2.0,0.0
+AXP,American Express,Financials,2020,True,2.0,1.0,2.0,0.0,2.0,0.0,2.0,0.0,0.0,2.0,0.0
+AXP,American Express,Financials,2021,True,0.0,0.0,2.0,0.0,2.0,0.0,2.0,0.0,0.0,2.0,0.0
+AXP,American Express,Financials,2022,True,0.0,0.0,2.0,0.0,2.0,0.0,2.0,1.0,0.0,2.0,0.0
+AXP,American Express,Financials,2023,True,0.0,0.0,1.0,0.0,2.0,0.0,2.0,1.0,0.0,2.0,0.0
+AXP,American Express,Financials,2024,True,0.0,0.0,2.0,0.0,2.0,0.0,0.0,1.0,0.0,2.0,0.0
+BAC,Bank of America,Financials,2016,True,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,1.0,0.0
+BAC,Bank of America,Financials,2017,True,1.0,1.0,1.0,0.0,2.0,0.0,1.0,0.0,0.0,1.0,0.0
+BAC,Bank of America,Financials,2018,True,1.0,1.0,1.0,1.0,2.0,0.0,1.0,1.0,0.0,1.0,0.0
+BAC,Bank of America,Financials,2019,True,1.0,1.0,1.0,0.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0
+BAC,Bank of America,Financials,2020,True,1.0,1.0,1.0,0.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0
+BAC,Bank of America,Financials,2021,True,1.0,1.0,1.0,0.0,2.0,0.0,1.0,1.0,1.0,1.0,1.0
+BAC,Bank of America,Financials,2022,True,0.0,1.0,1.0,0.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0
+BAC,Bank of America,Financials,2023,True,0.0,1.0,1.0,0.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0
+BAC,Bank of America,Financials,2024,True,0.0,1.0,1.0,0.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0
+BLK,BlackRock,Financials,2016,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+BLK,BlackRock,Financials,2017,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+BLK,BlackRock,Financials,2018,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+BLK,BlackRock,Financials,2019,True,1.0,0.0,1.0,0.0,2.0,0.0,1.0,0.0,0.0,1.0,0.0
+BLK,BlackRock,Financials,2020,True,0.0,0.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,1.0,0.0
+BLK,BlackRock,Financials,2021,True,1.0,0.0,1.0,0.0,2.0,0.0,1.0,1.0,1.0,1.0,0.0
+BLK,BlackRock,Financials,2022,True,0.0,0.0,0.0,0.0,2.0,0.0,1.0,0.0,0.0,1.0,0.0
+BLK,BlackRock,Financials,2023,True,1.0,1.0,1.0,0.0,2.0,0.0,1.0,1.0,0.0,1.0,0.0
+BLK,BlackRock,Financials,2024,True,1.0,1.0,1.0,1.0,2.0,0.0,1.0,1.0,1.0,1.0,0.0
+BMY,Bristol-Myers Squibb,Healthcare,2016,True,2.0,1.0,1.0,1.0,2.0,0.0,1.0,0.0,0.0,1.0,0.0
+BMY,Bristol-Myers Squibb,Healthcare,2017,True,2.0,1.0,1.0,0.0,2.0,0.0,1.0,0.0,0.0,1.0,0.0
+BMY,Bristol-Myers Squibb,Healthcare,2018,True,2.0,1.0,1.0,1.0,2.0,0.0,1.0,0.0,0.0,1.0,0.0
+BMY,Bristol-Myers Squibb,Healthcare,2019,True,2.0,1.0,1.0,0.0,2.0,0.0,1.0,0.0,0.0,1.0,0.0
+BMY,Bristol-Myers Squibb,Healthcare,2020,True,2.0,1.0,1.0,1.0,2.0,0.0,1.0,0.0,0.0,1.0,0.0
+BMY,Bristol-Myers Squibb,Healthcare,2021,True,2.0,1.0,0.0,1.0,2.0,1.0,1.0,0.0,0.0,2.0,0.0
+BMY,Bristol-Myers Squibb,Healthcare,2022,True,2.0,1.0,1.0,1.0,2.0,1.0,1.0,2.0,0.0,2.0,0.0
+BMY,Bristol-Myers Squibb,Healthcare,2023,True,2.0,1.0,0.0,1.0,2.0,0.0,2.0,2.0,0.0,2.0,0.0
+BMY,Bristol-Myers Squibb,Healthcare,2024,True,2.0,1.0,0.0,0.0,2.0,0.0,2.0,2.0,0.0,2.0,1.0
+BRK.B,Berkshire Hathaway,Financials,2016,False,,,,,,,,,,,
+BRK.B,Berkshire Hathaway,Financials,2017,False,,,,,,,,,,,
+BRK.B,Berkshire Hathaway,Financials,2018,False,,,,,,,,,,,
+BRK.B,Berkshire Hathaway,Financials,2019,False,,,,,,,,,,,
+BRK.B,Berkshire Hathaway,Financials,2020,False,,,,,,,,,,,
+BRK.B,Berkshire Hathaway,Financials,2021,False,,,,,,,,,,,
+BRK.B,Berkshire Hathaway,Financials,2022,False,,,,,,,,,,,
+BRK.B,Berkshire Hathaway,Financials,2023,False,,,,,,,,,,,
+BRK.B,Berkshire Hathaway,Financials,2024,False,,,,,,,,,,,
+C,Citigroup,Financials,2016,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+C,Citigroup,Financials,2017,True,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+C,Citigroup,Financials,2018,True,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+C,Citigroup,Financials,2019,True,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+C,Citigroup,Financials,2020,True,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+C,Citigroup,Financials,2021,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0
+C,Citigroup,Financials,2022,True,0.0,1.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+C,Citigroup,Financials,2023,True,0.0,1.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0,1.0
+C,Citigroup,Financials,2024,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0
+COP,ConocoPhillips,Energy,2016,True,1.0,1.0,0.0,1.0,2.0,0.0,1.0,2.0,1.0,1.0,2.0
+COP,ConocoPhillips,Energy,2017,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+COP,ConocoPhillips,Energy,2018,True,1.0,0.0,0.0,0.0,2.0,0.0,0.0,2.0,0.0,0.0,2.0
+COP,ConocoPhillips,Energy,2019,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,2.0
+COP,ConocoPhillips,Energy,2020,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,1.0,0.0,0.0,2.0
+COP,ConocoPhillips,Energy,2021,True,1.0,0.0,0.0,0.0,2.0,0.0,0.0,1.0,0.0,0.0,2.0
+COP,ConocoPhillips,Energy,2022,True,1.0,0.0,0.0,0.0,2.0,0.0,2.0,2.0,0.0,0.0,2.0
+COP,ConocoPhillips,Energy,2023,True,0.0,1.0,0.0,1.0,2.0,0.0,2.0,2.0,0.0,0.0,2.0
+COP,ConocoPhillips,Energy,2024,True,0.0,1.0,0.0,0.0,2.0,0.0,1.0,2.0,0.0,1.0,2.0
+CRM,Salesforce,Technology,2016,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+CRM,Salesforce,Technology,2017,True,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+CRM,Salesforce,Technology,2018,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+CRM,Salesforce,Technology,2019,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+CRM,Salesforce,Technology,2020,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+CRM,Salesforce,Technology,2021,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+CRM,Salesforce,Technology,2022,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CRM,Salesforce,Technology,2023,True,0.0,1.0,0.0,0.0,2.0,0.0,2.0,2.0,0.0,0.0,0.0
+CRM,Salesforce,Technology,2024,True,0.0,0.0,0.0,0.0,2.0,0.0,2.0,2.0,0.0,0.0,0.0
+CVX,Chevron,Energy,2016,True,1.0,1.0,0.0,1.0,2.0,0.0,0.0,0.0,0.0,0.0,2.0
+CVX,Chevron,Energy,2017,True,1.0,0.0,0.0,1.0,2.0,0.0,0.0,2.0,0.0,0.0,2.0
+CVX,Chevron,Energy,2018,True,1.0,1.0,0.0,1.0,2.0,0.0,0.0,2.0,0.0,0.0,2.0
+CVX,Chevron,Energy,2019,True,1.0,1.0,0.0,1.0,2.0,0.0,0.0,1.0,0.0,0.0,2.0
+CVX,Chevron,Energy,2020,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+CVX,Chevron,Energy,2021,True,1.0,0.0,0.0,0.0,2.0,0.0,0.0,2.0,0.0,0.0,0.0
+CVX,Chevron,Energy,2022,True,1.0,0.0,0.0,0.0,2.0,0.0,0.0,2.0,0.0,1.0,0.0
+CVX,Chevron,Energy,2023,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CVX,Chevron,Energy,2024,True,2.0,0.0,0.0,0.0,2.0,0.0,0.0,2.0,0.0,0.0,2.0
+EOG,EOG Resources,Energy,2016,True,1.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0,0.0
+EOG,EOG Resources,Energy,2017,True,1.0,1.0,1.0,0.0,2.0,0.0,0.0,1.0,0.0,0.0,1.0
+EOG,EOG Resources,Energy,2018,True,2.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0
+EOG,EOG Resources,Energy,2019,True,1.0,0.0,0.0,0.0,2.0,0.0,0.0,1.0,0.0,1.0,1.0
+EOG,EOG Resources,Energy,2020,True,2.0,1.0,0.0,0.0,1.0,0.0,0.0,2.0,0.0,0.0,2.0
+EOG,EOG Resources,Energy,2021,True,1.0,1.0,0.0,0.0,2.0,0.0,0.0,2.0,0.0,0.0,2.0
+EOG,EOG Resources,Energy,2022,True,1.0,0.0,0.0,1.0,2.0,0.0,0.0,2.0,0.0,1.0,2.0
+EOG,EOG Resources,Energy,2023,True,1.0,0.0,0.0,1.0,2.0,0.0,0.0,2.0,0.0,0.0,2.0
+EOG,EOG Resources,Energy,2024,True,1.0,1.0,0.0,1.0,2.0,0.0,0.0,2.0,0.0,0.0,2.0
+F,Ford Motor,Consumer Discretionary,2016,True,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+F,Ford Motor,Consumer Discretionary,2017,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+F,Ford Motor,Consumer Discretionary,2018,True,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+F,Ford Motor,Consumer Discretionary,2019,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0
+F,Ford Motor,Consumer Discretionary,2020,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+F,Ford Motor,Consumer Discretionary,2021,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+F,Ford Motor,Consumer Discretionary,2022,True,0.0,0.0,0.0,0.0,2.0,0.0,1.0,2.0,0.0,0.0,1.0
+F,Ford Motor,Consumer Discretionary,2023,True,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+F,Ford Motor,Consumer Discretionary,2024,True,1.0,0.0,2.0,1.0,2.0,0.0,0.0,0.0,0.0,1.0,2.0
+GOOGL,Alphabet,Technology,2016,True,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0
+GOOGL,Alphabet,Technology,2017,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+GOOGL,Alphabet,Technology,2018,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+GOOGL,Alphabet,Technology,2019,True,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0
+GOOGL,Alphabet,Technology,2020,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0
+GOOGL,Alphabet,Technology,2021,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+GOOGL,Alphabet,Technology,2022,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,2.0,2.0,1.0,0.0
+GOOGL,Alphabet,Technology,2023,True,0.0,0.0,0.0,0.0,2.0,0.0,1.0,1.0,1.0,0.0,0.0
+GOOGL,Alphabet,Technology,2024,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,1.0,1.0,1.0,0.0
+GS,Goldman Sachs,Financials,2016,True,0.0,1.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+GS,Goldman Sachs,Financials,2017,True,1.0,1.0,1.0,1.0,2.0,0.0,1.0,0.0,0.0,0.0,0.0
+GS,Goldman Sachs,Financials,2018,True,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,0.0,1.0,0.0
+GS,Goldman Sachs,Financials,2019,True,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,0.0,1.0,0.0
+GS,Goldman Sachs,Financials,2020,True,1.0,1.0,1.0,1.0,2.0,0.0,1.0,1.0,0.0,1.0,0.0
+GS,Goldman Sachs,Financials,2021,True,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0
+GS,Goldman Sachs,Financials,2022,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+GS,Goldman Sachs,Financials,2023,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0,0.0
+GS,Goldman Sachs,Financials,2024,True,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0
+HAL,Halliburton,Energy,2016,True,1.0,1.0,1.0,0.0,2.0,0.0,1.0,1.0,0.0,1.0,1.0
+HAL,Halliburton,Energy,2017,True,1.0,1.0,1.0,1.0,2.0,0.0,1.0,1.0,0.0,1.0,1.0
+HAL,Halliburton,Energy,2018,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0,1.0
+HAL,Halliburton,Energy,2019,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+HAL,Halliburton,Energy,2020,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+HAL,Halliburton,Energy,2021,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+HAL,Halliburton,Energy,2022,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+HAL,Halliburton,Energy,2023,True,1.0,1.0,1.0,1.0,2.0,0.0,2.0,2.0,0.0,0.0,1.0
+HAL,Halliburton,Energy,2024,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+HD,Home Depot,Consumer Discretionary,2016,True,0.0,0.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0,0.0
+HD,Home Depot,Consumer Discretionary,2017,True,0.0,1.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0,0.0
+HD,Home Depot,Consumer Discretionary,2018,True,0.0,1.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0,0.0
+HD,Home Depot,Consumer Discretionary,2019,True,1.0,0.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0,0.0
+HD,Home Depot,Consumer Discretionary,2020,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+HD,Home Depot,Consumer Discretionary,2021,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+HD,Home Depot,Consumer Discretionary,2022,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0,0.0
+HD,Home Depot,Consumer Discretionary,2023,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,1.0
+HD,Home Depot,Consumer Discretionary,2024,True,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0
+IBM,IBM,Technology,2016,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+IBM,IBM,Technology,2017,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+IBM,IBM,Technology,2018,True,1.0,1.0,1.0,1.0,2.0,0.0,1.0,0.0,0.0,1.0,0.0
+IBM,IBM,Technology,2019,True,1.0,1.0,1.0,1.0,2.0,0.0,1.0,0.0,0.0,1.0,0.0
+IBM,IBM,Technology,2020,True,1.0,1.0,1.0,0.0,2.0,0.0,1.0,0.0,1.0,1.0,0.0
+IBM,IBM,Technology,2021,True,1.0,1.0,1.0,1.0,2.0,1.0,2.0,1.0,1.0,1.0,0.0
+IBM,IBM,Technology,2022,True,1.0,1.0,1.0,1.0,2.0,0.0,2.0,1.0,0.0,1.0,0.0
+IBM,IBM,Technology,2023,True,1.0,1.0,1.0,1.0,2.0,0.0,2.0,1.0,0.0,1.0,0.0
+IBM,IBM,Technology,2024,True,1.0,1.0,1.0,0.0,2.0,0.0,2.0,0.0,0.0,1.0,0.0
+INTC,Intel,Technology,2016,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+INTC,Intel,Technology,2017,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+INTC,Intel,Technology,2018,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+INTC,Intel,Technology,2019,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+INTC,Intel,Technology,2020,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+INTC,Intel,Technology,2021,True,0.0,0.0,0.0,0.0,2.0,0.0,2.0,2.0,0.0,0.0,0.0
+INTC,Intel,Technology,2022,True,0.0,1.0,0.0,0.0,2.0,0.0,1.0,1.0,0.0,0.0,0.0
+INTC,Intel,Technology,2023,True,0.0,1.0,0.0,0.0,2.0,0.0,1.0,1.0,1.0,1.0,0.0
+INTC,Intel,Technology,2024,True,2.0,1.0,2.0,2.0,2.0,0.0,2.0,2.0,0.0,2.0,2.0
+JNJ,Johnson & Johnson,Healthcare,2016,True,1.0,1.0,1.0,1.0,2.0,0.0,1.0,0.0,1.0,1.0,1.0
+JNJ,Johnson & Johnson,Healthcare,2017,True,1.0,1.0,1.0,0.0,2.0,0.0,1.0,0.0,0.0,1.0,1.0
+JNJ,Johnson & Johnson,Healthcare,2018,True,1.0,1.0,1.0,0.0,2.0,0.0,1.0,0.0,1.0,1.0,0.0
+JNJ,Johnson & Johnson,Healthcare,2019,True,1.0,1.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,2.0,0.0
+JNJ,Johnson & Johnson,Healthcare,2020,True,1.0,1.0,1.0,1.0,2.0,0.0,0.0,0.0,0.0,1.0,1.0
+JNJ,Johnson & Johnson,Healthcare,2021,True,1.0,1.0,1.0,1.0,2.0,0.0,1.0,0.0,0.0,1.0,1.0
+JNJ,Johnson & Johnson,Healthcare,2022,True,1.0,1.0,1.0,1.0,2.0,0.0,1.0,1.0,0.0,1.0,1.0
+JNJ,Johnson & Johnson,Healthcare,2023,True,1.0,1.0,1.0,1.0,2.0,1.0,1.0,1.0,0.0,1.0,1.0
+JNJ,Johnson & Johnson,Healthcare,2024,True,1.0,1.0,1.0,0.0,2.0,0.0,1.0,0.0,0.0,1.0,1.0
+JPM,JPMorgan Chase,Financials,2016,True,1.0,1.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0,0.0
+JPM,JPMorgan Chase,Financials,2017,True,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,1.0,0.0
+JPM,JPMorgan Chase,Financials,2018,True,0.0,1.0,1.0,1.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0
+JPM,JPMorgan Chase,Financials,2019,True,0.0,1.0,1.0,1.0,2.0,0.0,1.0,0.0,1.0,0.0,0.0
+JPM,JPMorgan Chase,Financials,2020,True,1.0,1.0,1.0,1.0,2.0,1.0,1.0,0.0,1.0,1.0,0.0
+JPM,JPMorgan Chase,Financials,2021,True,0.0,1.0,1.0,1.0,2.0,0.0,1.0,0.0,1.0,1.0,1.0
+JPM,JPMorgan Chase,Financials,2022,True,1.0,1.0,1.0,1.0,2.0,0.0,1.0,1.0,1.0,1.0,1.0
+JPM,JPMorgan Chase,Financials,2023,True,1.0,1.0,1.0,1.0,2.0,0.0,1.0,1.0,1.0,0.0,1.0
+JPM,JPMorgan Chase,Financials,2024,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+LLY,Eli Lilly,Healthcare,2016,True,2.0,1.0,0.0,1.0,2.0,0.0,0.0,0.0,0.0,1.0,0.0
+LLY,Eli Lilly,Healthcare,2017,True,2.0,1.0,1.0,1.0,2.0,1.0,1.0,0.0,0.0,0.0,1.0
+LLY,Eli Lilly,Healthcare,2018,True,2.0,1.0,0.0,1.0,2.0,1.0,0.0,0.0,0.0,0.0,0.0
+LLY,Eli Lilly,Healthcare,2019,True,2.0,1.0,0.0,1.0,2.0,0.0,1.0,1.0,1.0,0.0,0.0
+LLY,Eli Lilly,Healthcare,2020,True,2.0,1.0,1.0,0.0,2.0,1.0,1.0,1.0,1.0,0.0,0.0
+LLY,Eli Lilly,Healthcare,2021,True,2.0,1.0,0.0,0.0,2.0,0.0,1.0,0.0,0.0,1.0,0.0
+LLY,Eli Lilly,Healthcare,2022,True,2.0,1.0,1.0,0.0,2.0,0.0,1.0,0.0,0.0,0.0,0.0
+LLY,Eli Lilly,Healthcare,2023,True,2.0,1.0,1.0,0.0,2.0,0.0,1.0,1.0,0.0,1.0,0.0
+LLY,Eli Lilly,Healthcare,2024,True,2.0,1.0,1.0,1.0,2.0,1.0,1.0,1.0,1.0,1.0,0.0
+LOW,Lowe's,Consumer Discretionary,2016,True,0.0,0.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,2.0,0.0
+LOW,Lowe's,Consumer Discretionary,2017,True,0.0,0.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,2.0,0.0
+LOW,Lowe's,Consumer Discretionary,2018,True,0.0,0.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,2.0,0.0
+LOW,Lowe's,Consumer Discretionary,2019,True,1.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,2.0,0.0
+LOW,Lowe's,Consumer Discretionary,2020,True,1.0,0.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0,0.0
+LOW,Lowe's,Consumer Discretionary,2021,True,1.0,0.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+LOW,Lowe's,Consumer Discretionary,2022,True,0.0,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0,0.0
+LOW,Lowe's,Consumer Discretionary,2023,True,2.0,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+LOW,Lowe's,Consumer Discretionary,2024,True,0.0,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+MCD,McDonald's,Consumer Discretionary,2016,True,0.0,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0,2.0,0.0
+MCD,McDonald's,Consumer Discretionary,2017,True,0.0,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0,0.0
+MCD,McDonald's,Consumer Discretionary,2018,True,0.0,0.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+MCD,McDonald's,Consumer Discretionary,2019,True,1.0,0.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+MCD,McDonald's,Consumer Discretionary,2020,True,1.0,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+MCD,McDonald's,Consumer Discretionary,2021,True,0.0,0.0,0.0,0.0,2.0,0.0,2.0,0.0,0.0,2.0,0.0
+MCD,McDonald's,Consumer Discretionary,2022,True,1.0,0.0,1.0,0.0,2.0,0.0,2.0,0.0,0.0,2.0,0.0
+MCD,McDonald's,Consumer Discretionary,2023,True,0.0,2.0,0.0,0.0,2.0,0.0,2.0,0.0,0.0,2.0,0.0
+MCD,McDonald's,Consumer Discretionary,2024,True,0.0,0.0,1.0,0.0,1.0,0.0,2.0,0.0,0.0,2.0,0.0
+MDT,Medtronic,Healthcare,2016,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0
+MDT,Medtronic,Healthcare,2017,True,0.0,2.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,2.0
+MDT,Medtronic,Healthcare,2018,True,0.0,2.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,2.0
+MDT,Medtronic,Healthcare,2019,True,0.0,1.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,2.0
+MDT,Medtronic,Healthcare,2020,True,0.0,2.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0,2.0
+MDT,Medtronic,Healthcare,2021,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0,1.0
+MDT,Medtronic,Healthcare,2022,True,0.0,2.0,0.0,0.0,2.0,0.0,2.0,0.0,0.0,0.0,2.0
+MDT,Medtronic,Healthcare,2023,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+MDT,Medtronic,Healthcare,2024,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+META,Meta Platforms,Technology,2016,False,,,,,,,,,,,
+META,Meta Platforms,Technology,2017,False,,,,,,,,,,,
+META,Meta Platforms,Technology,2018,False,,,,,,,,,,,
+META,Meta Platforms,Technology,2019,False,,,,,,,,,,,
+META,Meta Platforms,Technology,2020,False,,,,,,,,,,,
+META,Meta Platforms,Technology,2021,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+META,Meta Platforms,Technology,2022,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+META,Meta Platforms,Technology,2023,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+META,Meta Platforms,Technology,2024,True,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0
+MPC,Marathon Petroleum,Energy,2016,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,1.0,0.0,0.0,1.0
+MPC,Marathon Petroleum,Energy,2017,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+MPC,Marathon Petroleum,Energy,2018,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,1.0,0.0,0.0,0.0
+MPC,Marathon Petroleum,Energy,2019,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,2.0,0.0,0.0,2.0
+MPC,Marathon Petroleum,Energy,2020,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,2.0
+MPC,Marathon Petroleum,Energy,2021,False,,,,,,,,,,,
+MPC,Marathon Petroleum,Energy,2022,False,,,,,,,,,,,
+MPC,Marathon Petroleum,Energy,2023,True,0.0,1.0,0.0,0.0,2.0,0.0,2.0,2.0,0.0,0.0,2.0
+MPC,Marathon Petroleum,Energy,2024,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,2.0,0.0,1.0,1.0
+MRK,Merck,Healthcare,2016,True,2.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+MRK,Merck,Healthcare,2017,True,2.0,1.0,0.0,0.0,2.0,0.0,1.0,0.0,0.0,1.0,1.0
+MRK,Merck,Healthcare,2018,True,1.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+MRK,Merck,Healthcare,2019,True,2.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+MRK,Merck,Healthcare,2020,True,2.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+MRK,Merck,Healthcare,2021,True,2.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0
+MRK,Merck,Healthcare,2022,True,2.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0
+MRK,Merck,Healthcare,2023,True,2.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+MRK,Merck,Healthcare,2024,True,2.0,1.0,0.0,0.0,2.0,0.0,0.0,2.0,2.0,2.0,1.0
+MS,Morgan Stanley,Financials,2016,True,1.0,1.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0,0.0
+MS,Morgan Stanley,Financials,2017,True,0.0,1.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+MS,Morgan Stanley,Financials,2018,True,1.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,1.0,0.0
+MS,Morgan Stanley,Financials,2019,True,0.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,0.0,1.0,0.0
+MS,Morgan Stanley,Financials,2020,True,1.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0
+MS,Morgan Stanley,Financials,2021,True,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,1.0,0.0
+MS,Morgan Stanley,Financials,2022,True,1.0,0.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,1.0,0.0
+MS,Morgan Stanley,Financials,2023,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+MS,Morgan Stanley,Financials,2024,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+MSFT,Microsoft,Technology,2016,True,1.0,1.0,2.0,1.0,2.0,0.0,1.0,1.0,1.0,1.0,0.0
+MSFT,Microsoft,Technology,2017,True,1.0,1.0,1.0,0.0,2.0,0.0,1.0,0.0,0.0,0.0,0.0
+MSFT,Microsoft,Technology,2018,False,,,,,,,,,,,
+MSFT,Microsoft,Technology,2019,True,2.0,1.0,1.0,1.0,2.0,0.0,1.0,0.0,1.0,1.0,0.0
+MSFT,Microsoft,Technology,2020,True,2.0,1.0,2.0,0.0,2.0,0.0,1.0,1.0,0.0,1.0,0.0
+MSFT,Microsoft,Technology,2021,True,2.0,2.0,2.0,1.0,2.0,0.0,2.0,1.0,1.0,1.0,0.0
+MSFT,Microsoft,Technology,2022,True,1.0,1.0,1.0,0.0,2.0,0.0,1.0,1.0,1.0,2.0,0.0
+MSFT,Microsoft,Technology,2023,True,1.0,1.0,1.0,0.0,2.0,0.0,1.0,1.0,0.0,1.0,0.0
+MSFT,Microsoft,Technology,2024,True,1.0,1.0,1.0,1.0,2.0,0.0,1.0,1.0,2.0,1.0,0.0
+NKE,Nike,Consumer Discretionary,2016,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+NKE,Nike,Consumer Discretionary,2017,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+NKE,Nike,Consumer Discretionary,2018,True,1.0,1.0,0.0,1.0,2.0,0.0,1.0,0.0,0.0,1.0,0.0
+NKE,Nike,Consumer Discretionary,2019,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0,0.0
+NKE,Nike,Consumer Discretionary,2020,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+NKE,Nike,Consumer Discretionary,2021,True,1.0,0.0,2.0,1.0,2.0,0.0,1.0,1.0,0.0,1.0,0.0
+NKE,Nike,Consumer Discretionary,2022,False,,,,,,,,,,,
+NKE,Nike,Consumer Discretionary,2023,True,0.0,1.0,0.0,1.0,2.0,0.0,0.0,0.0,0.0,1.0,0.0
+NKE,Nike,Consumer Discretionary,2024,True,0.0,0.0,0.0,0.0,2.0,0.0,1.0,1.0,0.0,1.0,0.0
+NVDA,NVIDIA,Technology,2016,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+NVDA,NVIDIA,Technology,2017,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+NVDA,NVIDIA,Technology,2018,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+NVDA,NVIDIA,Technology,2019,True,1.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+NVDA,NVIDIA,Technology,2020,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+NVDA,NVIDIA,Technology,2021,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+NVDA,NVIDIA,Technology,2022,True,1.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+NVDA,NVIDIA,Technology,2023,True,1.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+NVDA,NVIDIA,Technology,2024,True,1.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0,0.0
+ORCL,Oracle,Technology,2016,True,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ORCL,Oracle,Technology,2017,True,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ORCL,Oracle,Technology,2018,True,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0
+ORCL,Oracle,Technology,2019,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+ORCL,Oracle,Technology,2020,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ORCL,Oracle,Technology,2021,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ORCL,Oracle,Technology,2022,True,1.0,1.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+ORCL,Oracle,Technology,2023,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0
+ORCL,Oracle,Technology,2024,True,1.0,1.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+OXY,Occidental Petroleum,Energy,2016,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0
+OXY,Occidental Petroleum,Energy,2017,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0
+OXY,Occidental Petroleum,Energy,2018,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0,0.0
+OXY,Occidental Petroleum,Energy,2019,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,2.0,0.0,0.0,2.0
+OXY,Occidental Petroleum,Energy,2020,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,1.0,0.0,0.0,0.0
+OXY,Occidental Petroleum,Energy,2021,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,1.0,0.0,0.0,1.0
+OXY,Occidental Petroleum,Energy,2022,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,2.0,0.0,0.0,1.0
+OXY,Occidental Petroleum,Energy,2023,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,2.0,0.0,0.0,0.0
+OXY,Occidental Petroleum,Energy,2024,True,1.0,0.0,0.0,0.0,2.0,0.0,0.0,2.0,0.0,0.0,0.0
+PFE,Pfizer,Healthcare,2016,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+PFE,Pfizer,Healthcare,2017,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+PFE,Pfizer,Healthcare,2018,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+PFE,Pfizer,Healthcare,2019,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+PFE,Pfizer,Healthcare,2020,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+PFE,Pfizer,Healthcare,2021,True,1.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0
+PFE,Pfizer,Healthcare,2022,True,2.0,1.0,0.0,0.0,2.0,0.0,2.0,2.0,0.0,0.0,0.0
+PFE,Pfizer,Healthcare,2023,True,2.0,0.0,0.0,0.0,2.0,0.0,2.0,2.0,0.0,0.0,0.0
+PFE,Pfizer,Healthcare,2024,True,0.0,1.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+PSX,Phillips 66,Energy,2016,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,2.0
+PSX,Phillips 66,Energy,2017,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,2.0,1.0
+PSX,Phillips 66,Energy,2018,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,2.0,2.0
+PSX,Phillips 66,Energy,2019,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,2.0,1.0
+PSX,Phillips 66,Energy,2020,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0,1.0
+PSX,Phillips 66,Energy,2021,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+PSX,Phillips 66,Energy,2022,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,2.0,0.0,2.0,2.0
+PSX,Phillips 66,Energy,2023,True,0.0,0.0,0.0,1.0,2.0,0.0,0.0,2.0,0.0,0.0,2.0
+PSX,Phillips 66,Energy,2024,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,2.0,0.0,2.0,2.0
+SBUX,Starbucks,Consumer Discretionary,2016,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+SBUX,Starbucks,Consumer Discretionary,2017,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+SBUX,Starbucks,Consumer Discretionary,2018,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,1.0,0.0
+SBUX,Starbucks,Consumer Discretionary,2019,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+SBUX,Starbucks,Consumer Discretionary,2020,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+SBUX,Starbucks,Consumer Discretionary,2021,True,0.0,0.0,0.0,1.0,2.0,0.0,0.0,0.0,0.0,1.0,0.0
+SBUX,Starbucks,Consumer Discretionary,2022,True,0.0,0.0,0.0,0.0,2.0,0.0,1.0,1.0,0.0,0.0,0.0
+SBUX,Starbucks,Consumer Discretionary,2023,True,0.0,0.0,0.0,0.0,2.0,0.0,2.0,2.0,0.0,0.0,0.0
+SBUX,Starbucks,Consumer Discretionary,2024,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+SCHW,Charles Schwab,Financials,2016,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+SCHW,Charles Schwab,Financials,2017,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+SCHW,Charles Schwab,Financials,2018,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+SCHW,Charles Schwab,Financials,2019,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+SCHW,Charles Schwab,Financials,2020,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+SCHW,Charles Schwab,Financials,2021,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+SCHW,Charles Schwab,Financials,2022,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+SCHW,Charles Schwab,Financials,2023,True,0.0,1.0,1.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+SCHW,Charles Schwab,Financials,2024,True,1.0,1.0,1.0,1.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0
+SLB,SLB (Schlumberger),Energy,2016,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+SLB,SLB (Schlumberger),Energy,2017,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+SLB,SLB (Schlumberger),Energy,2018,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+SLB,SLB (Schlumberger),Energy,2019,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0
+SLB,SLB (Schlumberger),Energy,2020,True,2.0,1.0,1.0,0.0,2.0,0.0,1.0,1.0,0.0,1.0,1.0
+SLB,SLB (Schlumberger),Energy,2021,True,1.0,1.0,1.0,1.0,2.0,0.0,1.0,1.0,0.0,0.0,1.0
+SLB,SLB (Schlumberger),Energy,2022,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,1.0,0.0,0.0,1.0
+SLB,SLB (Schlumberger),Energy,2023,True,1.0,0.0,0.0,1.0,2.0,0.0,0.0,1.0,0.0,0.0,1.0
+SLB,SLB (Schlumberger),Energy,2024,True,1.0,1.0,1.0,0.0,2.0,0.0,2.0,2.0,0.0,0.0,1.0
+TGT,Target,Consumer Discretionary,2016,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+TGT,Target,Consumer Discretionary,2017,False,,,,,,,,,,,
+TGT,Target,Consumer Discretionary,2018,False,,,,,,,,,,,
+TGT,Target,Consumer Discretionary,2019,True,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+TGT,Target,Consumer Discretionary,2020,True,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+TGT,Target,Consumer Discretionary,2021,True,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+TGT,Target,Consumer Discretionary,2022,False,,,,,,,,,,,
+TGT,Target,Consumer Discretionary,2023,False,,,,,,,,,,,
+TGT,Target,Consumer Discretionary,2024,False,,,,,,,,,,,
+TJX,TJX Companies,Consumer Discretionary,2016,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+TJX,TJX Companies,Consumer Discretionary,2017,True,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+TJX,TJX Companies,Consumer Discretionary,2018,True,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+TJX,TJX Companies,Consumer Discretionary,2019,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+TJX,TJX Companies,Consumer Discretionary,2020,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+TJX,TJX Companies,Consumer Discretionary,2021,True,0.0,0.0,1.0,1.0,2.0,0.0,0.0,0.0,0.0,1.0,1.0
+TJX,TJX Companies,Consumer Discretionary,2022,True,0.0,0.0,0.0,1.0,2.0,0.0,0.0,0.0,0.0,1.0,1.0
+TJX,TJX Companies,Consumer Discretionary,2023,True,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+TJX,TJX Companies,Consumer Discretionary,2024,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+TMO,Thermo Fisher Scientific,Healthcare,2016,True,1.0,0.0,1.0,0.0,2.0,0.0,1.0,0.0,1.0,0.0,0.0
+TMO,Thermo Fisher Scientific,Healthcare,2017,True,1.0,0.0,1.0,0.0,2.0,0.0,1.0,0.0,0.0,1.0,0.0
+TMO,Thermo Fisher Scientific,Healthcare,2018,True,1.0,1.0,1.0,0.0,2.0,0.0,1.0,0.0,1.0,0.0,0.0
+TMO,Thermo Fisher Scientific,Healthcare,2019,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+TMO,Thermo Fisher Scientific,Healthcare,2020,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,1.0,0.0,0.0,0.0
+TMO,Thermo Fisher Scientific,Healthcare,2021,True,1.0,0.0,0.0,0.0,2.0,0.0,0.0,1.0,0.0,0.0,0.0
+TMO,Thermo Fisher Scientific,Healthcare,2022,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+TMO,Thermo Fisher Scientific,Healthcare,2023,True,1.0,1.0,1.0,0.0,2.0,0.0,1.0,2.0,1.0,0.0,1.0
+TMO,Thermo Fisher Scientific,Healthcare,2024,True,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0
+TSLA,Tesla,Consumer Discretionary,2016,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+TSLA,Tesla,Consumer Discretionary,2017,True,2.0,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,1.0
+TSLA,Tesla,Consumer Discretionary,2018,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+TSLA,Tesla,Consumer Discretionary,2019,True,1.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+TSLA,Tesla,Consumer Discretionary,2020,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,1.0,0.0,0.0,0.0
+TSLA,Tesla,Consumer Discretionary,2021,True,2.0,0.0,0.0,0.0,2.0,0.0,0.0,1.0,0.0,0.0,0.0
+TSLA,Tesla,Consumer Discretionary,2022,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+TSLA,Tesla,Consumer Discretionary,2023,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+TSLA,Tesla,Consumer Discretionary,2024,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+UNH,UnitedHealth Group,Healthcare,2016,True,0.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+UNH,UnitedHealth Group,Healthcare,2017,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+UNH,UnitedHealth Group,Healthcare,2018,True,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+UNH,UnitedHealth Group,Healthcare,2019,True,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+UNH,UnitedHealth Group,Healthcare,2020,True,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+UNH,UnitedHealth Group,Healthcare,2021,True,0.0,0.0,2.0,1.0,2.0,0.0,0.0,0.0,0.0,2.0,0.0
+UNH,UnitedHealth Group,Healthcare,2022,True,1.0,1.0,2.0,1.0,2.0,0.0,0.0,0.0,0.0,2.0,0.0
+UNH,UnitedHealth Group,Healthcare,2023,True,1.0,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0,2.0,0.0
+UNH,UnitedHealth Group,Healthcare,2024,True,1.0,0.0,2.0,1.0,2.0,0.0,1.0,0.0,0.0,2.0,0.0
+VLO,Valero Energy,Energy,2016,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+VLO,Valero Energy,Energy,2017,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,2.0,1.0,1.0,2.0
+VLO,Valero Energy,Energy,2018,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,2.0,1.0,1.0,2.0
+VLO,Valero Energy,Energy,2019,True,1.0,1.0,0.0,0.0,2.0,0.0,0.0,2.0,1.0,1.0,1.0
+VLO,Valero Energy,Energy,2020,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+VLO,Valero Energy,Energy,2021,True,0.0,0.0,0.0,0.0,2.0,0.0,0.0,1.0,0.0,0.0,1.0
+VLO,Valero Energy,Energy,2022,True,0.0,0.0,0.0,0.0,2.0,0.0,2.0,2.0,0.0,0.0,2.0
+VLO,Valero Energy,Energy,2023,True,1.0,2.0,0.0,0.0,2.0,0.0,2.0,2.0,2.0,0.0,2.0
+VLO,Valero Energy,Energy,2024,True,0.0,1.0,0.0,0.0,2.0,0.0,0.0,2.0,0.0,0.0,2.0
+WFC,Wells Fargo,Financials,2016,False,,,,,,,,,,,
+WFC,Wells Fargo,Financials,2017,False,,,,,,,,,,,
+WFC,Wells Fargo,Financials,2018,False,,,,,,,,,,,
+WFC,Wells Fargo,Financials,2019,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+WFC,Wells Fargo,Financials,2020,True,0.0,1.0,1.0,1.0,2.0,0.0,1.0,0.0,0.0,1.0,0.0
+WFC,Wells Fargo,Financials,2021,True,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,1.0,0.0
+WFC,Wells Fargo,Financials,2022,True,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0
+WFC,Wells Fargo,Financials,2023,True,1.0,1.0,1.0,0.0,2.0,0.0,1.0,0.0,0.0,0.0,0.0
+WFC,Wells Fargo,Financials,2024,True,1.0,1.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+XOM,ExxonMobil,Energy,2016,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+XOM,ExxonMobil,Energy,2017,True,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+XOM,ExxonMobil,Energy,2018,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+XOM,ExxonMobil,Energy,2019,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+XOM,ExxonMobil,Energy,2020,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+XOM,ExxonMobil,Energy,2021,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+XOM,ExxonMobil,Energy,2022,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+XOM,ExxonMobil,Energy,2023,True,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0
+XOM,ExxonMobil,Energy,2024,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0
