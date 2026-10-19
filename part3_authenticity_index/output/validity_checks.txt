@@ -15,10 +15,11 @@ Company-years with an index: 357 (both components: 346, one component: 11); comp
   Sector differences (one-way ANOVA): F=7.02, p=0.000
 
 2. VALIDITY CHECKS
-  (a) Known-group check - Wells Fargo (fake-accounts scandal disclosed Sept 2016; consent orders through 2018):
-      2016-2018: WFC mean +0.29 (n=3) vs other banks -0.26 (n=19)
-      2019-2024: WFC mean +0.11 (n=6) vs other banks +0.25 (n=33)
-      Over-claiming 2016-2018: WFC 0.15 vs other banks 0.40
+  (a) Known-group check - Wells Fargo (fake-accounts scandal disclosed Sept 2016; consent orders through 2018). Window = first post-disclosure years:
+      2016 (pre-disclosure): WFC OAI +1.41 (n=1) vs other banks -0.55 (n=6); component A +0.51 vs +0.02; over-claiming 0.20 vs 0.41
+      2017-2018 (scandal): WFC OAI -0.27 (n=2) vs other banks -0.13 (n=13); component A +0.11 vs +0.21; over-claiming 0.12 vs 0.39
+      2019-2024: WFC OAI +0.11 (n=6) vs other banks +0.25 (n=33); component A +0.27 vs +0.26; over-claiming 0.06 vs 0.30
+      Note: Wells Fargo's CD&A was not detected in 2016-2018, so its score in those years rests on component A only.
   (b) Convergent check - when SAFETY is stated, is it pay-linked? Energy 69% (n=42) vs other sectors 13% (n=31). Expected: higher in Energy, where safety is operationally material.
   (c) Discriminant check - OAI vs About-page length: rho=0.124 (p=0.020). Near zero means the index is not an artefact of longer pages stating more values.
       OAI vs number of stated values: rho=0.214 (p=0.000).

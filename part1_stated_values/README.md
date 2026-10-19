@@ -1,10 +1,29 @@
 # Part 1 — Stated Values: "About Us" Pages via the Wayback Machine
 
-> **Status:** in progress. Sections marked _TODO_ will be completed as the pipeline is built.
+> **Non-technical summary:** [summary.md](summary.md)
 
 ## What I did
 
-_TODO_
+I collected one archived snapshot per year (2016–2024) of each sample company's "About Us" page
+from the Wayback Machine, extracted the clean body text, and used an LLM to code each snapshot for
+(a) change from the prior year, (b) value themes from a research-based codebook, and (c) linguistic
+shifts. Every step is a script, every rule is written down, and every gap carries a reason.
+
+| Stage | Script | Output |
+|---|---|---|
+| 1. Discover candidate About pages from archived homepages (rules, no AI) | [src/discover_candidates.py](src/discover_candidates.py), [src/build_candidates.py](src/build_candidates.py) | [output/discovered_candidates.csv](output/discovered_candidates.csv), [data/candidate_urls.csv](data/candidate_urls.csv) |
+| 2. Check each candidate's archive coverage per year (CDX API) | [src/probe_candidates.py](src/probe_candidates.py) | [output/candidate_coverage.csv](output/candidate_coverage.csv) |
+| 3. Select one page per company-year by the rules below | [src/select_pages.py](src/select_pages.py) | [output/selected_pages.csv](output/selected_pages.csv), [output/selection_summary.csv](output/selection_summary.csv) |
+| 4. Download first capture of each year, extract text, quality check | [src/download_pages.py](src/download_pages.py) | [output/snapshots.csv](output/snapshots.csv) |
+| 5. LLM coding: change, themes (with verified quotes), shifts | [src/analyze_snapshots.py](src/analyze_snapshots.py) | **[output/part1_dataset.csv](output/part1_dataset.csv)**, [output/company_shift_summaries.csv](output/company_shift_summaries.csv) |
+
+**Result:** usable text for **402 of 450 company-years (89%)**, covering all 50 companies;
+1,690 theme codes, 98.3% backed by an evidence quote verified verbatim against the page.
+
+**Reproduce:** from the repo root with the virtual environment active, run the five scripts in
+the order above (stage 5 needs `ANTHROPIC_API_KEY` in `.env`; it costs about $0.35 and reuses
+cached responses on re-runs). [src/make_review_page.py](src/make_review_page.py) builds an
+optional human-audit page.
 
 ## Page selection criteria
 
@@ -114,11 +133,18 @@ dedicated values page; this is noted under Limitations.
 
 ## Coverage gaps and known selection issues
 
-**Coverage:** a page was selected for **424 of 450 company-years (94%)**. 38 companies have all 9
-years, 7 have 8, and 5 have fewer
-([output/selection_summary.csv](output/selection_summary.csv)).
+**Coverage funnel (450 company-years):**
 
-**Missing company-years (26).** In every case the reason is the same: *no candidate page for
+| Step | Remaining | Lost | Reason |
+|---|---|---|---|
+| Page selection | 424 | 26 | No candidate page archived that year (table below) |
+| Download | 423 | 1 | IBM 2016: listed in the archive's index, but the archive returns "not found" for the capture on every attempt |
+| Quality check (rule F) | **402** | 21 | Under 50 words of text after cleaning: Broadcom 2020–24 (2 words each), Intel 2019 & 2021 (0), Lilly 2021–23 (7), ExxonMobil 2016–18 (45), Nike 2023–24, Meta 2016 & 2023, NVIDIA 2016, JPMorgan 2020, Target 2023, TJX 2018. Almost all are **JavaScript-rendered pages**: the archive stored an empty HTML shell whose content only appears when a browser runs the site's code |
+
+Every row of [output/part1_dataset.csv](output/part1_dataset.csv) carries `status` and
+`status_reason`, so each gap is documented at the company-year level.
+
+**Missing at selection (26).** In every case the reason is the same: *no candidate page for
 that company had a usable archived capture in that year* (`note` column in
 [output/selected_pages.csv](output/selected_pages.csv)). Per rule E, no year was filled from an
 adjacent year.
@@ -223,6 +249,35 @@ hard spending cap (`MAX_COST_USD`) and logs the cost of every call.
   (`about_page_check`). This documents the known selection issues (e.g. Meta, JPMorgan) without
   changing the rule-based selection.
 
+## Dataset schema — [output/part1_dataset.csv](output/part1_dataset.csv)
+
+One row per company-year (450 rows; analysis fields are blank where `status` is not `ok`).
+
+| Column | Meaning |
+|---|---|
+| `ticker`, `company_name`, `sector`, `year` | Identifiers (required) |
+| `page_text_clean` | Extracted visible body text (required) |
+| `changed_from_prior` | `True` if the text differs from the previous available snapshot, `False` if identical, blank for the first snapshot (required) |
+| `theme_categories` | Semicolon-separated codebook categories present (required) |
+| `analyst_notes` | LLM note on linguistic shifts versus the prior snapshot (required) |
+| `status`, `status_reason` | `ok`, `missing`, `too_short`, `fetch_failed`, with the reason |
+| `selected_url`, `tier` | Page used and its selection tier (1 = homepage "About" link … 4 = homepage) |
+| `capture_timestamp`, `archive_url` | Exact Wayback capture used (re-openable) |
+| `word_count` | Words of cleaned text |
+| `prior_year_compared`, `similarity_to_prior` | Year compared with, and word-level similarity (0–1, non-AI) |
+| `change_type`, `change_summary` | `none` / `cosmetic` / `substantive`, and a one-sentence description |
+| `about_page_check`, `about_page_note` | LLM judgement of whether the page reads like a general About page (documents selection issues; not used to filter) |
+| `theme_evidence` | JSON: category → verbatim evidence quote |
+| `n_quotes_unverified` | Evidence quotes not found verbatim in the page text |
+| `theme_<category>` (11 columns) | Salience per category: 0 absent, 1 mentioned, 2 emphasised |
+
+## Findings in brief
+
+See [summary.md](summary.md). In short: About pages change often (about half of year-on-year
+changes are substantive), and the mix of stated values shifted toward integrity, respect,
+diversity and safety, while the sharp post-2021 retreat seen in formal disclosures (Part 2) does
+**not** appear on About pages.
+
 ## Data collection notes
 
 - **Rate limiting.** A first run querying the CDX API every ~1.5 s was blocked by the Internet
@@ -257,8 +312,13 @@ hard spending cap (`MAX_COST_USD`) and logs the cost of every call.
 - **Use a content-based tie-break** (e.g. prefer the candidate whose text best matches the
   company's name and self-description) instead of shortest URL, which would have avoided the
   JPMorgan Chase Institute pick.
-
-_TODO: more as the pipeline is built._
+- **Render archived pages in a headless browser before extraction**, recovering the 21
+  JavaScript-rendered snapshots lost at the quality check.
+- **Validate the LLM coding against human labels** on a stratified sample (e.g. 20–30 pages across
+  sectors and years) and report agreement per category; and re-code a sample with a larger model
+  to measure model sensitivity.
+- **Archive-timing robustness:** use several captures per year (e.g. January and July) to check
+  that the first capture of a year is representative.
 
 ## Known limitations
 
@@ -266,5 +326,15 @@ _TODO: more as the pipeline is built._
 - **Candidate generation is not exhaustive.** Discovery only sees links present in the archived
   HTML (JavaScript-built menus are invisible), and the common-path list covers only standard
   conventions; an About page at an unusual address on a JavaScript-heavy site could be missed.
-
-_TODO: more as the pipeline is built._
+- **Selection is imperfect for a few companies** (Meta's social-media profile, JPMorgan's research
+  institute, Intel's homepage); see *Known selection issues*. The LLM's `about_page_check` flags
+  some snapshots as not reading like a general About page; Part 3 tests whether these bias the
+  results.
+- **LLM coding is unvalidated against humans.** Theme presence is a judgement; quotes are verified
+  but whether a quote really expresses a *value* is not. A small model (Claude Haiku 5.5) was used
+  for budget reasons.
+- **Missingness is not random.** JavaScript-heavy sites lose snapshots at the quality check, so
+  coverage is lower for modern, script-built sites.
+- **"Changed from prior" depends on extraction.** A redesign can change what the extractor keeps
+  even if the company's wording did not change; `change_type` (cosmetic vs substantive) mitigates
+  but does not eliminate this.

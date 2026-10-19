@@ -1,7 +1,12 @@
 # Part 2 — Lived Values: Proxy Statement Analysis
 
-> **Status:** in progress. Document collection is complete; text mining is next. Sections marked
-> _TODO_ will be completed as the analysis is built.
+> **Non-technical summary:** [summary.md](summary.md)
+
+**Pipeline:** [src/collect_proxies.py](src/collect_proxies.py) (collect, 450/450) →
+[src/mine_proxies.py](src/mine_proxies.py) (classical text mining, free) →
+[src/extract_pay_links.py](src/extract_pay_links.py) (LLM reading of the executive-pay section,
+$1.44). Run them in that order from the repo root; the last needs `ANTHROPIC_API_KEY` and reuses
+its cache on re-runs.
 
 ## Document type: annual proxy statements (SEC form DEF 14A)
 
@@ -69,26 +74,150 @@ requests are spaced 0.15 s apart.
 Hathaway to ≈257,000). Raw HTML and extracted text are kept in `data/raw/proxies/`
 (git-ignored because of size; fully re-creatable by re-running the script).
 
-## Text mining
+## Text mining: methods and why
 
-_TODO_
+**Classical methods for the whole corpus; an LLM only where reading comprehension is essential.**
+Proxies are long (median ~50,000 words; 23.7 million words in total). Sending them all to an LLM
+would cost far more than this project's $5 API budget, and dictionary measures are transparent,
+reproducible and standard in accounting and finance text analysis. The one question a dictionary
+cannot answer, whether a value is actually *tied to pay* rather than merely mentioned near pay, is
+given to an LLM, on the pay section only.
+
+1. **Theme emphasis (dictionaries).** The 11 codebook categories from Part 1
+   ([../data/codebook.json](../data/codebook.json)) are operationalised as keyword dictionaries
+   ([../data/theme_dictionaries.json](../data/theme_dictionaries.json)), drafted from each category's
+   definition and include-list. Because proxies are legal documents, phrases whose dominant meaning
+   there is legal or financial are deleted before counting: "equity" (stock) except in "racial/pay
+   equity", "with respect to", "safe harbor", "shareholder engagement", "performance share/period".
+   Emphasis = matches per 10,000 words, computed for the whole proxy and separately for the
+   **Compensation Discussion & Analysis (CD&A)**, the section explaining what executives are paid
+   for. Using the *same* categories as Part 1 is what makes the Part 3 comparison possible.
+2. **Specificity.** Among sentences mentioning a category, the share containing a quantified
+   commitment (a percentage, or a target year such as "by 2030"). Concrete targets are costlier
+   to state than aspirations.
+3. **Language change.** TF-IDF cosine similarity with the company's previous proxy. TF-IDF
+   down-weights words shared by all proxies, so legal boilerplate influences it less than raw
+   overlap would.
+4. **Cross-company and cross-sector variation.** Sector-by-year means, and a variance
+   decomposition: the share of each category's variation explained by sector, by company, and by
+   year (eta-squared).
+5. **External events** ([../data/external_events.csv](../data/external_events.csv)): 11 dated
+   events, each with the categories it should move, the expected direction, and the first proxy
+   year it could affect (spring proxies largely describe the previous year, so mid-year events
+   appear a year later). Test: within each company, mean emphasis in the two proxy years from the
+   first affected year minus the two years before (one year after for the 2024 split, where the
+   panel ends); a paired t-test across companies; and, crucially, the same pre/post change computed
+   at every *other* possible split year (placebo windows). An event "effect" is only credible if it
+   exceeds the placebo average, because most ESG language rose steadily all decade.
+6. **Values tied to executive pay (LLM).** Claude Haiku 5.5 reads each CD&A (median 12,000 words)
+   and lists every codebook category linked to pay, as a `quantitative_metric` (weighted or
+   formulaic goal) or `qualitative_factor` (discretionary assessment), with the stated weight and
+   a quote. Quotes are verified by code: a quote counts as supported if at least 80% of its
+   three-word phrases appear in the CD&A (tolerant of table spacing, but a paraphrase scores low).
+   A first prompt let the model stitch table cells with "..."; requiring one contiguous passage
+   raised verification from 44% to 93%. A hard spending cap is enforced in code.
+
+**CD&A detection.** The heading also appears in the table of contents, so the section is taken as
+the longest span from a "Compensation Discussion and Analysis" heading to the next "Summary
+Compensation Table". It was found in 424 of 450 proxies. Not found: Berkshire Hathaway (all
+years; its proxy has no standard CD&A), Meta 2016–2020 and Target 2017–2018 and 2022–2024
+(non-standard headings), Wells Fargo 2016–2018, Marathon Petroleum 2021–2022, Microsoft 2018, Nike
+2022. For these, CD&A-based columns are blank.
+
+**Validity checks on the pay extraction.** (a) 92.7% of 1,691 evidence quotes are supported by
+the text. (b) Companies coded as having *no* formulaic financial metric are the ones known for
+discretionary pay: Amazon (whose proxy states that performance goals "would undermine our focus
+on innovation"), ExxonMobil (board judgement without formulas), the large banks (holistic
+assessments) and Alphabet/Oracle/Broadcom (mostly time-vested stock). The extraction distinguishes
+formula-driven from discretionary plans rather than assuming every plan has metrics.
+
+## Dataset schema
+
+### [output/proxy_dataset.csv](output/proxy_dataset.csv): one row per company-year (450)
+
+| Column | Meaning | Why included |
+|---|---|---|
+| `ticker`, `company_name`, `sector`, `year` | Identifiers; `year` is the proxy year (see collection rule 4) | Join key with Parts 1 and 3 |
+| `form`, `filing_date`, `accession`, `url` | SEC form (`DEF 14A`/`DEFC14A`), filing date, SEC accession number, document URL | Provenance: every row can be re-opened at the source |
+| `n_words` | Words in the proxy after removing excluded phrases | Denominator for rates; length itself is a disclosure choice |
+| `cda_found`, `n_words_cda` | Whether the CD&A section was detected, and its length | Documents where pay-section measures are missing |
+| `rate_<category>` (11) | Dictionary matches per 10,000 words, whole proxy | Main measure of how much a value is discussed |
+| `cda_rate_<category>` (11) | Same, inside the CD&A only | Emphasis where pay is justified: closer to lived priorities |
+| `spec_<category>` (11) | Share of the category's sentences with a quantified commitment | Concrete versus aspirational language |
+| `nsent_<category>` (11) | Number of sentences mentioning the category | Reliability weight for `spec_` (small counts are noisy) |
+| `rate_esg_general` | Matches for the generic ESG label ("ESG", "environmental, social…") | Separates use of the *label* from substance (greenhushing) |
+| `tfidf_similarity_to_prior` | TF-IDF cosine similarity with the previous proxy (1 = same wording) | Within-company language change |
+| `yoy_change_<category>` (11) | Change in `rate_` from the previous year | Within-company change in emphasis |
+
+### [output/pay_links.csv](output/pay_links.csv): one row per company-year × pay-linked category
+
+`ticker`, `year`, `sector`; `category`; `mechanism` (`quantitative_metric` or
+`qualitative_factor`); `weight_percent` (stated weight, −1 if none stated); `evidence` (quote);
+`quote_support` (share of the quote's 3-word phrases found in the CD&A); `quote_verified`
+(`quote_support` ≥ 0.8). Kept in long form so every coded link can be audited against its quote.
+
+### [output/pay_links_wide.csv](output/pay_links_wide.csv): one row per company-year
+
+`pay_<category>` = 2 weighted metric, 1 qualitative factor, 0 not linked; blank where no CD&A was
+found (`cda_found`). The analysis-ready form used in Part 3.
+
+### Aggregate outputs
+
+- [output/sector_year_means.csv](output/sector_year_means.csv): mean `rate_` by sector and year.
+- [output/variance_decomposition.csv](output/variance_decomposition.csv): per category, mean,
+  standard deviation, and R² explained by sector, company and year.
+- [output/event_tests.csv](output/event_tests.csv): per event × category: pre and post means,
+  change and % change, share of companies moving in the expected direction, t and p, placebo mean
+  and maximum change, and the excess over placebo.
+- [output/proxy_manifest.csv](output/proxy_manifest.csv): collection record (see above).
+- Figures: [output/figures/](output/figures/).
+
+## Findings in brief
+
+See [summary.md](summary.md). ESG and people-related language roughly tripled in proxies between
+2016 and 2022; company identity explains far more of the variation than sector; the clearest
+event effects beyond trend are George Floyd → diversity (+48%), the Business Roundtable statement
+→ community and employees, COVID-19 → employee wellbeing and safety, and ChatGPT → innovation;
+after 2022, diversity language and diversity pay metrics retreat, and the generic "ESG" label falls
+while environmental substance does not.
 
 ## Assumptions
 
 - The annual proxy is treated as the company's most authoritative yearly statement of governance
   and pay priorities.
+- Dictionary matches measure *attention*, not sentiment or quality: a firm discussing a diversity
+  lawsuit and one announcing a diversity target both score.
 - Code was written with AI coding assistance (Claude); document selection is entirely rule-based.
 
 ## What I would do differently with more time
 
-_TODO_
+- **Section-aware analysis throughout:** split every proxy into its standard sections (board,
+  pay, shareholder proposals) and measure each separately, rather than the whole document plus
+  CD&A only.
+- **Shareholder proposals as a second behavioural signal:** extract ESG proposals and the board's
+  recommendation (support/oppose), a direct revealed-preference measure.
+- **Validate the dictionaries** against human-coded sentences, and extend them with embedding-based
+  nearest-neighbour terms to improve recall.
+- **Stronger event designs:** a difference-in-differences using companies or sectors the event
+  should not affect (e.g. Nasdaq- vs NYSE-listed firms for the Nasdaq board-diversity rule).
+- **Add a sustainability-report corpus** for 2019–2024 (when coverage is good) to test whether the
+  proxy's governance focus understates environmental commitments.
 
 ## Known limitations
 
 - **Governance focus.** Proxies under-represent environmental and community topics relative to
   sustainability reports (see trade-off above).
 - **Boilerplate.** Large parts of every proxy are legally required, near-identical text (cover
-  page, voting procedures), which dampens year-to-year change measures; the analysis must
-  normalise for this.
-
-_TODO: more as the analysis is built._
+  page, voting procedures), which dampens year-to-year change measures. Rates per 10,000 words
+  and TF-IDF weighting mitigate but do not remove this.
+- **Dictionary error.** Keyword matching misses paraphrases and can count off-topic uses; the
+  exclusion list removes the largest known false positives, but precision and recall were not
+  measured against human coding.
+- **Event tests are descriptive, not causal.** Events cluster in 2020–2021 (COVID-19, George
+  Floyd, the SEC human-capital rule all first affect 2021 proxies), so their effects cannot be
+  separated; the placebo comparison guards against mistaking trend for effect, not against
+  simultaneous events.
+- **LLM pay coding.** A small model was used for budget reasons; the quantitative/qualitative
+  boundary is a judgement, and some evidence quotes are only a scorecard label.
+- **Disclosure, not behaviour.** A pay metric shows what the board says it rewards; whether
+  targets were hard or payouts actually depended on them is not measured.

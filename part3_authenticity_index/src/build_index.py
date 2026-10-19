@@ -182,16 +182,21 @@ def report(df: pd.DataFrame) -> str:
     banks = d[d["sector"] == "Financials"]
     wfc = banks[banks["ticker"] == "WFC"]
     others = banks[banks["ticker"] != "WFC"]
+    # The scandal became public in September 2016, so the 2016 About page and
+    # spring-2016 proxy predate it; 2017-2018 are the first post-disclosure
+    # years (consent orders ran through 2018).
     w("  (a) Known-group check - Wells Fargo (fake-accounts scandal disclosed Sept 2016; "
-      "consent orders through 2018):")
-    for yrs, lab in [((2016, 2018), "2016-2018"), ((2019, 2024), "2019-2024")]:
-        a = wfc[wfc["year"].between(*yrs)]["OAI_z"]
-        b = others[others["year"].between(*yrs)]["OAI_z"]
-        w(f"      {lab}: WFC mean {a.mean():+.2f} (n={len(a)}) vs other banks {b.mean():+.2f} (n={len(b)})")
-    for col in ["over_claiming"]:
-        a = wfc[wfc["year"].between(2016, 2018)][col].mean()
-        b = others[others["year"].between(2016, 2018)][col].mean()
-        w(f"      Over-claiming 2016-2018: WFC {a:.2f} vs other banks {b:.2f}")
+      "consent orders through 2018). Window = first post-disclosure years:")
+    for yrs, lab in [((2016, 2016), "2016 (pre-disclosure)"), ((2017, 2018), "2017-2018 (scandal)"),
+                     ((2019, 2024), "2019-2024")]:
+        a = wfc[wfc["year"].between(*yrs)]
+        b = others[others["year"].between(*yrs)]
+        w(f"      {lab}: WFC OAI {a['OAI_z'].mean():+.2f} (n={len(a)}) vs other banks "
+          f"{b['OAI_z'].mean():+.2f} (n={len(b)}); component A {a['A_discourse_consistency'].mean():+.2f} "
+          f"vs {b['A_discourse_consistency'].mean():+.2f}; over-claiming {a['over_claiming'].mean():.2f} "
+          f"vs {b['over_claiming'].mean():.2f}")
+    w("      Note: Wells Fargo's CD&A was not detected in 2016-2018, so its score in those years "
+      "rests on component A only.")
 
     # (b) Convergent: energy companies that state safety should back it with pay
     en = d[(d["sector"] == "Energy") & (d["theme_safety"] > 0) & d["cda_found"].fillna(False).astype(bool)]
