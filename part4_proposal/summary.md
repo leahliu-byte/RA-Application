@@ -5,21 +5,21 @@
 It is often said that you see a company's true values in a crisis: values that cost nothing in
 good times have to be paid for in bad ones. If that is true, crises are the best test of whether a
 company meant what it said. If it is not, and crises simply prompt every company to say the right
-things at once, then crisis periods are when stated values tell us the *least*.
+things at once, then crisis periods are when stated values are *least* informative.
 
 Part 3 gave a reason for doubt. In 2016, while Wells Fargo's fake-accounts misconduct was under
-way but not yet public, our authenticity index rated it the most aligned bank in the sample; and
+way but not yet public, my authenticity index rated it the most aligned bank in the sample; and
 in the scandal years its shareholder documents mentioned integrity two to three times as often as
 other banks'.
 
-## What we did
+## What I did
 
-We used two crises that put a specific value under pressure, and asked whether companies that
+I used two crises that put a specific value under pressure, and asked whether companies that
 publicly claimed that value *before* the crisis behaved differently *after* it:
 
 - **COVID-19**, when "people first" became expensive. Did companies whose web page claimed employee
   wellbeing or safety in 2019 increase their attention to employees and safety, and tie more
-  executive pay to them, than companies that made no such claim? We also identified, from audited
+  executive pay to them, than companies that made no such claim? I also identified, from audited
   SEC financial data, which companies actually lost revenue in 2020: those were the ones whose
   claim was truly costly to keep.
 - **The DEI backlash of 2022–2024**, when diversity commitments became politically risky. Did
@@ -30,7 +30,7 @@ The analysis reuses the data from Parts 1–3 plus public SEC financial data.
 
 ![COVID-19 convergence](output/figures/fig1_covid_convergence.png)
 
-## What we found
+## What I found
 
 **1. During COVID-19, prior claims made no difference.** Companies that had claimed people values
 and those that had not increased their attention to employees and safety by about the same amount.

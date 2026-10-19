@@ -3,7 +3,7 @@ discover_candidates.py
 ----------------------
 Systematic (non-AI) discovery of candidate "About Us" URLs.
 
-Instead of relying on someone's knowledge of each company's website, we let the
+Instead of relying on someone's knowledge of each company's website, I let the
 companies' own homepages tell us where their About page is:
 
   1. For each company homepage in data/homepages.csv, download the ARCHIVED
@@ -123,7 +123,7 @@ def fetch_archived_homepage(homepage: str, year: int) -> tuple[str, str] | None:
 
     The `id_` flag asks the Wayback Machine for the page exactly as originally
     captured: no Wayback toolbar, and links NOT rewritten to web.archive.org,
-    so we see the company's real link addresses.
+    so I see the company's real link addresses.
     HTML is cached on disk so re-running the script does not re-download.
     """
     cache_file = CACHE_DIR / f"{homepage.replace('/', '_')}_{year}.html"

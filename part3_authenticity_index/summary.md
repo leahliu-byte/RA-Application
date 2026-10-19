@@ -11,7 +11,7 @@ Index**, measuring how closely what a company says matches what it formally prio
 ## How the score works
 
 Researchers on organisational culture distinguish the values a company *espouses* from those it
-*enacts*, and call the gap between symbolic statements and real practice "decoupling". We measure
+*enacts*, and call the gap between symbolic statements and real practice "decoupling". I measure
 that gap in two ways, using the same eleven values throughout:
 
 1. **Consistency of emphasis.** Does the company stress the same values in its shareholder report
@@ -22,14 +22,14 @@ that gap in two ways, using the same eleven values throughout:
    compared with how often each value is pay-linked at other companies? (Some values, like
    "respect", are rarely tied to pay anywhere, so a company is not penalised for that alone.)
 
-The index averages the two, so 0 is the average company, positive is more aligned. We also report
+The index averages the two, so 0 is the average company, positive is more aligned. I also report
 two opposite ways to be inauthentic: **over-claiming** (stating a value with no sign of it in
 the shareholder report or in pay: "cheap talk") and **under-claiming** (prioritising a value
 without saying so publicly: "quiet virtue").
 
 ![Authenticity index by company](output/figures/fig1_oai_by_company.png)
 
-## What we found
+## What I found
 
 **1. Authenticity varies widely, and it changes.** Scores cover 47 companies and 357
 company-years. About half the variation is between companies and half is the same company
@@ -55,7 +55,7 @@ Companies put their money behind results and safety, and their words behind peop
 
 ## How far to trust it
 
-We checked whether the index behaves as it should. It passes most checks: the two parts measure
+I checked whether the index behaves as it should. It passes most checks: the two parts measure
 different things, rankings barely change if either part or any single value is removed, and it
 is not simply rewarding longer web pages. **One check is revealing.** Wells Fargo should score low
 after its fake-accounts scandal became public in late 2016, and in 2017–2018 it does score slightly

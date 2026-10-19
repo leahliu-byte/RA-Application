@@ -1,23 +1,23 @@
 # Part 1 Summary: What 50 Large Companies Say They Value, 2016–2024
 
-## What we did
+## What I did
 
-We reconstructed how 50 of the largest U.S. companies (ten each in Technology, Financials,
+I reconstructed how 50 of the largest U.S. companies (ten each in Technology, Financials,
 Healthcare, Consumer Discretionary and Energy) described themselves on their "About Us" web pages
-every year from 2016 to 2024, using the Internet Archive's Wayback Machine. For each year we
+every year from 2016 to 2024, using the Internet Archive's Wayback Machine. For each year I
 recorded whether the page changed and which of eleven values it expressed (for example,
 innovation, integrity, customer focus, diversity, environment, safety), using a framework drawn
 from published research on corporate values. An AI model did the reading, but every value it
 reported had to be backed by a direct quote from the page, and the quotes were checked by
 computer: 98% matched the page word for word.
 
-We obtained usable pages for **402 of 450 company-years (89%)**. Every gap is documented. Most are
+I obtained usable pages for **402 of 450 company-years (89%)**. Every gap is documented. Most are
 years the archive never saved the page, or pages built so that their text only appears when a
 browser runs the site's code, so the archive stored an empty shell.
 
 ![Values stated on About pages, 2016 vs 2024](output/figures/fig1_values_2016_vs_2024.png)
 
-## What we found
+## What I found
 
 **1. Company self-descriptions are not static.** In a typical year, about half of the companies
 made a *substantive* change to their About page: adding, dropping or reframing values, not just
@@ -61,7 +61,7 @@ reduced by 2020 to generic navigation text with that wording gone.
 
 ## Caveats
 
-- The page we tracked is chosen by written rules applied the same way to every company. For a few
+- The page I tracked is chosen by written rules applied the same way to every company. For a few
   companies the rules land on an imperfect page (for Meta, Facebook's own social-media profile; for
   JPMorgan, its research institute's About page; for Intel and Berkshire Hathaway, the homepage).
   These are documented, and Part 3 tests whether they bias the results.

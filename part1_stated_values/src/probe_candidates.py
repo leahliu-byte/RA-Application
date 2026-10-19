@@ -5,7 +5,7 @@ Step 1 of the Part 1 pipeline: decide WHICH page to scrape for each company.
 
 For every candidate "About Us" URL in data/candidate_urls.csv, ask the Wayback
 Machine CDX API which years (2016-2024) have an archived capture, and what HTTP
-status those captures had. We do not download any pages here; we only look at
+status those captures had. I do not download any pages here; I only look at
 the CDX index, which is cheap.
 
 Output: output/candidate_coverage.csv with one row per candidate URL and, for each
@@ -39,8 +39,8 @@ CDX_ENDPOINT = "https://web.archive.org/cdx/search/cdx"
 YEARS = list(range(2016, 2025))                           # 2016..2024 inclusive
 
 # The Internet Archive is a free, shared service: be polite. A first run at one
-# request every ~1.5 s got our IP temporarily blocked (connection refused) after
-# ~20 queries, so we now pause 4 s between requests and back off for minutes
+# request every ~1.5 s got my IP temporarily blocked (connection refused) after
+# ~20 queries, so I now pause 4 s between requests and back off for minutes
 # (not seconds) when the archive refuses connections.
 REQUEST_DELAY_SEC = 4
 MAX_RETRIES = 5
@@ -110,7 +110,7 @@ def main() -> None:
     fieldnames = ["ticker", "candidate_url", "years_200", "error"] + [str(y) for y in YEARS]
 
     # Resume support: keep rows that were already probed successfully in an
-    # earlier (interrupted) run, so we never re-query the archive needlessly.
+    # earlier (interrupted) run, so I never re-query the archive needlessly.
     done: dict[tuple[str, str], dict] = {}
     if OUTPUT_CSV.exists():
         with open(OUTPUT_CSV, newline="") as f:

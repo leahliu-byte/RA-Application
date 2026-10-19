@@ -1,25 +1,25 @@
 # Part 2 Summary: What Companies Tell Shareholders, and What They Pay Executives For
 
-## What we did
+## What I did
 
 Every U.S.-listed company must publish a **proxy statement** each year before its shareholder
-meeting. It describes the board, governance, and above all **what executives are paid for**. We
+meeting. It describes the board, governance, and above all **what executives are paid for**. I
 collected the official proxy statement for all 50 sample companies for every year from 2016 to
 2024 from the SEC's public database: **450 of 450 documents, about 24 million words, with no
-gaps**. We chose proxies over sustainability or diversity reports because every company must file
+gaps**. I chose proxies over sustainability or diversity reports because every company must file
 one, every year, in a comparable format, whereas voluntary reports have large gaps before 2019 and
 can be written as marketing.
 
-We then measured, for each document, how much it discusses each of the same eleven values used in
+I then measured, for each document, how much it discusses each of the same eleven values used in
 Part 1, using transparent word lists applied identically to every document. Separately, an AI model
 read the executive-pay section of each proxy to identify which values are **actually built into
 executive pay** (for example, "10% of the annual bonus depends on safety targets") as opposed to
-merely mentioned. We tested every shift against eleven external events, such as the 2019 Business
+merely mentioned. I tested every shift against eleven external events, such as the 2019 Business
 Roundtable statement on corporate purpose and the murder of George Floyd in 2020.
 
 ![How proxy statements talk about ESG themes](output/figures/fig1_proxy_esg_language.png)
 
-## What we found
+## What I found
 
 **1. Environmental, diversity and workforce language exploded, then split.** Between 2016 and
 2022, mentions of environment and sustainability rose roughly fivefold, diversity about 2.6-fold

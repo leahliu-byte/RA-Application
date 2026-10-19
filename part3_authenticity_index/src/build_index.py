@@ -7,7 +7,7 @@ Construct. Authenticity is the alignment between the values an organisation
 ESPOUSES and those it ENACTS (Schein's distinction between espoused values and
 enacted culture). Its absence is what institutional theory calls DECOUPLING:
 symbolic statements disconnected from practice (Meyer & Rowan 1977; Bromley &
-Powell 2012). We measure decoupling at two levels, each comparing the Part 1
+Powell 2012). I measure decoupling at two levels, each comparing the Part 1
 About page (espoused, public) with the Part 2 proxy statement (disclosed to
 shareholders, and where pay is set):
 

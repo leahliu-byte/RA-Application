@@ -35,7 +35,7 @@ Rules implemented here (numbering matches the README):
      a 3xx on the old URL and 200s on the new one, and stitching picks the new
      one for those years.
   E  One snapshot per year. The exact capture (first 200 of the year) is
-     resolved at download time; here we only decide the URL. A year with no
+     resolved at download time; here I only decide the URL. A year with no
      usable capture on any candidate is MISSING, never filled from another year.
 
   Audit  After the automatic pick, every company's selection is reviewed by
