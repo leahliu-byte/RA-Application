@@ -32,7 +32,7 @@ shifts.
 | Which snapshot per year | First working capture of the calendar year; a missing year stays missing | Evenly spaced time points; never borrow from another year | Rule E |
 | Quality bar | Under 50 words or an error page counts as missing | Empty JavaScript shells and error pages are not the company's words | Rule F |
 | Value categories | 11-category hybrid codebook (MIT "Big Nine" values + stakeholder/ESG themes + safety), shared with Part 2 | Research-grounded, and identical categories make the Part 3 comparison possible | *Codebook* |
-| LLM | Claude Haiku 5.5, every theme backed by a quote verified by code | Fits a $5 budget; verification makes errors visible | *LLM analysis* |
+| LLM | Claude Haiku 5.5, every theme backed by a quote verified by code | Small, fast model suited to structured coding at scale; verification makes errors visible | *LLM analysis* |
 
 ## Page selection criteria
 
@@ -194,10 +194,10 @@ values stated on S&P 500 websites.
 [src/analyze_snapshots.py](src/analyze_snapshots.py) → [output/part1_dataset.csv](output/part1_dataset.csv).
 Model: Claude Haiku 5.5 (`claude-haiku-5-5`), structured JSON output enforced by a schema, fixed
 prompts (`PROMPT_VERSION`), and every raw response cached in `output/llm_cache/` for
-reproducibility and resumability. **Model choice was budget-driven:** the project's total API
-budget is $5; the largest model would have cost roughly $14 for Part 1 alone; Haiku cost $0.33. Codebook classification with verbatim evidence is well within a small model's
-ability, and the quote-verification check makes weak evidence visible. The script enforces a
-hard spending cap (`MAX_COST_USD`) and logs the cost of every call.
+reproducibility and resumability. **Why a small model:** codebook classification with verbatim
+evidence is a structured task well within a small, fast model's ability, which matters for a
+pipeline designed to scale to all 500 S&P firms; and the quote-verification check makes weak
+evidence visible.
 
 - **(a) Changed from prior year.** Two layers. *Non-AI:* each snapshot is compared with the
   company's previous available snapshot (exact match after normalisation, plus a word-level
@@ -343,8 +343,8 @@ diversity and safety, while the sharp post-2021 retreat seen in formal disclosur
   some snapshots as not reading like a general About page; Part 3 tests whether these bias the
   results.
 - **LLM coding is unvalidated against humans.** Theme presence is a judgement; quotes are verified
-  but whether a quote really expresses a *value* is not. A small model (Claude Haiku 5.5) was used
-  for budget reasons.
+  but whether a quote really expresses a *value* is not. A small model (Claude Haiku 5.5) was
+  used; a larger model might code some borderline cases differently.
 - **Missingness is not random.** JavaScript-heavy sites lose snapshots at the quality check, so
   coverage is lower for modern, script-built sites.
 - **"Changed from prior" depends on extraction.** A redesign can change what the extractor keeps

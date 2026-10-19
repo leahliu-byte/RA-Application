@@ -42,8 +42,8 @@ revenue in a standard concept). Tests are repeated within hit and not-hit firms.
 
 **Inference.** With about 50 firms, differences in mean change between claimers and non-claimers
 are tested by permutation (claimer labels shuffled 10,000 times, fixed seed; two-sided p), which
-needs no distributional assumptions. Everything uses existing Part 1–3 outputs plus free SEC data:
-**no API cost**.
+needs no distributional assumptions. Everything uses existing Part 1–3 outputs plus public SEC
+financial data.
 
 ## Results
 

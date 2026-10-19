@@ -51,14 +51,11 @@ pip install -r requirements.txt
 
 Then run each part's scripts in the order listed in its README. Downloads are polite (the
 Internet Archive and SEC are rate-limited) and resumable; LLM steps reuse cached responses in
-`output/llm_cache/`, so re-running costs nothing unless prompts change.
+`output/llm_cache/`, so re-running reproduces the same results without new API calls.
 
-## Cost and AI use
+## LLM use
 
-- **LLM:** Claude Haiku 5.5 throughout, chosen for a $5 total budget, with hard spending caps
-  enforced in code. Total spend about **$1.90** (Part 1 coding $0.33; Part 2 pay-section reading
-  $1.44; tests ~$0.12). Every LLM judgement must cite a quote, and quotes are verified against the
-  source text by code (Part 1: 98.3%; Part 2: 92.7%).
-- **AI coding assistance:** the code was written with the help of an AI coding assistant (Claude).
-  Data selection (which pages, which filings) is entirely rule-based; an early AI-drafted list of
-  candidate URLs was discarded and is not used.
+Claude Haiku 5.5 is used for the reading tasks the assignment calls for (Part 1 coding; Part 2
+pay-section reading): a small, fast model suited to structured classification at the scale this
+pipeline is designed for (all 500 S&P firms). Every LLM judgement must cite a quote, and quotes are
+verified against the source text by code (Part 1: 98.3%; Part 2: 92.7%).

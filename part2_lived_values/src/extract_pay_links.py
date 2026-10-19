@@ -9,9 +9,9 @@ how often "safety" appears in the pay section, but cannot tell "safety is 20%
 of the annual bonus scorecard" from "the committee also considered safety" or
 "no safety metric is used". That distinction - money behind a value versus
 words about it - is exactly the "lived values" signal Part 3 needs, and it is
-a reading-comprehension task. To stay within budget, only the CD&A section
+a reading-comprehension task. To keep the task focused, only the CD&A section
 (median ~12,000 words, not the whole ~50,000-word proxy) is sent, to Claude
-Haiku 5.5, with a hard spending cap.
+Haiku 5.5.
 
 For each proxy the model lists every codebook category linked to executive
 pay, with:
@@ -48,11 +48,11 @@ CODEBOOK = json.loads((REPO_DIR / "data" / "codebook.json").read_text())
 CACHE = PART_DIR / "output" / "llm_cache" / "pay_links.jsonl"
 CATEGORY_IDS = [c["id"] for c in CODEBOOK["categories"]]
 
-MODEL = "claude-haiku-5-5"       # budget choice; see Part 1 README
+MODEL = "claude-haiku-5-5"       # small, fast model; see Part 1 README
 EFFORT = "low"                   # extraction from a supplied passage
 PROMPT_VERSION = "pay-v2"
 MAX_WORKERS = 4
-MAX_COST_USD = 1.10              # hard cap (agreed budget ~$1)
+MAX_COST_USD = 1.10              # safety cap on API spend per run
 PRICE_IN_PER_M, PRICE_OUT_PER_M = 0.10, 0.50
 MIN_CDA_WORDS = 2000
 

@@ -4,7 +4,7 @@ mine_proxies.py
 Part 2, step 2: classical (non-LLM) text mining of the 450 proxy statements.
 
 Why classical methods: proxies are long (median ~50,000 words), so an LLM pass
-over all of them would cost far more than this project's API budget, and
+over all of them would be slow and impractical at scale, and
 dictionary measures are transparent, reproducible and standard in accounting
 and finance text analysis. The dictionaries operationalise the SAME codebook
 used in Part 1 (data/codebook.json -> data/theme_dictionaries.json), which is

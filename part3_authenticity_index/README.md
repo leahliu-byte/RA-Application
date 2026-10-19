@@ -11,7 +11,7 @@ statement and executive pay, Part 2), for each company and year. It is computed 
 company-years across 47 companies**, varies both between companies and within companies over time,
 and is accompanied by a decomposition into two distinct failure modes (over-claiming and
 under-claiming), five validity checks (one of them inconclusive in an informative way) and
-robustness tests. The script runs in seconds from the Part 1 and Part 2 outputs; no API cost.
+robustness tests. The script runs in seconds from the Part 1 and Part 2 outputs.
 
 ## Defining "alignment": reasoning
 

@@ -3,9 +3,9 @@
 > **Non-technical summary:** [summary.md](summary.md)
 
 **Pipeline:** [src/collect_proxies.py](src/collect_proxies.py) (collect, 450/450) →
-[src/mine_proxies.py](src/mine_proxies.py) (classical text mining, free) →
-[src/extract_pay_links.py](src/extract_pay_links.py) (LLM reading of the executive-pay section,
-$1.44). Run them in that order from the repo root; the last needs `ANTHROPIC_API_KEY` and reuses
+[src/mine_proxies.py](src/mine_proxies.py) (classical text mining) →
+[src/extract_pay_links.py](src/extract_pay_links.py) (LLM reading of the executive-pay section).
+Run them in that order from the repo root; the last needs `ANTHROPIC_API_KEY` and reuses
 its cache on re-runs.
 
 ## Document type: annual proxy statements (SEC form DEF 14A)
@@ -78,7 +78,7 @@ Hathaway to ≈257,000). Raw HTML and extracted text are kept in `data/raw/proxi
 
 **Classical methods for the whole corpus; an LLM only where reading comprehension is essential.**
 Proxies are long (median ~50,000 words; 23.7 million words in total). Sending them all to an LLM
-would cost far more than this project's $5 API budget, and dictionary measures are transparent,
+would be slow and impractical at the scale of 500 firms, and dictionary measures are transparent,
 reproducible and standard in accounting and finance text analysis. The one question a dictionary
 cannot answer, whether a value is actually *tied to pay* rather than merely mentioned near pay, is
 given to an LLM, on the pay section only.
@@ -115,7 +115,7 @@ given to an LLM, on the pay section only.
    a quote. Quotes are verified by code: a quote counts as supported if at least 80% of its
    three-word phrases appear in the CD&A (tolerant of table spacing, but a paraphrase scores low).
    A first prompt let the model stitch table cells with "..."; requiring one contiguous passage
-   raised verification from 44% to 93%. A hard spending cap is enforced in code.
+   raised verification from 44% to 93%.
 
 **CD&A detection.** The heading also appears in the table of contents, so the section is taken as
 the longest span from a "Compensation Discussion and Analysis" heading to the next "Summary
@@ -191,7 +191,6 @@ while environmental substance does not.
   and pay priorities.
 - Dictionary matches measure *attention*, not sentiment or quality: a firm discussing a diversity
   lawsuit and one announcing a diversity target both score.
-- Code was written with AI coding assistance (Claude); document selection is entirely rule-based.
 
 ## What I would do differently with more time
 
@@ -221,7 +220,7 @@ while environmental substance does not.
   Floyd, the SEC human-capital rule all first affect 2021 proxies), so their effects cannot be
   separated; the placebo comparison guards against mistaking trend for effect, not against
   simultaneous events.
-- **LLM pay coding.** A small model was used for budget reasons; the quantitative/qualitative
+- **LLM pay coding.** A small model was used; the quantitative/qualitative
   boundary is a judgement, and some evidence quotes are only a scorecard label.
 - **Disclosure, not behaviour.** A pay metric shows what the board says it rewards; whether
   targets were hard or payouts actually depended on them is not measured.

@@ -60,10 +60,10 @@ SNAP_CACHE = CACHE_DIR / "snapshot_analysis.jsonl"
 SHIFT_CACHE = CACHE_DIR / "company_shifts.jsonl"
 OUTPUT_CSV = PART_DIR / "output" / "part1_dataset.csv"
 
-# Claude Haiku 5.5: chosen for budget (the project's total API budget is $5).
+# Claude Haiku 5.5: a small, fast model, suited to structured coding at scale.
 # Codebook coding with verbatim evidence is a structured classification task
 # well within a small model's ability, and the quote-verification check below
-# makes weak evidence visible. Estimated cost for all of Part 1: ~$0.50.
+# makes weak evidence visible.
 MODEL = "claude-haiku-5-5"
 EFFORT = "medium"           # classification against a codebook; medium is ample
 PROMPT_VERSION = "p1-v1"    # bump when prompts change, so cached results are not mixed

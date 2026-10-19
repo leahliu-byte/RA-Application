@@ -26,7 +26,7 @@ publicly claimed that value *before* the crisis behaved differently *after* it:
   companies that had publicly championed DEI keep their DEI commitments longer than those that had
   not?
 
-The analysis reuses the data from Parts 1–3 plus free SEC financial data, at no cost.
+The analysis reuses the data from Parts 1–3 plus public SEC financial data.
 
 ![COVID-19 convergence](output/figures/fig1_covid_convergence.png)
 
