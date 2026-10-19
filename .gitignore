@@ -179,3 +179,6 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+# Raw downloaded HTML (large, re-downloadable)
+**/data/raw/
+**/logs/

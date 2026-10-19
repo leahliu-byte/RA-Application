@@ -1,0 +1,202 @@
+ticker,candidate_url,score,years_seen,link_text,found_on
+MSFT,microsoft.com/en-us/about,8.0,2020;2024,About Microsoft,microsoft.com
+MSFT,unlocked.microsoft.com/kc7,4.0,2024,Learn about KC7,microsoft.com
+NVDA,nvidia.com/object/about-nvidia.html,8.0,2016,About NVIDIA,nvidia.com
+NVDA,nvidia.com/en-us/about-nvidia,8.0,2020,About NVIDIA,nvidia.com
+GOOGL,google.com/intl/en/about.html,8.0,2016;2020;2024,About,google.com
+GOOGL,about.google,6.0,2024,About Google,abc.xyz
+META,about.meta.com,8.0,2024,About Meta,meta.com
+META,about.meta.com/company-info,8.0,2024,About Meta,meta.com
+META,facebook.com/facebook,7.0,2016,About,facebook.com
+AVGO,broadcom.com/company,7.0,2016,Company Overview,broadcom.com
+CRM,salesforce.com/company/about-us,8.0,2020,About Us,salesforce.com
+CRM,salesforce.com/company,7.0,2016,About Us,salesforce.com
+CRM,cs.salesforce.com,4.0,2024,Learn all about customer success in hands-on workshops.,salesforce.com
+ORCL,oracle.com/us/corporate/index.html,7.0,2016,About,oracle.com
+ORCL,oracle.com/ocom/groups/systemobject/@mktg_admin/documents/webcontent/videoplayer-ocom.html,4.0,2016,Video: Oracle Database in the Cloud Accelerates Your Business Oracle President T,oracle.com
+ORCL,oracle.com/cloud/index.html,4.0,2016,Learn About Oracle Cloud Computing,oracle.com
+ORCL,oracle.com/cloud/daas.html,4.0,2016,Learn About DaaS,oracle.com
+ORCL,oracle.com/cloud/saas.html,4.0,2016,Learn About SaaS,oracle.com
+ORCL,oracle.com/cloud/paas.html,4.0,2016,Learn About PaaS,oracle.com
+JPM,jpmorganchase.com/corporate/About-JPMC/about-us.htm,8.0,2016;2020,About Us,jpmorganchase.com
+JPM,jpmorganchase.com/corporate/institute/about.htm,8.0,2016;2020,About,jpmorganchase.com
+JPM,jpmorganchase.com/about,8.0,2024,Who We Are,jpmorganchase.com
+JPM,jpmorganchase.com/institute/about,8.0,2024,About,jpmorganchase.com
+JPM,jpmorganchase.com/about/people-culture,5.0,2024,Our Culture,jpmorganchase.com
+JPM,jpmorganchase.com/corporate/institute/institute-insights.htm,4.0,2016,Learn More about 2 Billion Transactions from 15 U.S. Cities Informs New Index,jpmorganchase.com
+BAC,about.bankofamerica.com,8.0,2016;2020;2024,About Us,bankofamerica.com
+BAC,promo.bankofamerica.com/mobile-banking,4.0,2020;2024,Learn More about the app,bankofamerica.com
+BAC,promotions.bankofamerica.com/deals,4.0,2016,Learn more about BankAmeriDeals ®,bankofamerica.com
+BAC,promotions.bankofamerica.com/digitalbanking/mobilebanking,4.0,2024,Explore our app Learn more about our mobile banking app,bankofamerica.com
+WFC,wellsfargo.com/about,8.0,2016;2020;2024,About Us,wellsfargo.com
+WFC,wellsfargo.com/about/corporate/vision-and-values/index,5.0,2016,Vision and Values,wellsfargo.com
+WFC,wellsfargo.com/about/corporate/vision-and-values,5.0,2020,"Our Vision, Values & Goals",wellsfargo.com
+WFC,wellsfargo.com/online-banking/transfers/zelle,4.0,2020,Learn more about Zelle >,wellsfargo.com
+WFC,wellsfargo.com/goals-going-to-college/paying-college,4.0,2020,Learn about financial aid >,wellsfargo.com
+WFC,wellsfargo.com/goals-credit/large-expenses/my-credit-options-guide,4.0,2020,Learn about your credit options Let’s talk about your personalized My Credit Opt,wellsfargo.com
+GS,goldmansachs.com/who-we-are/index.html,8.0,2016,Who We Are,goldmansachs.com
+GS,goldmansachs.com/about-us/index.html,8.0,2024,About Us,goldmansachs.com
+MS,morganstanley.com/about-us,8.0,2016;2020;2024,About Us,morganstanley.com
+MS,morganstanley.com/ideas/what-to-know-about-direct-listings-from-a-banker,5.0,2020,"Global Capital Markets Direct Listings: What to Know, From a Banker Nov 21, 2019",morganstanley.com
+MS,morganstanley.com/about-us/morgan-stanley-core-values,5.0,2024,Core Values,morganstanley.com
+MS,morganstanley.com/people-opportunities/students-graduates/culture,4.0,2016;2020;2024,Our Culture,morganstanley.com
+MS,morganstanley.com/ideas/china-smart-cities-economy,4.0,2020,"Research Chinaâs Coming Supercities Boom Dec 4, 2019 By 2030, China's five lar",morganstanley.com
+MS,morganstanley.com/ideas/venture-capital-funding-gap,4.0,2020,"Inclusive Innovation & Opportunity Beyond the VC Funding Gap Oct 23, 2019 Why ve",morganstanley.com
+BLK,blackrock.com/corporate/en-us/about-us,8.0,2016,About Us,blackrock.com
+BLK,blackrock.com/corporate/about-us,8.0,2020,WHO WE ARE,blackrock.com
+BLK,blackrock.com/us/individual/about-us/about-blackrock,8.0,2024,About BlackRock,blackrock.com
+BLK,blackrock.com/corporate/about-us/mission-and-principles,5.0,2020,Mission & Principles Mission & Principles,blackrock.com
+BLK,blackrock.com/corporate,4.0,2020;2024,Learn more about BlackRock,blackrock.com
+BLK,blackrock.com/aladdin/offerings/aladdin-overview,4.0,2020,About Aladdin About Aladdin,blackrock.com
+SCHW,aboutschwab.com,8.0,2016;2020;2024,About Schwab,schwab.com
+SCHW,schwab.com/public/schwab/investing/accounts_products/portfolio_solutions/windhaven/about_windhaven,8.0,2016,About Windhaven,schwab.com
+SCHW,schwab.com/public/schwab/investment_advice/windhaven/about_windhaven,8.0,2020,About Windhaven,schwab.com
+SCHW,aboutschwab.com/who-we-are,5.0,2020;2024,Service is at the heart of who we are,aboutschwab.com
+SCHW,schwab.com/public/schwab/investment_advice/schwab_managed_portfolios/about_schwab_managed_portfolios,5.0,2020,About Schwab Managed Portfolios,schwab.com
+SCHW,aboutschwab.com/about,5.0,2016,Our Story,aboutschwab.com
+AXP,about.americanexpress.com,5.0,2016;2020,About American Express,americanexpress.com
+AXP,americanexpress.com/us/credit-cards,4.0,2016,Learn about Charge & Credit Cards,americanexpress.com
+AXP,www262.americanexpress.com/mobile/credit-card,4.0,2016,Learn about Charge & Credit Cards,americanexpress.com
+C,citigroup.com/global/about-us,8.0,2024,About Us,citigroup.com
+C,citigroup.com/citi/about/ipc.html,5.0,2020,Learn more about Team Citi,citigroup.com
+C,citigroup.com/citi/citiforcities/montreal-profile.html,4.0,2020,Learn more about Citiâs involvement in Montreal,citigroup.com
+LLY,lilly.com/About/default.aspx,8.0,2016,about,lilly.com
+LLY,lilly.com/who-we-are,8.0,2020,Who We Are,lilly.com
+LLY,e.lilly/34xfP6r,4.0,2020,From CEO Dave Ricks We’ve heard too many stories about people with diabetes who ,lilly.com
+LLY,lilly.com/diabetessolutioncenter,4.0,2020,About Insulin Affordability About,lilly.com
+LLY,lilly.com/patient-resources,4.0,2020,Patient Resources About,lilly.com
+UNH,unitedhealthgroup.com/About/Default.aspx,8.0,2016,About,unitedhealthgroup.com
+UNH,unitedhealthgroup.com/about.html,8.0,2020,About Us,unitedhealthgroup.com
+UNH,unitedhealthgroup.com/about/mission-values.html,5.0,2020,Mission & Values,unitedhealthgroup.com
+UNH,unitedhealthgroup.com/people-and-businesses/mission-values.html,5.0,2024,Mission & Values,unitedhealthgroup.com
+UNH,unitedhealthgroup.com/driven-by-our-mission.html,5.0,2024,Driven By Our Mission,unitedhealthgroup.com
+JNJ,jnj.com/about-jnj,8.0,2016;2020,Our Company,jnj.com
+JNJ,jnj.com/discover-j-j,7.0,2024,Our Company,jnj.com
+JNJ,jnj.com/about-jnj/jnj-credo,5.0,2016,Our Credo Values,jnj.com
+JNJ,jnj.com/credo,5.0,2020,Our Credo,jnj.com
+JNJ,jnj.com/personal-stories/laverne-cox-speaks-about-hiv-aids-advocacy-band-aid-red,5.0,2020,"""It's Affected People I Know"": Laverne Cox Opens Up About Her HIV/AIDS Advocacy ",jnj.com
+JNJ,jnj.com/health-and-wellness/facts-about-weight-loss-surgery-medical-experts-debunk-common-myths,5.0,2020,The Facts About Weight-Loss Surgery: Medical Experts Debunk 6 Common Myths The F,jnj.com
+ABBV,abbvie.com/about-us/home.html,8.0,2016,About Us,abbvie.com
+ABBV,abbvie.com/about-us/who-we-are.html,8.0,2016,Who We Are,abbvie.com
+ABBV,abbvie.com/about-us.html,8.0,2016,ABOUT US,abbvie.com
+ABBV,abbvie.com/our-company.html,8.0,2020,Our Company,abbvie.com
+ABBV,abbvie.com/our-company/about-abbvie.html,8.0,2020,About AbbVie,abbvie.com
+ABBV,abbvie.com/who-we-are.html,8.0,2024,Who We Are,abbvie.com
+MRK,merck.com/about/home.html,8.0,2016;2020,ABOUT US,merck.com
+MRK,merck.com/company-overview,8.0,2024,Company overview,merck.com
+MRK,merck.com/about/our-values/home.html,5.0,2016,Our Values,merck.com
+MRK,merck.com/about/how-we-operate/code-of-conduct/values-and-standards.html,5.0,2020,Our Values and Standards,merck.com
+MRK,merck.com/about/how-we-operate/code-of-conduct/values.html,5.0,2020,Our Values and Standards For External Business Partners,merck.com
+MRK,merck.com/about/featured-stories/creating-safer-childbirth-cities-leaning-into-our-values-of-diversity-and-inclusion.html,5.0,2020,Creating Safer Childbirth Cities: Leaning into our values of diversity and inclu,merck.com
+TMO,corporate.thermofisher.com/en/home.html,7.0,2016;2020;2024,About Us,thermofisher.com
+TMO,corporate.thermofisher.com,7.0,2016,About Us,thermofisher.com
+ABT,abbott.com/about-abbott.html,8.0,2016;2024,About US,abbott.com
+ABT,abbott.com/about-abbott/who-we-are.html,8.0,2024,Who We Are,abbott.com
+ABT,abbott.com/Abbott-at-CES.html,4.0,2024,READ MORE HUMAN-POWERED HEALTH: ALL SYSTEMS GO We're on a mission to empower inn,abbott.com
+ABT,abbott.com/BinaxNOW-Tests-NAVICA-App.html,4.0,2024,READ MORE COVID ANSWERS: NO MORE BARRIERS. NO MORE INCONVENIENCES. Everything yo,abbott.com
+ABT,abbott.com/antibody-testing.html,4.0,2024,"READ MORE ""HAVE I HAD COVID-19?"" KNOW WITH ANTIBODY TESTING. Antibody testing ca",abbott.com
+PFE,pfizer.com/about,8.0,2016;2024,About Us,pfizer.com
+PFE,pfizer.com/products/upjohn/about,8.0,2020,About Upjohn,pfizer.com
+PFE,pfizer.com/about/diversity/purpose,5.0,2016,Business Purpose,pfizer.com
+PFE,pfizer.com/purpose,5.0,2020,Our Purpose,pfizer.com
+PFE,pfizer.com/about/purpose,5.0,2024,Purpose,pfizer.com
+PFE,pfizer.com/seagen,4.0,2024,Learn About This Change,pfizer.com
+MDT,medtronic.com/us-en/about-3.html,8.0,2016,About,medtronic.com
+MDT,medtronic.com/us-en/about/mission.html,5.0,2020,Mission,medtronic.com
+MDT,medtronic.com/us-en/about/corporate-governance/ca-proposition-65.html,5.0,2020,Information About Proposition 65 for California Customers,medtronic.com
+MDT,medtronic.com/us-en/transforming-healthcare/aligning-value/value-based-healthcare.html,4.0,2020,Learn About VBHC,medtronic.com
+BMY,bms.com/about-us.html,8.0,2020;2024,About Us,bms.com
+BMY,bms.com/about-us/our-company.html,8.0,2024,Our company,bms.com
+BMY,bms.com/ourcompany,7.0,2016,Our Company,bms.com
+BMY,bms.com/ourcompany/mission/pages/default.aspx,5.0,2016,Our Mission & Commitment,bms.com
+BMY,bms.com/healthcare-providers/early-patient-access-to-investigational-medicine.html,4.0,2024,Learn About Pre-Approval Access,bms.com
+BMY,bms.com/healthcare-providers/post-study-drug-access.html,4.0,2024,Learn About Post Study Drug Access,bms.com
+AMZN,aboutamazon.com,8.0,2020;2024,About Amazon,amazon.com
+AMZN,aboutamazon.com/about-us,8.0,2024,Who We Are,aboutamazon.com
+AMZN,amazon.com/p/feature/rzekmvyjojcp6uc,7.0,2016,About Amazon,amazon.com
+AMZN,aboutamazon.com/facts,5.0,2024,Facts About Amazon,aboutamazon.com
+AMZN,aboutamazon.com.au,5.0,2024,About Amazon (English),aboutamazon.com
+AMZN,aboutamazon.in,5.0,2024,About Amazon (English),aboutamazon.com
+TSLA,tesla.com/whois/details,4.0,2016,More information about the owner,tesla.com
+TSLA,tesla.com/modelx/design,4.0,2024,Learn about est. gas savings,tesla.com
+TSLA,tesla.com/models/design,4.0,2024,Learn about est. gas savings,tesla.com
+HD,corporate.homedepot.com/about,8.0,2020,About Us,corporate.homedepot.com
+HD,corporate.homedepot.com/page/about-us,8.0,2024,About Us,corporate.homedepot.com
+HD,corporate.homedepot.com/OurCompany/Pages/default.aspx,7.0,2016,Our Company,corporate.homedepot.com
+HD,corporate.homedepot.com/OurCompany/Values/Pages/default.aspx,5.0,2016,Values,corporate.homedepot.com
+HD,corporate.homedepot.com/about/values,5.0,2020,Values Wheel,corporate.homedepot.com
+HD,corporate.homedepot.com/page/our-values,5.0,2024,Values Wheel,corporate.homedepot.com
+MCD,mcdonalds.com/us/en-us/about-us.html,8.0,2020;2024,About Us,mcdonalds.com
+MCD,corporate.mcdonalds.com/corpmcd/config/about0.html,8.0,2020,About,corporate.mcdonalds.com
+MCD,corporate.mcdonalds.com/corpmcd/about-us/our-values.html,8.0,2020,About,corporate.mcdonalds.com
+MCD,corporate.mcdonalds.com/corpmcd/our-company/who-we-are.html,8.0,2024,Who We Are,corporate.mcdonalds.com
+MCD,mcdonalds.com/us/en-us/about-our-food.html,5.0,2020;2024,About Our Food,mcdonalds.com
+MCD,mcdonalds.com/us/en-us/about-us/values-in-action.html,5.0,2020;2024,Values In Action,mcdonalds.com
+NKE,about.nike.com,8.0,2024,About Nike,nike.com
+NKE,purpose.nike.com,5.0,2024,Purpose,nike.com
+SBUX,starbucks.com/about-us,8.0,2016;2024,About Us,starbucks.com
+SBUX,starbucks.com/about-us/company-information,8.0,2016,Our Company,starbucks.com
+SBUX,starbucks.com/coffee/learn/roast,4.0,2016,Learn About the Starbucks Roast,starbucks.com
+SBUX,starbucks.com/coffee/learn/format,4.0,2016,Learn About Coffee Forms,starbucks.com
+TGT,corporate.target.com/about,8.0,2016;2020;2024,about,corporate.target.com
+TGT,corporate.target.com/about/purpose-history,5.0,2020;2024,purpose & history,corporate.target.com
+TGT,corporate.target.com/about/purpose-beliefs,5.0,2016,purpose & beliefs,corporate.target.com
+TGT,corporate.target.com/about/purpose-history/history-timeline,5.0,2024,Dig into our company history,corporate.target.com
+TGT,target.com/redcard/main,4.0,2016,learn about REDcard,target.com
+TGT,corporate.target.com/article/tag/4439/Holiday-2015,4.0,2016,All You Need to Know About What's Happening at Target This Holiday Season,corporate.target.com
+LOW,lowes.com/cd_About+Lowes+Landing+page_567636953_,8.0,2016,About Lowe's,lowes.com
+LOW,corporate.lowes.com/who-we-are,8.0,2024,Who We Are,corporate.lowes.com
+LOW,lowes.com/l/company-information.html,7.0,2020,Company Overview,lowes.com
+LOW,talent.lowes.com/us/en/our-culture,5.0,2024,Our Culture,corporate.lowes.com
+TJX,tjx.com/about/index.html,8.0,2016,About Us,tjx.com
+TJX,tjx.com/about/tjx_company.html,8.0,2016,Our Company,tjx.com
+TJX,tjx.com/company/about-tjx,8.0,2024,About TJX,tjx.com
+TJX,tjx.com/corporate/corporate_leveraging.html,4.0,2016,Leveraging Our Culture,tjx.com
+F,corporate.ford.com/about.html,8.0,2024,About Us,corporate.ford.com
+F,corporate.ford.com/company.html,7.0,2016;2020;2024,About Ford,ford.com
+F,corporate.ford.com/about/purpose.html,5.0,2024,Our Purpose,corporate.ford.com
+F,corporate.ford.com/microsites/our-purpose/index.html,5.0,2024,Learn more about Our Purpose through personal employee stories,corporate.ford.com
+F,ford.com/performance/gt,4.0,2016,More about Ford GT,ford.com
+F,owner.ford.com/fordpass.html,4.0,2020,Learn about the FordPass App,ford.com
+XOM,corporate.exxonmobil.com/en/company/about-us,8.0,2016,About us,exxonmobil.com
+XOM,corporate.exxonmobil.com/Company/Who-we-are,8.0,2020,Who we are,exxonmobil.com
+XOM,corporate.exxonmobil.com/who-we-are,8.0,2024,Who we are,exxonmobil.com
+XOM,corporate.exxonmobil.com/what-we-do/delivering-industrial-solutions/lithium,4.0,2024,Learn about Lithium,exxonmobil.com
+XOM,corporate.exxonmobil.com/what-we-do/delivering-industrial-solutions,4.0,2024,Learn more about our solutions,exxonmobil.com
+CVX,chevron.com/about,8.0,2016,About Chevron,chevron.com
+CVX,chevron.com/about/leadership,5.0,2016,Company Profile,chevron.com
+COP,conocophillips.com/about-us,8.0,2020;2024,About Us,conocophillips.com
+COP,conocophillips.com/about-us/who-we-are,8.0,2020;2024,Who We Are,conocophillips.com
+COP,conocophillips.com/who-we-are/Pages/default.aspx,8.0,2016,Who We Are,conocophillips.com
+COP,conocophillips.com/who-we-are/our-company/Pages/default.aspx,8.0,2016,Our Company,conocophillips.com
+SLB,slb.com/about.aspx,8.0,2016,About Us,slb.com
+SLB,slb.com/who-we-are,8.0,2020,Who We Are,slb.com
+SLB,slb.com/about,8.0,2024,About Us,slb.com
+SLB,slb.com/about/who-we-are,8.0,2024,Who We Are,slb.com
+SLB,slb.com/about/foundation/about_foundation.aspx,5.0,2016,About the Foundation,slb.com
+MPC,marathonpetroleum.com/About,8.0,2020;2024,About,marathonpetroleum.com
+MPC,marathonpetroleum.com/About_MPC,8.0,2016,About MPC,marathonpetroleum.com
+MPC,marathonpetroleum.com/About/Our-Values,5.0,2020;2024,Our Values,marathonpetroleum.com
+MPC,marathonpetroleum.com/About_MPC/Our_Values,5.0,2016,Our Values,marathonpetroleum.com
+MPC,marathonpetroleum.com/Operations/Refining,4.0,2020;2024,LEARN MORE ABOUT OUR REFINERIES,marathonpetroleum.com
+MPC,marathonpetroleum.com/Operations/Midstream,4.0,2020;2024,LEARN MORE ABOUT OUR LOGISTICS,marathonpetroleum.com
+PSX,phillips66.com/EN/about,8.0,2016,About,phillips66.com
+PSX,phillips66.com/EN/about/Company_Overview/Pages/index.aspx,8.0,2016,Company Overview,phillips66.com
+PSX,phillips66.com/about,8.0,2020,About,phillips66.com
+PSX,phillips66.com/customers,4.0,2020,Learn about our businesses,phillips66.com
+PSX,phillips66.com/our-people,4.0,2024,More about our People,phillips66.com
+PSX,phillips66.com/emerging-energy,4.0,2024,More about emerging Energy,phillips66.com
+VLO,valero.com/en-us/AboutValero,8.0,2020,About Valero,valero.com
+VLO,valero.com/about,8.0,2024,About,valero.com
+VLO,valero.com/about/guiding-principles,5.0,2024,More About Our Guiding Principles,valero.com
+VLO,valero.com/refining,4.0,2024,Learn About Our Refining,valero.com
+VLO,valero.com/renewables,4.0,2024,Learn About Our Renewables,valero.com
+VLO,valero.com/renewables/ethanol,4.0,2024,Learn More About Ethanol,valero.com
+OXY,oxy.com/aboutOccidental/Pages/default.aspx,8.0,2016;2020,About Occidental,oxy.com
+OXY,oxy.com/aboutOccidental,8.0,2016;2020,About Occidental,oxy.com
+OXY,oxy.com/about,8.0,2024,About,oxy.com
+OXY,oxy.com/aboutOccidental/Pages/Vision-and-Values.aspx,5.0,2016;2020,Vision and Values,oxy.com
+OXY,oxy.com/OurBusinesses/Pages/default.aspx,4.0,2020,Read more about our businesses,oxy.com
+HAL,halliburton.com/en-US/about-us/default.page,8.0,2016,About Us,halliburton.com
+HAL,halliburton.com/content/halliburton/en-US/about-us/default.html,8.0,2020,About Us,halliburton.com
+HAL,halliburton.com/en/about-us.html,8.0,2024,Company Overview,halliburton.com

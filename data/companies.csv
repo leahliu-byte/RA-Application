@@ -1,0 +1,51 @@
+ticker,company_name,sector
+MSFT,Microsoft,Technology
+AAPL,Apple,Technology
+NVDA,NVIDIA,Technology
+GOOGL,Alphabet,Technology
+META,Meta Platforms,Technology
+AVGO,Broadcom,Technology
+CRM,Salesforce,Technology
+ORCL,Oracle,Technology
+IBM,IBM,Technology
+INTC,Intel,Technology
+BRK.B,Berkshire Hathaway,Financials
+JPM,JPMorgan Chase,Financials
+BAC,Bank of America,Financials
+WFC,Wells Fargo,Financials
+GS,Goldman Sachs,Financials
+MS,Morgan Stanley,Financials
+BLK,BlackRock,Financials
+SCHW,Charles Schwab,Financials
+AXP,American Express,Financials
+C,Citigroup,Financials
+LLY,Eli Lilly,Healthcare
+UNH,UnitedHealth Group,Healthcare
+JNJ,Johnson & Johnson,Healthcare
+ABBV,AbbVie,Healthcare
+MRK,Merck,Healthcare
+TMO,Thermo Fisher Scientific,Healthcare
+ABT,Abbott Laboratories,Healthcare
+PFE,Pfizer,Healthcare
+MDT,Medtronic,Healthcare
+BMY,Bristol-Myers Squibb,Healthcare
+AMZN,Amazon,Consumer Discretionary
+TSLA,Tesla,Consumer Discretionary
+HD,Home Depot,Consumer Discretionary
+MCD,McDonald's,Consumer Discretionary
+NKE,Nike,Consumer Discretionary
+SBUX,Starbucks,Consumer Discretionary
+TGT,Target,Consumer Discretionary
+LOW,Lowe's,Consumer Discretionary
+TJX,TJX Companies,Consumer Discretionary
+F,Ford Motor,Consumer Discretionary
+XOM,ExxonMobil,Energy
+CVX,Chevron,Energy
+COP,ConocoPhillips,Energy
+EOG,EOG Resources,Energy
+SLB,SLB (Schlumberger),Energy
+MPC,Marathon Petroleum,Energy
+PSX,Phillips 66,Energy
+VLO,Valero Energy,Energy
+OXY,Occidental Petroleum,Energy
+HAL,Halliburton,Energy
