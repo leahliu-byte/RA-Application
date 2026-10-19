@@ -1,0 +1,4 @@
+ticker,cik,entity_name,former_names_on_edgar,reason
+XOM,34088,EXXON MOBIL CORP,EXXON CORP,"Current ticker maps to ExxonMobil Holdings Corp (holding-company reorganisation, first filing 2026); proxies for 2016-2024 were filed by the predecessor entity"
+BLK,1364742,"BlackRock Finance, Inc.","BlackRock Inc.; BlackRock, Inc.; New BlackRock, Inc.","Current ticker maps to the new BlackRock, Inc. holding company (2024 reorganisation, first filing 2024-02-20); proxies for 2016-2024 were filed by the predecessor entity, since renamed"
+AVGO,1649338,Broadcom Pte. Ltd.,Broadcom Ltd; Pavonia Ltd,"Broadcom re-domiciled from Singapore to the U.S. in 2018 (new CIK 1730168, first filing 2018-02-06); proxies for 2016-2018 were filed by Broadcom Limited"
