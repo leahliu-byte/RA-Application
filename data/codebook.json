@@ -1,0 +1,115 @@
+{
+  "version": "1.0",
+  "description": "Value/theme codebook shared by Part 1 (stated values on About pages) and Part 2 (disclosures), so that Part 3 can compare the two on identical categories. Hybrid design: six culture values adapted from the MIT Sloan 'Big Nine' corporate values, four stakeholder/ESG themes from stakeholder theory, plus Safety.",
+  "sources": {
+    "big_nine": "Sull, D., Turconi, S., & Sull, C. (2020). When it comes to culture, does your company walk the talk? MIT Sloan Management Review (Culture 500). The 'Big Nine' values most often stated by large U.S. companies: agility, collaboration, customer, diversity, execution, innovation, integrity, performance, respect.",
+    "stated_values_precedent": "Guiso, L., Sapienza, P., & Zingales, L. (2015). The value of corporate culture. Journal of Financial Economics, 117(1), 60-76. Coded values stated on S&P 500 company websites; motivates studying stated vs. lived values.",
+    "stakeholder": "Freeman, R. E. (1984). Strategic Management: A Stakeholder Approach; Business Roundtable (2019), Statement on the Purpose of a Corporation (customers, employees, suppliers, communities, shareholders)."
+  },
+  "categories": [
+    {
+      "id": "innovation",
+      "name": "Innovation",
+      "group": "culture",
+      "origin": "Big Nine: innovation (agility folded in)",
+      "definition": "Commitment to creating new products, technologies, ideas or ways of working; pioneering, invention, research and development, adaptability and speed of change.",
+      "include": "'we push the boundaries of what is possible', R&D, breakthrough science, reinventing, agility",
+      "exclude": "A bare product list or product description with no claim about innovating as a value or identity"
+    },
+    {
+      "id": "integrity_ethics",
+      "name": "Integrity & ethics",
+      "group": "culture",
+      "origin": "Big Nine: integrity",
+      "definition": "Honesty, ethical conduct, transparency, accountability, compliance, doing the right thing, trust and trustworthiness.",
+      "include": "'we act with integrity', code of conduct, 'doing the right thing', transparency, accountability",
+      "exclude": "Data privacy or security mentioned only as a product feature"
+    },
+    {
+      "id": "customer_focus",
+      "name": "Customer focus",
+      "group": "culture",
+      "origin": "Big Nine: customer",
+      "definition": "Putting customers, clients or patients first; service, customer satisfaction, listening to and meeting customer needs.",
+      "include": "'customer obsession', 'clients come first', 'patients at the center', service excellence",
+      "exclude": "Merely naming who the customers are (e.g. 'we serve 50 million customers') without a commitment to them"
+    },
+    {
+      "id": "collaboration_teamwork",
+      "name": "Collaboration & teamwork",
+      "group": "culture",
+      "origin": "Big Nine: collaboration",
+      "definition": "Working together across teams, partnership, one-team culture, cooperation with colleagues and partners.",
+      "include": "'one team', 'we win together', partnership with customers/partners as a way of working",
+      "exclude": "Business partnerships or alliances described only as commercial deals"
+    },
+    {
+      "id": "performance_results",
+      "name": "Performance & results",
+      "group": "culture",
+      "origin": "Big Nine: performance and execution",
+      "definition": "Delivering results, excellence, operational execution, quality, growth, financial performance and shareholder value, leadership position.",
+      "include": "'deliver superior returns', 'operational excellence', 'industry leader', quality, efficiency, disciplined capital allocation",
+      "exclude": "Plain factual statistics (revenue, headcount) with no framing of performance as a value or goal"
+    },
+    {
+      "id": "respect_people",
+      "name": "Respect & people",
+      "group": "culture",
+      "origin": "Big Nine: respect",
+      "definition": "Treating people with respect, dignity, care and fairness; valuing people as a cultural norm.",
+      "include": "'we treat everyone with respect', 'people are our greatest asset', caring culture",
+      "exclude": "Specific workforce programmes (code those as employee_wellbeing_development) and diversity statements (code as diversity_inclusion)"
+    },
+    {
+      "id": "diversity_inclusion",
+      "name": "Diversity, equity & inclusion",
+      "group": "stakeholder_esg",
+      "origin": "Big Nine: diversity; ESG social pillar",
+      "definition": "Diversity of people and perspectives, inclusion, equity, belonging, equal opportunity, representation of under-represented groups.",
+      "include": "DEI, inclusion, belonging, diverse workforce/suppliers, racial equity, gender equality, accessibility for people with disabilities",
+      "exclude": "Diversity of products or business lines"
+    },
+    {
+      "id": "environment_sustainability",
+      "name": "Environment & sustainability",
+      "group": "stakeholder_esg",
+      "origin": "Stakeholder theory / ESG environmental pillar",
+      "definition": "Protecting the environment and planet; climate, emissions, net zero, energy transition, renewable energy, resource use, waste, water, biodiversity.",
+      "include": "'carbon negative by 2030', net zero, lower-carbon energy, sustainable sourcing, environmental stewardship",
+      "exclude": "'Sustainable growth' or 'sustainable returns' used only in a financial sense"
+    },
+    {
+      "id": "community_social_impact",
+      "name": "Community & social impact",
+      "group": "stakeholder_esg",
+      "origin": "Stakeholder theory (communities, society) / ESG social pillar",
+      "definition": "Positive impact on communities and society beyond the business; philanthropy, volunteering, access, economic opportunity, corporate citizenship, purpose for society.",
+      "include": "giving programmes, foundations, 'improving lives', access to medicines, community investment, education initiatives",
+      "exclude": "Customer service claims (customer_focus)"
+    },
+    {
+      "id": "employee_wellbeing_development",
+      "name": "Employee wellbeing & development",
+      "group": "stakeholder_esg",
+      "origin": "Stakeholder theory (employees) / ESG human capital",
+      "definition": "Commitments to the workforce: training, careers and development, pay and benefits, health and wellbeing, engagement, great place to work.",
+      "include": "'invest in our people', career growth, benefits, wellbeing programmes, employee engagement",
+      "exclude": "General respect/dignity language (respect_people); recruiting calls-to-action ('Join us') alone"
+    },
+    {
+      "id": "safety",
+      "name": "Safety",
+      "group": "stakeholder_esg",
+      "origin": "Added for sector salience (Energy, Healthcare, Industrials)",
+      "definition": "Physical safety of workers, customers, patients and communities; process safety, product and patient safety, health and safety culture.",
+      "include": "'safety is our top priority', zero incidents, patient safety, product safety, operational/process safety",
+      "exclude": "Cybersecurity or financial 'safety' (integrity_ethics or not coded)"
+    }
+  ],
+  "coding_rules": {
+    "present": "A category is present only if the page expresses it as something the company values, commits to, or identifies with - not if a word merely appears.",
+    "salience": "1 = mentioned (present but not central); 2 = emphasized (headline, repeated, or framed as a core value/mission).",
+    "evidence": "Every present category must be supported by a verbatim quote from the page."
+  }
+}

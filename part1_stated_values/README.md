@@ -150,6 +150,75 @@ rules and were left uncorrected to keep selection fully rule-based:
   were not linked from the sampled homepages, so their content has not been confirmed to be a
   general About page.
 
+## Download and text extraction
+
+[src/download_pages.py](src/download_pages.py) → [output/snapshots.csv](output/snapshots.csv) (one row per company-year).
+
+- **Snapshot choice (rule E):** one CDX query per selected URL returns the first capture of each
+  year that is not a redirect or error; that capture is downloaded in the Wayback Machine's `id_`
+  mode (original HTML, no toolbar, links not rewritten).
+- **Text extraction:** `trafilatura` (a main-content extractor) strips navigation, headers,
+  footers, cookie banners and other boilerplate; `favor_recall` is on so short About-page sections
+  (mission lines, value lists) are kept. If it yields under 50 words, a BeautifulSoup fallback
+  removes `nav`/`header`/`footer`/`script`/`style`/`form`/`aside` elements and keeps the remaining
+  text. Line breaks inherited from the HTML source are rejoined when a line continues a sentence.
+- **Quality check (rule F):** under 50 words → `too_short`; an error/placeholder phrase in the
+  first 600 characters ("page not found", "enable JavaScript", …) → `error_page`. Both count as
+  missing, with the reason in `status_reason`.
+- **Encoding fix.** The archive often omits the charset header, so the HTTP library decoded UTF-8
+  pages as ISO-8859-1, turning curly apostrophes into garbage ("mojibake"). This was caught by the
+  quote-verification check in the analysis step (a verbatim quote could not be found in the page
+  text). Pages are now decoded as UTF-8 first, and HTML cached before the fix is repaired by the
+  exact inverse transformation.
+
+## Analytical categories (codebook)
+
+Defined in [../data/codebook.json](../data/codebook.json), shared with Part 2 so that Part 3 can
+compare stated and disclosed values **on identical categories**. It is a hybrid of two research
+traditions:
+
+| Group | Category | Origin |
+|---|---|---|
+| Culture values | Innovation · Integrity & ethics · Customer focus · Collaboration & teamwork · Performance & results · Respect & people | MIT Sloan "Big Nine" corporate values (Sull, Turconi & Sull, 2020), the values most often stated by large U.S. firms; agility folded into innovation, execution into performance |
+| Stakeholder / ESG themes | Diversity, equity & inclusion · Environment & sustainability · Community & social impact · Employee wellbeing & development | Stakeholder theory (Freeman, 1984; Business Roundtable, 2019) and the ESG pillars that Part 2's disclosures address |
+| Sector-salient | Safety | Central to Energy and Healthcare, two of the five sample sectors |
+
+**Why a hybrid?** The Big Nine alone describe *what kind of company* a firm claims to be but say
+nothing about environment or community, which is what ESG disclosures (Part 2) are about;
+stakeholder categories alone capture *whom* a firm claims to serve but miss cultural identity
+(innovative, ethical, results-driven). Eleven categories is few enough for consistent coding and
+for a human validation check. Each category has a definition plus explicit include/exclude rules
+(e.g. "sustainable growth" in a purely financial sense is *not* environment), and a category counts
+as present only if the page expresses it as something the company values or commits to, not
+merely if a keyword appears. Guiso, Sapienza & Zingales (2015) provide the precedent for coding
+values stated on S&P 500 websites.
+
+## LLM analysis
+
+[src/analyze_snapshots.py](src/analyze_snapshots.py) → [output/part1_dataset.csv](output/part1_dataset.csv).
+Model: Claude Opus 5.5 (`claude-opus-5-5`), structured JSON output enforced by a schema, fixed
+prompts (`PROMPT_VERSION`), and every raw response cached in `output/llm_cache/` for
+reproducibility and resumability.
+
+- **(a) Changed from prior year.** Two layers. *Non-AI:* each snapshot is compared with the
+  company's previous available snapshot (exact match after normalisation, plus a word-level
+  similarity ratio, `similarity_to_prior`). Identical text → `change_type = none`, no LLM call,
+  and the prior coding is reused (guaranteeing identical pages get identical codes). *LLM:* when
+  the text differs, it is classified `cosmetic` (wording, figures, layout) or `substantive`
+  (values, mission, commitments or self-description changed), with a one-sentence summary. The
+  similarity score alone cannot tell a reworded sentence from a new value, which is why the LLM
+  layer is used.
+- **(b) Theme categories.** The LLM codes each page against the codebook: presence, salience
+  (1 = mentioned, 2 = emphasised) and one **verbatim evidence quote** per category. Code then
+  verifies every quote against the page text (`n_quotes_unverified`), so fabricated evidence is
+  counted rather than hidden.
+- **(c) Linguistic shifts.** One LLM call per company reads all its snapshots in chronological
+  order and writes a per-year note on shifts in vocabulary, framing and tone (`analyst_notes`),
+  plus a company-level summary ([output/company_shift_summaries.csv](output/company_shift_summaries.csv)).
+- **Selection check.** The same call records whether each page reads like a general About page
+  (`about_page_check`). This documents the known selection issues (e.g. Meta, JPMorgan) without
+  changing the rule-based selection.
+
 ## Data collection notes
 
 - **Rate limiting.** A first run querying the CDX API every ~1.5 s was blocked by the Internet
