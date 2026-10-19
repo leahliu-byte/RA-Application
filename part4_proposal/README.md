@@ -3,6 +3,15 @@
 > **Non-technical summary:** [summary.md](summary.md) · **Code:** [src/get_revenue.py](src/get_revenue.py),
 > [src/crisis_tests.py](src/crisis_tests.py) · **Full output:** [output/results.txt](output/results.txt)
 
+## What I did
+
+I tested whether crises separate genuine values from cheap talk, using COVID-19 and the 2022–24
+DEI backlash as natural tests: did companies that publicly claimed a value before each crisis back
+it differently afterwards than companies that did not? I combined the Part 1–3 data with audited
+2019–2020 revenue from SEC filings (to find companies for which keeping a "people first" claim was
+genuinely costly), compared claimers with non-claimers using permutation tests, and examined the
+Wells Fargo case in detail.
+
 ## Motivation
 
 Part 3's most revealing result was a failure of intuition: in 2016, while Wells Fargo's
@@ -107,6 +116,17 @@ at face value. A better crisis-based signal is the *survival of costly commitmen
 links and quantified targets persist when they become expensive or politically risky. The 2×2 in
 the DEI analysis (kept both / decoupled / dropped both) is a prototype of such a measure, and could
 be added to the index as a "commitment durability" component.
+
+## Assumptions
+
+- **A claim on the About page before a crisis is a public commitment** that the company could be
+  held to; its absence means the value was not publicly claimed, not that it was not held.
+- **Proxy emphasis and pay links measure the response.** Changes in what a company discusses with
+  shareholders and ties to pay are taken as its formal response to the crisis.
+- **Pre/post windows:** 2019–2020 proxies were written before the pandemic's effects; 2021–2022
+  proxies are the first written after them. For the DEI backlash, 2022–23 is the pre-period and 2024
+  the post-period.
+- **A revenue fall in 2020 makes keeping a people-related commitment costly.**
 
 ## Limitations
 

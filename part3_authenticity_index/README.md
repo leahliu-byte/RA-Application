@@ -128,6 +128,20 @@ at once. Both are threats to validity below.
   add some downward bias. Company rankings using only clean pages correlate 0.85 with rankings using
   all pages, so conclusions about which companies are high or low are largely unaffected.
 
+## Assumptions
+
+- **About pages measure espoused values; proxies and pay measure enacted priorities.** The proxy
+  is itself a communication, so it is treated as the more *formal and consequential* statement
+  (subject to securities law, read by investors, tied to pay), not as behaviour.
+- **The 11 codebook categories are comparable across the two sources.** The same definitions are
+  applied to both, by an LLM on About pages and by dictionaries on proxies; differences in method
+  are assumed to add noise rather than systematic bias.
+- **Same-year matching.** An About page captured early in year *t* and the proxy filed in spring of
+  year *t* describe the company at the same point in time.
+- **Pay links reflect priorities.** A value tied to executive pay is assumed to be a value the
+  board actually wants delivered; whether targets were demanding is not assessed.
+- **Equal weights** for the two components, in the absence of an external criterion.
+
 ## Output schema
 
 **[output/authenticity_index.csv](output/authenticity_index.csv)**: one row per company-year with

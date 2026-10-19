@@ -18,6 +18,11 @@ For each company-year it computes:
   2. SPECIFICITY: share of a category's sentences that contain a quantified
      commitment (a percentage, or a target year such as "by 2030"). Concrete
      targets are costlier to state than aspirations.
+  2b. TONE OF VALUES LANGUAGE: within sentences that mention any codebook
+     category, the share of stance markers that express commitment ("will",
+     "commit", "must", "ensure") rather than hedging or aspiration ("may",
+     "aim", "strive", "seek", "believe"). Restricting to value sentences
+     keeps legal boilerplate ("you may vote...") from dominating the measure.
   3. LANGUAGE CHANGE: TF-IDF cosine similarity with the company's previous
      proxy (1 = same wording). TF-IDF down-weights words common to all proxies,
      so shared legal boilerplate influences this less than raw overlap would.
@@ -76,6 +81,12 @@ CAT_RE = {c: compile_terms(t) for c, t in DICTS["categories"].items()}
 SUPP_RE = {c: compile_terms(t) for c, t in DICTS["supplementary"].items()}
 EXCLUDE_RE = re.compile("|".join(re.escape(p) for p in DICTS["exclude_phrases"]))
 # Quantified commitment: a percentage, or a target year (2020-2059) after by/until/before/through
+# Tone markers (stance words), counted only inside value sentences.
+COMMIT_RE = re.compile(r"\b(will|shall|must|commit(s|ted|ment|ments)?|ensure[sd]?|pledge[sd]?|"
+                       r"require[sd]?|deliver(s|ed)?|achieve[sd]?)\b")
+HEDGE_RE = re.compile(r"\b(may|might|could|aim(s|ed)?|aspire[sd]?|aspiration(s)?|strive[sd]?|"
+                      r"seek(s)?|hope[sd]?|intend(s|ed)?|believe[sd]?|endeavou?r(s)?|"
+                      r"where (possible|appropriate|feasible))\b")
 QUANT_RE = re.compile(r"\d+(\.\d+)?\s?(%|percent)|\b(by|until|before|through)\s+20[2-5]\d\b")
 SENT_SPLIT = re.compile(r"(?<=[.!?;])\s+|\n{2,}")
 
@@ -108,6 +119,15 @@ def find_cda(text: str) -> str:
     return best if len(best.split()) >= MIN_CDA_WORDS else ""
 
 
+def values_tone(sentences: list[str]) -> tuple[float, int]:
+    """Commitment share of stance markers in value sentences, and the number
+    of value sentences. 1 = all commitment, 0 = all hedging."""
+    vs = [s for s in sentences if any(p.search(s) for p in CAT_RE.values())]
+    c = sum(len(COMMIT_RE.findall(s)) for s in vs)
+    h = sum(len(HEDGE_RE.findall(s)) for s in vs)
+    return (round(c / (c + h), 4) if c + h else np.nan), len(vs)
+
+
 def specificity(pattern: re.Pattern, sentences: list[str]) -> tuple[float, int]:
     """Share of sentences mentioning the category that contain a quantified
     commitment, and the number of such sentences."""
@@ -138,6 +158,7 @@ def measure_documents(manifest: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
             spec, n_sent = specificity(CAT_RE[c], sentences)
             row[f"spec_{c}"] = spec
             row[f"nsent_{c}"] = n_sent
+        row["tone_commitment_share"], row["n_value_sentences"] = values_tone(sentences)
         for c, pat in SUPP_RE.items():
             row[f"rate_{c}"] = rate(pat, text, n)
         rows.append(row)

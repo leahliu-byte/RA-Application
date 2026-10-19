@@ -308,6 +308,10 @@ diversity and safety, while the sharp post-2021 retreat seen in formal disclosur
 
 ## Assumptions
 
+- **Sample.** The 50 companies are the list specified in the assignment (the ten largest by market
+  capitalisation in each of five GICS sectors, S&P 500 composition as of January 2024); I used it
+  as given ([../data/companies.csv](../data/companies.csv)). Companies that changed name or legal
+  entity during 2016–2024 (e.g. Facebook → Meta, Schlumberger → SLB) are tracked as one company.
 - `data/homepages.csv` lists each company's main corporate web address (for retailers and some
   others, the corporate site, e.g. `corporate.target.com`, since the shopping site is not where the
   company describes itself). Every entry was verified by hand as the company's official site

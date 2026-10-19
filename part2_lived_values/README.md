@@ -2,6 +2,14 @@
 
 > **Non-technical summary:** [summary.md](summary.md)
 
+## What I did
+
+I collected the annual proxy statement of every sample company for 2016–2024 from SEC EDGAR
+(450 of 450 company-years), measured how much each proxy discusses each of the 11 codebook values,
+how concretely and how committally it does so, and how its wording changes year to year; compared
+companies and sectors; tested shifts against 11 dated external events; and used an LLM to read
+each proxy's executive-pay section to identify which values are actually tied to pay.
+
 **Pipeline:** [src/collect_proxies.py](src/collect_proxies.py) (collect, 450/450) →
 [src/mine_proxies.py](src/mine_proxies.py) (classical text mining) →
 [src/extract_pay_links.py](src/extract_pay_links.py) (LLM reading of the executive-pay section).
@@ -95,13 +103,19 @@ given to an LLM, on the pay section only.
 2. **Specificity.** Among sentences mentioning a category, the share containing a quantified
    commitment (a percentage, or a target year such as "by 2030"). Concrete targets are costlier
    to state than aspirations.
-3. **Language change.** TF-IDF cosine similarity with the company's previous proxy. TF-IDF
+3. **Tone of values language.** Within sentences that mention any codebook value, the share of
+   stance markers expressing **commitment** ("will", "must", "commit", "ensure", "deliver") rather
+   than **hedging or aspiration** ("may", "could", "aim", "strive", "seek", "believe", "where
+   possible"). Restricting to value sentences keeps legal boilerplate ("you may vote…") from
+   dominating. This complements specificity: a sentence can be committal without being quantified
+   ("we will advance inclusion") or quantified but hedged ("we aim to cut emissions 30% by 2030").
+4. **Language change.** TF-IDF cosine similarity with the company's previous proxy. TF-IDF
    down-weights words shared by all proxies, so legal boilerplate influences it less than raw
    overlap would.
-4. **Cross-company and cross-sector variation.** Sector-by-year means, and a variance
+5. **Cross-company and cross-sector variation.** Sector-by-year means, and a variance
    decomposition: the share of each category's variation explained by sector, by company, and by
    year (eta-squared).
-5. **External events** ([../data/external_events.csv](../data/external_events.csv)): 11 dated
+6. **External events** ([../data/external_events.csv](../data/external_events.csv)): 11 dated
    events, each with the categories it should move, the expected direction, and the first proxy
    year it could affect (spring proxies largely describe the previous year, so mid-year events
    appear a year later). Test: within each company, mean emphasis in the two proxy years from the
@@ -109,7 +123,7 @@ given to an LLM, on the pay section only.
    panel ends); a paired t-test across companies; and, crucially, the same pre/post change computed
    at every *other* possible split year (placebo windows). An event "effect" is only credible if it
    exceeds the placebo average, because most ESG language rose steadily all decade.
-6. **Values tied to executive pay (LLM).** Claude Haiku 5.5 reads each CD&A (median 12,000 words)
+7. **Values tied to executive pay (LLM).** Claude Haiku 5.5 reads each CD&A (median 12,000 words)
    and lists every codebook category linked to pay, as a `quantitative_metric` (weighted or
    formulaic goal) or `qualitative_factor` (discretionary assessment), with the stated weight and
    a quote. Quotes are verified by code: a quote counts as supported if at least 80% of its
@@ -133,7 +147,7 @@ formula-driven from discretionary plans rather than assuming every plan has metr
 
 ## Dataset schema
 
-### [output/proxy_dataset.csv](output/proxy_dataset.csv): **the main Part 2 dataset**, one row per company-year (450 rows, 79 columns)
+### [output/proxy_dataset.csv](output/proxy_dataset.csv): **the main Part 2 dataset**, one row per company-year (450 rows, 81 columns)
 
 Built by `mine_proxies.py`; the 11 `pay_` columns are merged in by `extract_pay_links.py`, so run
 the scripts in pipeline order.
@@ -148,6 +162,8 @@ the scripts in pipeline order.
 | `cda_rate_<category>` (11) | Same, inside the CD&A only | Emphasis where pay is justified: closer to lived priorities |
 | `spec_<category>` (11) | Share of the category's sentences with a quantified commitment | Concrete versus aspirational language |
 | `nsent_<category>` (11) | Number of sentences mentioning the category | Reliability weight for `spec_` (small counts are noisy) |
+| `tone_commitment_share` | Commitment markers ÷ (commitment + hedging markers) in value sentences; 1 = fully committal | Tone: firm promises versus aspirations |
+| `n_value_sentences` | Sentences mentioning any codebook value | Reliability weight for the tone measure |
 | `rate_esg_general` | Matches for the generic ESG label ("ESG", "environmental, social…") | Separates use of the *label* from substance (greenhushing) |
 | `tfidf_similarity_to_prior` | TF-IDF cosine similarity with the previous proxy (1 = same wording) | Within-company language change |
 | `yoy_change_<category>` (11) | Change in `rate_` from the previous year | Within-company change in emphasis |
@@ -183,7 +199,12 @@ See [summary.md](summary.md). ESG and people-related language roughly tripled in
 event effects beyond trend are George Floyd → diversity (+48%), the Business Roundtable statement
 → community and employees, COVID-19 → employee wellbeing and safety, and ChatGPT → innovation;
 after 2022, diversity language and diversity pay metrics retreat, and the generic "ESG" label falls
-while environmental substance does not.
+while environmental substance does not. The tone of values language became more committal (share of
+commitment markers 0.60 in 2016 → 0.67 in 2021–22, easing to 0.64 in 2024; 64% of companies more
+committal in 2023–24 than in 2016–17, p < 0.001), with Healthcare the most committal sector (0.69)
+and Technology the most hedged (0.59). Yet values language stays largely unquantified: even at the
+2022–23 peak only about 10% of environmental sentences and 7% of diversity sentences contain a
+percentage or target year.
 
 ## Assumptions
 
@@ -213,6 +234,9 @@ while environmental substance does not.
 - **Boilerplate.** Large parts of every proxy are legally required, near-identical text (cover
   page, voting procedures), which dampens year-to-year change measures. Rates per 10,000 words
   and TF-IDF weighting mitigate but do not remove this.
+- **Tone is approximated by stance words.** "Will" and "may" are crude markers: "we will
+  continue to monitor" counts as commitment. The measure captures the register of the language,
+  not the strength of the underlying promise.
 - **Dictionary error.** Keyword matching misses paraphrases and can count off-topic uses; the
   exclusion list removes the largest known false positives, but precision and recall were not
   measured against human coding.
