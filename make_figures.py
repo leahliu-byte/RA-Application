@@ -162,7 +162,53 @@ def fig_part3() -> None:
     save(fig, "part3_authenticity_index", "fig2_cheap_talk_by_value.png")
 
 
+def fig_part4() -> None:
+    """COVID convergence (dumbbell) and DEI outcomes in 2024 (bars)."""
+    d = pd.read_csv(REPO / "part4_proposal" / "output" / "crisis_company_panel.csv", index_col=0)
+    g = d.groupby("covid_people_claimer")[["people_pay_pre", "people_pay_post"]].mean() * 100
+    fig, ax = plt.subplots(figsize=(7.5, 2.8))
+    labels = {True: "Claimed people values\non 2019 About page", False: "Did not claim them"}
+    for k, claim in enumerate([True, False]):
+        pre, post = g.loc[claim, "people_pay_pre"], g.loc[claim, "people_pay_post"]
+        ax.plot([pre, post], [k, k], color=GRID, lw=2, zorder=1)
+        ax.scatter([pre], [k], s=60, color=MUTED, zorder=2, edgecolor=SURFACE, linewidth=2,
+                   label="2019-2020 (before COVID)" if k == 0 else None)
+        ax.scatter([post], [k], s=60, color=SERIES[0], zorder=3, edgecolor=SURFACE, linewidth=2,
+                   label="2021-2022 (after)" if k == 0 else None)
+        ax.text(pre, k - 0.32, f"{pre:.0f}%", ha="center", fontsize=8, color=TEXT2)
+        ax.text(post, k + 0.22, f"{post:.0f}%", ha="center", fontsize=8, color=TEXT2)
+    ax.set_yticks([0, 1], [labels[True], labels[False]])
+    ax.set_ylim(-0.6, 1.7)
+    ax.set_xlim(0, 100)
+    ax.grid(axis="y", visible=False)
+    ax.set_xlabel("% of proxy years with an employee or safety pay link")
+    ax.legend(loc="upper left", fontsize=8)
+    ax.set_title("COVID-19: non-claimers caught up; claims did not predict the response")
+    save(fig, "part4_proposal", "fig1_covid_convergence.png")
+
+    c = pd.read_csv(REPO / "part4_proposal" / "output" / "dei_decoupling_2024.csv", index_col=0)
+    order = ["kept both (consistent commitment)", "kept public claim, dropped pay link (decoupled)",
+             "dropped both (consistent retreat)"]
+    names = {"kept both (consistent commitment)": "Kept public claim and pay link",
+             "kept public claim, dropped pay link (decoupled)": "Kept public claim, dropped pay link",
+             "dropped both (consistent retreat)": "Dropped both"}
+    counts = [int((c["outcome_2024"] == o).sum()) for o in order]
+    firms = [", ".join(sorted(c.index[c["outcome_2024"] == o])) for o in order]
+    fig, ax = plt.subplots(figsize=(7.5, 2.8))
+    ax.set_axisbelow(True)
+    ax.barh(range(3)[::-1], counts, color=[SERIES[2], SERIES[1], MUTED], height=0.6)
+    for k, (n, f) in enumerate(zip(counts, firms)):
+        ax.text(n + 0.1, 2 - k, f"{n}  ({f})", va="center", fontsize=8, color=TEXT2)
+    ax.set_yticks(range(3)[::-1], [names[o] for o in order])
+    ax.set_xlim(0, 9)
+    ax.grid(axis="y", visible=False)
+    ax.set_xlabel("Companies (public DEI claimers with a DEI pay link in 2022-23)")
+    ax.set_title("DEI backlash, 2024: what companies kept")
+    save(fig, "part4_proposal", "fig2_dei_2024_outcomes.png")
+
+
 if __name__ == "__main__":
     fig_part1()
     fig_part2()
     fig_part3()
+    fig_part4()

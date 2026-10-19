@@ -10,7 +10,7 @@ documented, and designed to run unchanged on all 500 firms.
 | [1. Stated values](part1_stated_values/) | What do companies say they value, and how has it changed? | 402 archived "About Us" snapshots (Wayback Machine), coded by LLM against a research-based codebook | [README](part1_stated_values/README.md) · [Summary](part1_stated_values/summary.md) |
 | [2. Lived values](part2_lived_values/) | What do they emphasise to shareholders, and what do they pay executives for? | 450/450 annual proxy statements (SEC EDGAR); classical text mining + LLM reading of the pay section | [README](part2_lived_values/README.md) · [Summary](part2_lived_values/summary.md) |
 | [3. Authenticity index](part3_authenticity_index/) | How aligned are the two, by company and year? | Index of discourse consistency + incentive backing, with over-/under-claiming | [README](part3_authenticity_index/README.md) · [Summary](part3_authenticity_index/summary.md) |
-| [4. Proposal](part4_proposal/) | An additional analysis | _In progress_ | [README](part4_proposal/README.md) · [Summary](part4_proposal/summary.md) |
+| [4. Proposal](part4_proposal/) | Does a crisis reveal whether corporate values are authentic? | COVID-19 and the 2022–24 DEI backlash as tests: do pre-crisis public claims predict post-crisis behaviour? Permutation tests; SEC revenue data | [README](part4_proposal/README.md) · [Summary](part4_proposal/summary.md) |
 
 ## Shared design decisions
 
