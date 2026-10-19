@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "description": "Keyword dictionaries operationalising the 11 codebook categories (data/codebook.json) for classical, non-LLM text mining. Patterns are case-insensitive regular expressions matched at word starts. Terms were drafted from each category's codebook definition and include list, then pruned of words whose dominant meaning in SEC filings is legal or financial rather than values-related (listed under 'exclude_phrases', which are removed from the text before counting).",
+  "exclude_phrases": [
+    "with respect to", "in respect of", "respectively",
+    "safe harbor", "safe-harbor",
+    "shareholder engagement", "stockholder engagement", "investor engagement",
+    "private equity", "equity award", "equity compensation", "equity grant", "equity plan", "equity incentive", "stockholders' equity", "shareholders' equity", "return on equity", "equity securities",
+    "performance share", "performance stock", "performance unit", "performance period", "performance-based", "performance based", "performance goal", "performance metric", "performance award",
+    "employee stock purchase", "employee benefit", "employees' retirement", "employee retirement income security act",
+    "foundation for", "client account",
+    "trust company", "voting trust"
+  ],
+  "categories": {
+    "innovation": ["innovat", "breakthrough", "pioneer", "inventi", "invent ", "research and development", "r&d", "new products", "artificial intelligence", "generative ai", "machine learning", "digital transformation", "agil"],
+    "integrity_ethics": ["integrity", "ethic", "code of conduct", "code of business conduct", "honest", "transparen", "accountab", "anti-corruption", "bribery", "whistleblow", "doing the right thing", "do the right thing"],
+    "customer_focus": ["customer", "client", "patient", "consumer", "guest"],
+    "collaboration_teamwork": ["collaborat", "teamwork", "team work", "working together", "work together", "one team", "cross-functional", "partnering"],
+    "performance_results": ["shareholder value", "stockholder value", "total shareholder return", "total stockholder return", "operational excellence", "excellence", "financial performance", "business performance", "profitab", "efficien", "superior returns", "long-term value"],
+    "respect_people": ["respect", "dignity", "treat people", "treat each other", "treat everyone", "caring", "fairness", "fair treatment", "mutual trust"],
+    "diversity_inclusion": ["diversity", "diverse", "inclusion", "inclusive", "belonging", "racial equity", "pay equity", "gender equity", "diversity, equity", "underrepresented", "under-represented", "women", "minorit", "ethnic", "racial", "lgbt", "veteran", "disabilit", "equal opportunit"],
+    "environment_sustainability": ["climate", "emission", "greenhouse", "ghg", "carbon", "net zero", "net-zero", "renewable", "sustainab", "energy transition", "low-carbon", "lower-carbon", "environmental stewardship", "biodiversity", "tcfd", "scope 1", "scope 2", "scope 3", "water use", "waste reduction", "recycl"],
+    "community_social_impact": ["communit", "philanthrop", "charit", "volunteer", "social impact", "societ", "nonprofit", "non-profit", "corporate citizenship", "corporate responsibility", "giving back", "access to medicine", "economic opportunit"],
+    "employee_wellbeing_development": ["human capital", "workforce", "talent", "career", "training", "upskill", "reskill", "well-being", "wellbeing", "wellness", "employee engagement", "employee development", "professional development", "great place to work", "our people", "our employees", "colleagues", "team members"],
+    "safety": ["safety", "safe ", "safely", "injur", "fatalit", "recordable", "process safety", "patient safety", "product safety", "zero harm", "hse", "health and safety"]
+  },
+  "supplementary": {
+    "esg_general": ["esg", "environmental, social", "environmental and social", "corporate responsibility", "sustainability report", "sustainability committee"]
+  }
+}

@@ -1,0 +1,12 @@
+category,mean_rate,sd_rate,r2_sector,r2_company,r2_year
+innovation,3.196,3.358,0.3014,0.6685,0.0916
+integrity_ethics,7.501,3.637,0.0342,0.565,0.0975
+customer_focus,7.831,6.877,0.4164,0.7865,0.0593
+collaboration_teamwork,1.056,0.998,0.0822,0.5052,0.1676
+performance_results,6.41,2.962,0.0687,0.5753,0.0718
+respect_people,2.416,1.425,0.0347,0.4869,0.0718
+diversity_inclusion,16.41,12.353,0.1112,0.3957,0.1797
+environment_sustainability,13.363,18.199,0.2038,0.4366,0.213
+community_social_impact,6.725,5.363,0.0595,0.5148,0.1104
+employee_wellbeing_development,10.5,7.922,0.1269,0.4883,0.2267
+safety,2.662,3.699,0.294,0.5528,0.0723

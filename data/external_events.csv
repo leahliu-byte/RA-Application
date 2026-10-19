@@ -1,0 +1,12 @@
+event_id,date,event,expected_categories,expected_direction,first_proxy_year_affected,note
+paris_agreement,2015-12-12,Paris climate agreement adopted,environment_sustainability,up,2016,"Proxies filed in spring 2016 are the first written after the agreement; the panel starts here, so no pre-period - used descriptively only"
+fink_purpose_letter,2018-01-16,"BlackRock CEO Larry Fink's letter ""A Sense of Purpose""",community_social_impact;environment_sustainability,up,2018,"Released in January, before most spring 2018 proxies were filed"
+fink_climate_letter,2020-01-14,"BlackRock CEO Larry Fink's letter ""A Fundamental Reshaping of Finance"" (climate risk is investment risk)",environment_sustainability,up,2020,"Released in January, before most spring 2020 proxies were filed"
+brt_purpose_statement,2019-08-19,Business Roundtable Statement on the Purpose of a Corporation (all stakeholders),community_social_impact;employee_wellbeing_development;customer_focus,up,2020,
+covid19,2020-03-11,COVID-19 declared a pandemic,employee_wellbeing_development;safety,up,2021,"Most 2020 proxies were filed before March 2020"
+george_floyd,2020-05-25,Murder of George Floyd and the racial-justice movement,diversity_inclusion,up,2021,
+sec_human_capital_rule,2020-11-09,SEC rule requiring human-capital disclosure takes effect,employee_wellbeing_development,up,2021,"The rule applies to 10-K filings; any proxy effect is a spillover"
+nasdaq_board_diversity,2021-08-06,SEC approves Nasdaq board-diversity disclosure rule,diversity_inclusion,up,2022,"Applies to Nasdaq-listed firms only (in this sample mainly Technology)"
+chatgpt_launch,2022-11-30,ChatGPT released,innovation,up,2023,
+anti_esg_backlash,2022-06-01,Anti-ESG political backlash (state anti-ESG laws and campaigns; approximate start),environment_sustainability;diversity_inclusion,down,2023,"Diffuse event without a single date; mid-2022 used as an approximate onset"
+sffa_ruling,2023-06-29,Supreme Court rules against race-conscious admissions (SFFA v. Harvard),diversity_inclusion,down,2024,
