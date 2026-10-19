@@ -1,0 +1,403 @@
+ticker,company_name,sector,year,OAI_z,OAI_pct,A_discourse_consistency,B_incentive_backing,n_components,over_claiming,under_claiming,n_stated_values,cda_found,tier,about_page_check,word_count
+AAPL,Apple,Technology,2016,,,,,0,,1.0,0,True,3.0,False,69.0
+AAPL,Apple,Technology,2017,,,,,0,,1.0,0,True,3.0,False,63.0
+AAPL,Apple,Technology,2018,,,,,0,,1.0,0,True,3.0,False,768.0
+AAPL,Apple,Technology,2020,,,,,0,,1.0,0,True,3.0,False,164.0
+AAPL,Apple,Technology,2021,,,,,0,,,0,True,3.0,False,165.0
+AAPL,Apple,Technology,2022,,,,,0,,1.0,0,True,3.0,False,168.0
+AAPL,Apple,Technology,2023,,,,,0,,1.0,0,True,3.0,False,158.0
+AAPL,Apple,Technology,2024,,,,,0,,1.0,0,True,3.0,False,175.0
+ABBV,AbbVie,Healthcare,2016,1.0649,85.4,0.1741,0.3492,2,0.3333,0.5,3,True,1.0,True,62.0
+ABBV,AbbVie,Healthcare,2017,-0.0715,46.8,0.3114,-0.0838,2,0.625,0.0,8,True,1.0,True,452.0
+ABBV,AbbVie,Healthcare,2018,0.9547,82.9,0.6549,0.0073,2,0.2857,0.0,7,True,1.0,True,779.0
+ABBV,AbbVie,Healthcare,2019,1.5041,93.3,0.7416,0.1185,2,0.1429,0.0,7,True,1.0,True,779.0
+ABBV,AbbVie,Healthcare,2020,0.8459,80.4,0.0745,0.3466,2,0.5,0.5,2,True,1.0,False,61.0
+ABBV,AbbVie,Healthcare,2021,1.4646,93.0,0.391,0.3314,2,0.5,0.0,2,True,1.0,True,105.0
+ABBV,AbbVie,Healthcare,2022,0.9434,82.4,0.1348,0.3375,2,0.5,0.75,2,True,1.0,True,98.0
+ABBV,AbbVie,Healthcare,2023,0.9113,81.8,0.2611,0.2468,2,0.2222,0.3333,9,True,1.0,True,215.0
+ABBV,AbbVie,Healthcare,2024,0.9428,82.1,0.4142,0.1582,2,0.4286,0.5,7,True,1.0,True,319.0
+ABT,Abbott Laboratories,Healthcare,2016,1.0879,86.0,0.383,0.2222,2,0.6667,0.5,3,True,1.0,True,245.0
+ABT,Abbott Laboratories,Healthcare,2017,-0.7137,26.1,0.2,-0.2073,2,1.0,,1,True,1.0,True,238.0
+ABT,Abbott Laboratories,Healthcare,2018,0.0119,50.1,0.5,-0.1795,2,0.0,,1,True,1.0,True,238.0
+ABT,Abbott Laboratories,Healthcare,2019,-0.1945,43.1,0.1491,-0.017,2,0.5,,2,True,1.0,True,319.0
+ABT,Abbott Laboratories,Healthcare,2020,-1.2715,9.0,-0.1451,-0.1553,2,1.0,,3,True,1.0,True,356.0
+ABT,Abbott Laboratories,Healthcare,2021,0.5851,70.0,0.2437,0.1589,2,0.3333,,3,True,1.0,True,356.0
+ABT,Abbott Laboratories,Healthcare,2022,0.5439,68.6,0.7253,-0.1625,2,0.6667,,3,True,1.0,True,356.0
+ABT,Abbott Laboratories,Healthcare,2023,-0.0037,49.3,0.2611,-0.031,2,0.6667,1.0,3,True,1.0,True,356.0
+ABT,Abbott Laboratories,Healthcare,2024,-0.1795,44.0,0.1915,-0.0397,2,0.6667,1.0,3,True,1.0,True,192.0
+AMZN,Amazon,Consumer Discretionary,2016,,,,,0,,1.0,0,True,1.0,False,84.0
+AMZN,Amazon,Consumer Discretionary,2017,0.4662,66.9,0.5809,-0.0935,2,0.3333,0.5,3,True,1.0,False,332.0
+AMZN,Amazon,Consumer Discretionary,2018,-0.271,39.8,0.4286,-0.2196,2,0.5,0.0,8,True,1.0,False,508.0
+AMZN,Amazon,Consumer Discretionary,2019,0.4215,65.5,0.6621,-0.1591,2,0.0,0.0,6,True,1.0,False,693.0
+AMZN,Amazon,Consumer Discretionary,2020,-0.7049,26.3,0.1011,-0.1412,2,0.2857,0.375,7,True,1.0,True,315.0
+AMZN,Amazon,Consumer Discretionary,2021,0.2502,58.5,0.6351,-0.1938,2,0.0,0.25,6,True,1.0,False,1254.0
+AMZN,Amazon,Consumer Discretionary,2022,,,,,0,,1.0,0,True,1.0,False,52.0
+AMZN,Amazon,Consumer Discretionary,2023,0.2393,58.0,0.7236,-0.2539,2,0.0,0.2857,6,True,1.0,False,967.0
+AMZN,Amazon,Consumer Discretionary,2024,0.0417,51.5,0.4477,-0.1369,2,0.0,0.5,4,True,1.0,False,120.0
+AVGO,Broadcom,Technology,2016,-0.9883,16.8,-0.1279,-0.0804,2,0.5,,4,True,1.0,True,330.0
+AVGO,Broadcom,Technology,2019,-0.629,29.1,0.2225,-0.196,2,0.75,,4,True,1.0,True,140.0
+AXP,American Express,Financials,2016,,,,,0,,1.0,0,True,2.0,False,183.0
+AXP,American Express,Financials,2017,0.2316,57.7,0.5396,-0.1382,2,0.0,0.3333,3,True,2.0,True,668.0
+AXP,American Express,Financials,2018,0.4573,66.1,0.6708,-0.1538,2,0.0,0.0,2,True,2.0,False,659.0
+AXP,American Express,Financials,2019,0.6458,71.1,0.064,0.2926,2,0.0,0.25,8,True,2.0,True,330.0
+AXP,American Express,Financials,2020,0.6545,71.7,-0.0426,0.3636,2,0.375,0.25,8,True,2.0,True,330.0
+BAC,Bank of America,Financials,2016,0.8194,79.6,0.3518,0.1607,2,0.25,0.5,4,True,1.0,False,1044.0
+BAC,Bank of America,Financials,2017,-1.3429,7.6,-0.383,-0.0244,2,0.6667,1.0,3,True,1.0,False,1487.0
+BAC,Bank of America,Financials,2018,1.1409,87.4,0.4587,0.1897,2,0.2,0.25,5,True,1.0,False,1342.0
+BAC,Bank of America,Financials,2019,,,,,0,,1.0,0,True,1.0,False,357.0
+BAC,Bank of America,Financials,2020,1.17,87.7,0.4671,0.1932,2,0.1667,0.5,6,True,1.0,False,749.0
+BAC,Bank of America,Financials,2021,0.8239,79.8,0.3114,0.188,2,0.3333,0.6667,6,True,1.0,False,741.0
+BAC,Bank of America,Financials,2023,1.7499,96.9,0.798,0.157,2,0.0,0.2,6,True,1.0,False,265.0
+BAC,Bank of America,Financials,2024,1.6275,95.2,0.7753,0.1344,2,0.1429,0.0,7,True,1.0,True,486.0
+BLK,BlackRock,Financials,2016,-1.1222,12.0,0.051,-0.2357,2,0.8,,5,True,1.0,True,245.0
+BLK,BlackRock,Financials,2017,,,,,0,,1.0,0,True,1.0,False,55.0
+BLK,BlackRock,Financials,2018,0.3334,62.5,0.4523,-0.0513,2,0.6,0.0,5,True,1.0,True,224.0
+BLK,BlackRock,Financials,2019,0.6069,70.6,0.2158,0.1834,2,0.2857,0.0,7,True,1.0,False,584.0
+BLK,BlackRock,Financials,2020,0.3435,63.3,0.5442,-0.1071,2,0.2857,0.0,7,True,1.0,True,287.0
+BLK,BlackRock,Financials,2021,1.4271,92.7,0.4077,0.3093,2,0.0,0.0,5,True,1.0,False,245.0
+BLK,BlackRock,Financials,2022,-0.1286,44.8,0.2403,-0.0556,2,0.2222,0.0,9,True,1.0,False,663.0
+BLK,BlackRock,Financials,2023,1.2605,90.5,0.6198,0.1227,2,0.1111,0.0,9,True,1.0,True,717.0
+BLK,BlackRock,Financials,2024,1.0223,84.6,0.3065,0.2513,2,0.0,0.0,9,True,1.0,False,755.0
+BMY,Bristol-Myers Squibb,Healthcare,2016,0.3014,61.1,-0.0883,0.2857,2,0.1667,0.5,6,True,1.0,True,485.0
+BMY,Bristol-Myers Squibb,Healthcare,2017,0.6715,73.4,0.206,0.2093,2,0.3333,0.0,6,True,1.0,True,176.0
+BMY,Bristol-Myers Squibb,Healthcare,2018,1.3674,91.0,0.4119,0.2885,2,0.0,0.25,6,True,1.0,True,176.0
+BMY,Bristol-Myers Squibb,Healthcare,2019,1.122,86.6,0.4768,0.1723,2,0.0,0.5,6,True,1.0,True,206.0
+BMY,Bristol-Myers Squibb,Healthcare,2020,1.6902,96.6,0.5449,0.3011,2,0.125,0.0,8,True,1.0,True,430.0
+BMY,Bristol-Myers Squibb,Healthcare,2021,0.8287,80.1,0.2663,0.2183,2,0.2222,0.3333,9,True,1.0,True,396.0
+BMY,Bristol-Myers Squibb,Healthcare,2022,1.612,94.1,0.5153,0.2964,2,0.0,0.4,7,True,1.0,True,410.0
+BMY,Bristol-Myers Squibb,Healthcare,2023,1.5377,93.8,0.5538,0.2492,2,0.0,0.3333,7,True,1.0,True,410.0
+BMY,Bristol-Myers Squibb,Healthcare,2024,0.5535,69.2,0.1156,0.2315,2,0.1111,0.1667,9,True,1.0,True,528.0
+BRK.B,Berkshire Hathaway,Financials,2016,,,,,0,,1.0,0,False,4.0,False,87.0
+BRK.B,Berkshire Hathaway,Financials,2017,,,,,0,,1.0,0,False,4.0,False,81.0
+BRK.B,Berkshire Hathaway,Financials,2018,,,,,0,,1.0,0,False,4.0,False,81.0
+BRK.B,Berkshire Hathaway,Financials,2019,,,,,0,,,0,False,4.0,False,81.0
+BRK.B,Berkshire Hathaway,Financials,2020,,,,,0,,1.0,0,False,4.0,False,81.0
+BRK.B,Berkshire Hathaway,Financials,2021,,,,,0,,1.0,0,False,4.0,False,81.0
+BRK.B,Berkshire Hathaway,Financials,2022,,,,,0,,1.0,0,False,4.0,False,80.0
+BRK.B,Berkshire Hathaway,Financials,2023,,,,,0,,1.0,0,False,4.0,False,80.0
+BRK.B,Berkshire Hathaway,Financials,2024,,,,,0,,1.0,0,False,4.0,False,80.0
+C,Citigroup,Financials,2023,-0.8427,21.0,-0.1195,-0.0415,2,0.5714,0.0,7,True,1.0,True,255.0
+C,Citigroup,Financials,2024,-0.2015,42.3,0.1155,0.0024,2,0.4,0.0,5,True,1.0,True,295.0
+COP,ConocoPhillips,Energy,2016,0.6752,73.7,-0.032,0.3631,2,0.0,1.0,4,True,1.0,True,102.0
+COP,ConocoPhillips,Energy,2017,-1.014,16.0,-0.2558,-0.0061,2,0.5,1.0,4,True,1.0,True,100.0
+COP,ConocoPhillips,Energy,2018,-0.0107,48.5,0.1195,0.0577,2,0.5,1.0,4,True,1.0,True,99.0
+COP,ConocoPhillips,Energy,2019,-1.6617,5.3,-0.501,-0.0455,2,0.5,1.0,4,True,1.0,True,99.0
+COP,ConocoPhillips,Energy,2020,-1.6366,5.6,-0.5379,-0.0142,2,0.75,1.0,4,True,1.0,True,99.0
+COP,ConocoPhillips,Energy,2021,0.0591,52.4,-0.1019,0.2209,2,0.4,0.5,5,True,1.0,True,217.0
+COP,ConocoPhillips,Energy,2022,0.9474,82.6,0.2309,0.2771,2,0.3333,0.3333,6,True,1.0,True,211.0
+COP,ConocoPhillips,Energy,2023,0.0905,53.5,-0.1324,0.25,2,0.3333,0.3333,6,True,1.0,True,230.0
+COP,ConocoPhillips,Energy,2024,0.2836,60.5,0.0704,0.1786,2,0.5,0.0,6,True,1.0,True,229.0
+CRM,Salesforce,Technology,2016,0.7993,77.9,0.7104,-0.0754,2,0.6667,,6,True,1.0,False,226.0
+CRM,Salesforce,Technology,2017,-0.216,41.5,0.2412,-0.0827,2,0.7778,,9,True,1.0,True,401.0
+CRM,Salesforce,Technology,2018,-0.4377,35.6,0.0754,-0.0436,2,0.8,,5,True,1.0,False,225.0
+CRM,Salesforce,Technology,2019,-0.9437,19.0,0.0302,-0.1682,2,0.8,,5,True,1.0,True,176.0
+CRM,Salesforce,Technology,2020,-0.2735,39.5,0.3367,-0.1614,2,0.4,,5,True,1.0,True,273.0
+CRM,Salesforce,Technology,2021,0.2577,58.8,0.6326,-0.1899,2,0.3333,,6,True,1.0,True,276.0
+CRM,Salesforce,Technology,2022,0.2112,56.0,0.602,-0.1844,2,1.0,,8,True,1.0,True,333.0
+CRM,Salesforce,Technology,2023,0.308,61.3,0.2312,0.0828,2,0.5,0.0,8,True,1.0,True,339.0
+CRM,Salesforce,Technology,2024,0.3673,63.9,-0.0107,0.256,2,0.5,0.0,4,True,1.0,True,97.0
+CVX,Chevron,Energy,2016,2.1059,98.9,0.2832,0.5952,2,0.0,0.6,2,True,1.0,False,56.0
+CVX,Chevron,Energy,2017,-0.6983,26.6,-0.2191,0.0662,2,0.2857,0.6667,7,True,1.0,False,120.0
+CVX,Chevron,Energy,2018,-0.7215,25.5,-0.3211,0.1245,2,0.2857,0.75,7,True,1.0,False,120.0
+CVX,Chevron,Energy,2019,0.5216,67.5,0.1809,0.1799,2,0.1667,0.5,6,True,1.0,True,120.0
+CVX,Chevron,Energy,2020,-1.0696,13.2,-0.0746,-0.1392,2,0.5,0.3333,8,True,1.0,False,168.0
+CVX,Chevron,Energy,2021,-0.1531,44.5,0.0107,0.0843,2,0.5,0.0,8,True,1.0,False,168.0
+CVX,Chevron,Energy,2022,0.6712,73.1,0.3874,0.0929,2,0.5714,0.0,7,True,1.0,False,146.0
+CVX,Chevron,Energy,2023,-1.2051,10.6,0.1156,-0.3023,2,0.5714,0.5,7,True,1.0,True,122.0
+CVX,Chevron,Energy,2024,0.3206,62.2,0.3371,0.0187,2,0.5714,0.6667,7,True,3.0,True,125.0
+EOG,EOG Resources,Energy,2019,-0.7237,25.2,-0.5,0.2386,2,0.0,,1,True,3.0,False,58.0
+EOG,EOG Resources,Energy,2020,,,,,0,,1.0,0,True,3.0,False,58.0
+EOG,EOG Resources,Energy,2021,,,,,0,,1.0,0,True,3.0,False,59.0
+EOG,EOG Resources,Energy,2022,,,,,0,,1.0,0,True,3.0,False,59.0
+EOG,EOG Resources,Energy,2023,,,,,0,,1.0,0,True,3.0,False,65.0
+EOG,EOG Resources,Energy,2024,,,,,0,,1.0,0,True,3.0,False,69.0
+F,Ford Motor,Consumer Discretionary,2016,0.0883,53.2,0.4523,-0.1257,2,0.5556,0.0,9,True,1.0,True,725.0
+F,Ford Motor,Consumer Discretionary,2017,-0.0483,47.3,0.3034,-0.0716,2,0.625,0.0,8,True,1.0,True,619.0
+F,Ford Motor,Consumer Discretionary,2018,-0.2009,42.6,0.2714,-0.0974,2,0.6,0.0,5,True,1.0,True,217.0
+F,Ford Motor,Consumer Discretionary,2019,-0.6524,28.0,-0.0736,-0.0133,2,0.5,1.0,6,True,1.0,True,285.0
+F,Ford Motor,Consumer Discretionary,2020,-0.7949,22.4,-0.0598,-0.0653,2,0.5,0.0,4,True,1.0,True,233.0
+F,Ford Motor,Consumer Discretionary,2021,-0.8477,20.7,-0.0598,-0.0814,2,0.7143,0.0,7,True,1.0,True,256.0
+F,Ford Motor,Consumer Discretionary,2022,-0.9882,17.1,-0.1195,-0.0857,2,0.7143,1.0,7,True,1.0,True,256.0
+F,Ford Motor,Consumer Discretionary,2023,-0.7435,23.8,0.0213,-0.1017,2,0.5,,4,True,1.0,True,211.0
+F,Ford Motor,Consumer Discretionary,2024,0.2142,56.3,0.0746,0.1548,2,0.5,0.5,4,True,1.0,True,213.0
+GOOGL,Alphabet,Technology,2016,-1.2298,10.1,-0.4371,0.0446,2,0.25,,4,True,1.0,True,221.0
+GOOGL,Alphabet,Technology,2017,-0.343,37.8,0.2309,-0.1146,2,0.6,0.5,5,True,1.0,False,200.0
+GOOGL,Alphabet,Technology,2018,-1.2389,9.8,-0.1919,-0.1154,2,0.75,0.5,4,True,1.0,False,130.0
+GOOGL,Alphabet,Technology,2019,0.0005,49.6,0.2089,0.0038,2,0.3333,1.0,3,True,1.0,True,94.0
+GOOGL,Alphabet,Technology,2020,-1.6883,4.5,-0.3424,-0.1553,2,0.6667,1.0,3,True,1.0,True,63.0
+GOOGL,Alphabet,Technology,2021,-0.2223,41.2,0.2,-0.0581,2,0.0,1.0,1,True,1.0,False,70.0
+GOOGL,Alphabet,Technology,2022,-0.5351,31.9,-0.0533,0.0094,2,0.0,0.75,4,True,1.0,True,194.0
+GOOGL,Alphabet,Technology,2023,-0.2358,40.3,0.1165,-0.0087,2,0.0,1.0,4,True,1.0,True,113.0
+GOOGL,Alphabet,Technology,2024,0.2271,57.4,0.2292,0.0595,2,0.0,1.0,2,True,1.0,False,53.0
+GS,Goldman Sachs,Financials,2016,-1.0007,16.2,-0.2293,-0.019,2,0.5,1.0,10,True,1.0,True,393.0
+GS,Goldman Sachs,Financials,2017,-0.4832,33.1,-0.2803,0.1707,2,0.2,,10,True,1.0,True,393.0
+GS,Goldman Sachs,Financials,2018,0.8787,81.5,0.3972,0.1496,2,0.2222,,9,True,1.0,True,395.0
+GS,Goldman Sachs,Financials,2019,0.5494,68.9,0.2044,0.1733,2,0.125,0.0,8,True,1.0,True,360.0
+GS,Goldman Sachs,Financials,2021,,,,,0,,1.0,0,True,1.0,True,60.0
+GS,Goldman Sachs,Financials,2022,,,,,0,,1.0,0,True,1.0,True,60.0
+GS,Goldman Sachs,Financials,2023,,,,,0,,1.0,0,True,1.0,True,60.0
+GS,Goldman Sachs,Financials,2024,0.0037,49.9,0.1685,0.0306,2,0.2857,0.0,7,True,1.0,True,222.0
+HAL,Halliburton,Energy,2016,0.0237,51.3,0.3,-0.0476,2,1.0,1.0,1,True,1.0,True,57.0
+HAL,Halliburton,Energy,2017,,,,,0,,1.0,0,True,1.0,False,74.0
+HAL,Halliburton,Energy,2018,-0.4531,35.3,0.2,-0.1282,2,1.0,1.0,1,True,1.0,True,69.0
+HAL,Halliburton,Energy,2019,-0.8651,20.4,0.0,-0.125,2,1.0,,1,True,1.0,True,94.0
+HAL,Halliburton,Energy,2020,-0.7287,24.6,0.1,-0.1477,2,1.0,1.0,1,True,1.0,True,94.0
+HAL,Halliburton,Energy,2021,-0.6902,27.2,0.0764,-0.1209,2,0.7,,10,True,1.0,True,426.0
+HAL,Halliburton,Energy,2022,0.068,52.9,0.4221,-0.1125,2,0.6667,,9,True,1.0,True,345.0
+HAL,Halliburton,Energy,2023,0.6525,71.4,0.1173,0.2605,2,0.2,0.0,10,True,1.0,True,396.0
+HD,Home Depot,Consumer Discretionary,2016,0.5358,67.8,0.2714,0.1262,2,0.4,1.0,5,True,1.0,True,333.0
+HD,Home Depot,Consumer Discretionary,2017,0.5645,69.5,0.2764,0.1317,2,0.4,1.0,5,True,1.0,True,333.0
+HD,Home Depot,Consumer Discretionary,2018,0.3668,63.6,0.1683,0.141,2,0.3333,1.0,3,True,1.0,True,293.0
+HD,Home Depot,Consumer Discretionary,2019,0.5798,69.7,0.0696,0.2689,2,0.0,1.0,3,True,1.0,True,293.0
+HD,Home Depot,Consumer Discretionary,2020,0.022,51.0,0.3017,-0.0492,2,0.3333,1.0,3,True,1.0,True,293.0
+HD,Home Depot,Consumer Discretionary,2021,-0.988,17.4,0.1277,-0.2442,2,0.3333,,3,True,1.0,True,293.0
+HD,Home Depot,Consumer Discretionary,2022,-1.1094,12.3,-0.1741,-0.0875,2,0.3333,1.0,3,True,1.0,True,289.0
+HD,Home Depot,Consumer Discretionary,2023,-0.8037,21.6,0.2013,-0.2355,2,0.5,,4,True,1.0,True,283.0
+HD,Home Depot,Consumer Discretionary,2024,-1.9569,2.8,-0.2785,-0.2778,2,0.3333,1.0,3,True,1.0,True,287.0
+IBM,IBM,Technology,2020,2.0411,98.3,0.688,0.3159,2,0.0,0.0,5,True,3.0,True,830.0
+IBM,IBM,Technology,2021,1.4034,92.2,0.3772,0.3217,2,0.0,1.0,3,True,3.0,True,821.0
+IBM,IBM,Technology,2022,0.7433,76.2,0.2513,0.2021,2,0.1667,1.0,6,True,3.0,True,787.0
+IBM,IBM,Technology,2023,0.4597,66.4,0.0804,0.2256,2,0.0,1.0,5,True,3.0,True,749.0
+IBM,IBM,Technology,2024,0.808,79.0,0.597,0.0,2,0.25,1.0,4,True,3.0,True,241.0
+INTC,Intel,Technology,2016,-0.9872,17.6,0.1,-0.2262,2,0.0,1.0,1,True,4.0,False,77.0
+INTC,Intel,Technology,2017,-0.8012,22.1,0.1491,-0.2012,2,0.5,1.0,2,True,4.0,False,150.0
+INTC,Intel,Technology,2018,-1.0754,12.9,-0.0745,-0.141,2,0.0,1.0,2,True,4.0,False,98.0
+INTC,Intel,Technology,2020,0.6938,74.2,0.1,0.2841,2,0.0,0.8,1,True,4.0,False,66.0
+INTC,Intel,Technology,2022,0.3829,64.1,0.4932,-0.0625,2,0.0,0.5,3,True,4.0,False,194.0
+INTC,Intel,Technology,2023,0.1358,54.9,0.4178,-0.0891,2,0.0,,3,True,4.0,False,253.0
+INTC,Intel,Technology,2024,2.2831,99.4,0.2,0.7024,2,0.0,0.875,1,True,4.0,False,308.0
+JNJ,Johnson & Johnson,Healthcare,2016,1.62,95.0,0.3873,0.381,2,0.0,0.0,3,True,1.0,True,126.0
+JNJ,Johnson & Johnson,Healthcare,2017,1.2274,89.6,0.5863,0.1341,2,0.25,0.0,4,True,1.0,True,119.0
+JNJ,Johnson & Johnson,Healthcare,2018,-0.5607,31.4,0.1491,-0.1282,2,0.5,1.0,2,True,1.0,False,128.0
+JNJ,Johnson & Johnson,Healthcare,2019,0.4696,67.2,0.191,0.1577,2,0.375,0.0,8,True,1.0,True,260.0
+JNJ,Johnson & Johnson,Healthcare,2020,0.0976,53.8,-0.005,0.1705,2,0.375,0.0,8,True,1.0,True,260.0
+JNJ,Johnson & Johnson,Healthcare,2021,0.8007,78.2,0.2563,0.2163,2,0.0,0.5,5,True,1.0,True,307.0
+JNJ,Johnson & Johnson,Healthcare,2022,1.6556,95.5,0.6885,0.1986,2,0.1111,0.0,9,True,1.0,True,560.0
+JNJ,Johnson & Johnson,Healthcare,2023,0.7902,77.6,0.2501,0.2171,2,0.0,0.5,6,True,1.0,True,277.0
+JNJ,Johnson & Johnson,Healthcare,2024,1.133,86.8,0.5528,0.127,2,0.1667,0.0,6,True,1.0,True,390.0
+JPM,JPMorgan Chase,Financials,2016,-1.0328,15.1,-0.2,-0.0476,2,0.0,1.0,1,True,1.0,False,570.0
+JPM,JPMorgan Chase,Financials,2017,-1.1274,11.3,-0.3,-0.0122,2,1.0,1.0,1,True,1.0,False,570.0
+JPM,JPMorgan Chase,Financials,2018,-0.7913,22.7,-0.1,-0.0385,2,0.0,1.0,1,True,1.0,False,570.0
+JPM,JPMorgan Chase,Financials,2019,1.0066,84.3,0.0,0.4432,2,0.0,0.8571,1,True,1.0,False,562.0
+JPM,JPMorgan Chase,Financials,2021,1.2136,89.1,0.1,0.4419,2,0.0,0.8,1,True,1.0,False,116.0
+JPM,JPMorgan Chase,Financials,2022,0.9879,84.0,0.0,0.4375,2,0.0,0.875,1,True,1.0,False,116.0
+JPM,JPMorgan Chase,Financials,2023,0.8491,81.0,0.0,0.3953,2,0.0,1.0,1,True,1.0,False,96.0
+JPM,JPMorgan Chase,Financials,2024,-0.9186,19.6,0.0953,-0.2024,2,0.25,0.5,4,True,1.0,True,163.0
+LLY,Eli Lilly,Healthcare,2016,0.6573,72.5,0.2256,0.1925,2,0.0,0.4,6,True,1.0,True,152.0
+LLY,Eli Lilly,Healthcare,2017,1.089,86.3,0.1849,0.3496,2,0.0,0.0,6,True,1.0,True,248.0
+LLY,Eli Lilly,Healthcare,2018,1.5239,93.6,0.506,0.2756,2,0.3333,0.0,6,True,1.0,True,248.0
+LLY,Eli Lilly,Healthcare,2019,1.8148,97.2,0.6719,0.2576,2,0.3333,0.0,6,True,1.0,True,211.0
+LLY,Eli Lilly,Healthcare,2020,2.725,99.7,0.8369,0.428,2,0.0,0.0,6,True,1.0,True,211.0
+LOW,Lowe's,Consumer Discretionary,2016,-1.2441,9.2,-0.3,-0.0476,2,1.0,1.0,1,True,1.0,False,89.0
+LOW,Lowe's,Consumer Discretionary,2017,-1.1274,11.3,-0.3,-0.0122,2,1.0,1.0,1,True,1.0,False,89.0
+LOW,Lowe's,Consumer Discretionary,2018,-1.2139,10.4,-0.3,-0.0385,2,1.0,1.0,1,True,1.0,False,89.0
+LOW,Lowe's,Consumer Discretionary,2019,,,,,0,,1.0,0,True,1.0,False,59.0
+LOW,Lowe's,Consumer Discretionary,2020,1.6178,94.7,0.6731,0.197,2,0.0,,3,True,1.0,True,171.0
+LOW,Lowe's,Consumer Discretionary,2021,1.6646,95.8,0.7485,0.1628,2,0.0,0.0,3,True,1.0,True,171.0
+LOW,Lowe's,Consumer Discretionary,2022,0.7873,77.3,0.2558,0.2125,2,0.5,0.5,4,True,1.0,True,188.0
+LOW,Lowe's,Consumer Discretionary,2023,0.7001,74.8,0.2558,0.186,2,0.5,0.3333,4,True,1.0,True,187.0
+LOW,Lowe's,Consumer Discretionary,2024,1.6763,96.1,0.2562,0.4821,2,0.0,0.0,2,True,1.0,True,178.0
+MCD,McDonald's,Consumer Discretionary,2016,0.1356,54.6,0.0745,0.131,2,0.0,1.0,2,True,1.0,True,139.0
+MCD,McDonald's,Consumer Discretionary,2017,0.4008,65.3,0.2236,0.1159,2,0.0,0.6667,2,True,1.0,True,139.0
+MCD,McDonald's,Consumer Discretionary,2018,0.8084,79.3,0.4472,0.0962,2,0.0,0.6667,2,True,1.0,True,137.0
+MCD,McDonald's,Consumer Discretionary,2019,0.3186,61.9,0.2236,0.0909,2,0.0,1.0,2,True,1.0,True,137.0
+MCD,McDonald's,Consumer Discretionary,2020,-0.7252,24.9,-0.1936,0.0417,2,0.6667,1.0,3,True,1.0,True,125.0
+MCD,McDonald's,Consumer Discretionary,2021,-0.0085,48.7,0.0745,0.0872,2,0.0,0.8,2,True,1.0,True,248.0
+MCD,McDonald's,Consumer Discretionary,2022,-0.6036,30.0,-0.1491,0.05,2,0.0,0.8333,2,True,1.0,True,125.0
+MCD,McDonald's,Consumer Discretionary,2023,-0.3767,37.0,0.0,0.0233,2,0.0,0.8333,2,True,1.0,True,138.0
+MCD,McDonald's,Consumer Discretionary,2024,0.1463,55.2,0.1291,0.0992,2,0.0,0.6,3,True,1.0,True,136.0
+MDT,Medtronic,Healthcare,2016,-0.1065,45.9,0.4178,-0.1627,2,1.0,1.0,3,True,1.0,False,137.0
+MDT,Medtronic,Healthcare,2017,-1.3198,7.8,-0.5051,0.061,2,0.7143,0.5,7,True,2.0,True,287.0
+MDT,Medtronic,Healthcare,2018,-1.1803,10.9,-0.5759,0.1487,2,0.6,0.5,5,True,2.0,True,292.0
+MDT,Medtronic,Healthcare,2019,-0.2018,42.0,0.0482,0.0455,2,0.4286,1.0,7,True,2.0,True,262.0
+MDT,Medtronic,Healthcare,2020,0.2792,60.2,0.1493,0.1266,2,0.4286,0.5,7,True,2.0,True,283.0
+MDT,Medtronic,Healthcare,2021,-0.4652,34.2,-0.0626,0.0365,2,0.5714,,7,True,2.0,True,283.0
+MDT,Medtronic,Healthcare,2022,0.2213,57.1,0.2803,0.025,2,0.5714,0.5,7,True,2.0,True,186.0
+MDT,Medtronic,Healthcare,2023,-0.9045,19.9,0.2293,-0.2841,2,0.7143,,7,True,2.0,True,186.0
+MDT,Medtronic,Healthcare,2024,-0.8023,21.8,0.2803,-0.2857,2,0.7143,0.0,7,True,2.0,True,186.0
+META,Meta Platforms,Technology,2017,,,,,0,,,0,False,1.0,False,64.0
+META,Meta Platforms,Technology,2018,,,,,0,,,0,False,1.0,False,110.0
+META,Meta Platforms,Technology,2019,,,,,0,,1.0,0,False,1.0,False,222.0
+META,Meta Platforms,Technology,2020,,,,,0,,1.0,0,False,1.0,False,61.0
+META,Meta Platforms,Technology,2021,,,,,0,,1.0,0,True,1.0,False,102.0
+META,Meta Platforms,Technology,2022,,,,,0,,1.0,0,True,1.0,False,109.0
+META,Meta Platforms,Technology,2024,,,,,0,,1.0,0,True,1.0,False,90.0
+MPC,Marathon Petroleum,Energy,2016,1.2002,88.8,0.3,0.3095,2,0.0,1.0,1,True,1.0,True,144.0
+MPC,Marathon Petroleum,Energy,2017,0.7727,77.0,0.2,0.2439,2,0.0,1.0,1,True,1.0,True,147.0
+MPC,Marathon Petroleum,Energy,2018,,,,,0,,1.0,0,True,1.0,True,152.0
+MPC,Marathon Petroleum,Energy,2019,1.1767,88.0,0.6277,0.0922,2,0.6667,0.0,9,True,1.0,True,316.0
+MPC,Marathon Petroleum,Energy,2020,0.0131,50.4,0.1195,0.0649,2,0.5714,0.0,7,True,1.0,True,308.0
+MPC,Marathon Petroleum,Energy,2021,1.0719,85.7,0.4281,,1,0.5714,,7,False,1.0,True,256.0
+MPC,Marathon Petroleum,Energy,2022,1.3973,91.6,0.5051,,1,0.4286,,7,False,1.0,True,226.0
+MPC,Marathon Petroleum,Energy,2023,1.6897,96.4,0.5247,0.314,2,0.1429,0.0,7,True,1.0,True,226.0
+MPC,Marathon Petroleum,Energy,2024,0.731,75.6,0.5738,-0.0085,2,0.4286,0.0,7,True,1.0,True,226.0
+MRK,Merck,Healthcare,2016,2.2288,99.2,0.7311,0.3452,2,0.0,0.0,3,True,1.0,True,62.0
+MRK,Merck,Healthcare,2017,0.2196,56.9,-0.103,0.2703,2,0.1667,0.6667,6,True,1.0,True,413.0
+MRK,Merck,Healthcare,2018,-0.2569,40.1,0.005,0.0564,2,0.4,0.5,5,True,1.0,True,500.0
+MRK,Merck,Healthcare,2019,0.2838,60.8,0.2552,0.0601,2,0.5714,0.0,7,True,1.0,True,500.0
+MRK,Merck,Healthcare,2020,0.6824,73.9,0.3568,0.1159,2,0.2,0.5,5,True,1.0,True,494.0
+MRK,Merck,Healthcare,2021,0.2639,59.4,0.3417,-0.0015,2,0.625,0.0,8,True,1.0,True,531.0
+MRK,Merck,Healthcare,2022,0.6569,72.3,0.441,0.0542,2,0.4444,0.0,9,True,1.0,True,534.0
+MRK,Merck,Healthcare,2023,0.2154,56.6,0.383,-0.0426,2,0.5556,0.0,9,True,1.0,True,534.0
+MRK,Merck,Healthcare,2024,,,,,0,,1.0,0,True,1.0,False,1095.0
+MS,Morgan Stanley,Financials,2016,-0.598,30.5,-0.191,0.0786,2,0.4,,5,True,1.0,False,501.0
+MS,Morgan Stanley,Financials,2017,-0.7434,24.1,0.0452,-0.1171,2,0.8,,5,True,1.0,False,501.0
+MS,Morgan Stanley,Financials,2018,0.0146,50.7,0.2814,-0.0385,2,0.2,0.0,5,True,1.0,False,501.0
+MS,Morgan Stanley,Financials,2019,0.1833,55.7,0.397,-0.0614,2,0.4,,5,True,1.0,False,501.0
+MS,Morgan Stanley,Financials,2020,0.5374,68.1,0.5327,-0.0409,2,0.6,,5,True,1.0,False,501.0
+MS,Morgan Stanley,Financials,2021,0.0675,52.7,0.2211,0.0163,2,0.4,,5,True,1.0,True,249.0
+MS,Morgan Stanley,Financials,2022,0.1226,54.3,0.5025,-0.1475,2,0.2,0.0,5,True,1.0,True,249.0
+MS,Morgan Stanley,Financials,2023,-0.1928,43.7,0.5729,-0.2884,2,0.4,,5,True,1.0,True,249.0
+MS,Morgan Stanley,Financials,2024,-1.3536,7.0,-0.1106,-0.2024,2,0.8,,5,True,1.0,True,249.0
+MSFT,Microsoft,Technology,2016,2.0728,98.6,0.53,0.4269,2,0.0,0.0,7,True,1.0,True,399.0
+MSFT,Microsoft,Technology,2017,0.6993,74.5,0.3411,0.1311,2,0.5,,4,True,1.0,True,161.0
+MSFT,Microsoft,Technology,2018,-0.4645,34.5,0.0645,,1,0.3333,1.0,3,False,1.0,True,229.0
+MSFT,Microsoft,Technology,2019,-0.0042,49.0,-0.3307,0.3485,2,0.3333,0.6667,3,True,1.0,True,136.0
+MSFT,Microsoft,Technology,2020,1.6154,94.4,0.4608,0.3324,2,0.0,0.5,4,True,1.0,True,200.0
+MSFT,Microsoft,Technology,2021,1.4011,91.9,-0.0107,0.5698,2,0.0,0.5,4,True,1.0,True,193.0
+MSFT,Microsoft,Technology,2022,0.461,66.7,-0.0107,0.2844,2,0.0,0.6,4,True,1.0,True,193.0
+MSFT,Microsoft,Technology,2023,-0.4566,34.7,-0.1919,0.1221,2,0.0,1.0,4,True,1.0,True,193.0
+MSFT,Microsoft,Technology,2024,0.7595,76.8,-0.0107,0.375,2,0.0,0.25,4,True,1.0,True,193.0
+NKE,Nike,Consumer Discretionary,2016,-0.9524,18.8,-0.0135,-0.1429,2,1.0,,2,True,1.0,True,74.0
+NKE,Nike,Consumer Discretionary,2017,-0.9237,19.3,-0.0135,-0.1341,2,1.0,,2,True,1.0,True,82.0
+NKE,Nike,Consumer Discretionary,2018,0.1621,55.5,0.1214,0.109,2,0.0,1.0,2,True,1.0,True,82.0
+NKE,Nike,Consumer Discretionary,2019,0.6657,72.8,0.5444,-0.0095,2,0.1667,0.0,6,True,1.0,True,209.0
+NKE,Nike,Consumer Discretionary,2020,-0.0107,48.2,0.3335,-0.0795,2,0.6667,,6,True,1.0,True,205.0
+NKE,Nike,Consumer Discretionary,2021,0.4563,65.8,0.1223,0.1977,2,0.0,0.6667,5,True,1.0,True,204.0
+NKE,Nike,Consumer Discretionary,2022,-0.6942,26.9,0.0102,,1,0.8,,5,False,1.0,True,204.0
+NVDA,NVIDIA,Technology,2017,-0.5024,32.8,0.3,-0.2073,2,1.0,1.0,1,True,1.0,True,106.0
+NVDA,NVIDIA,Technology,2018,-0.1994,42.9,0.4,-0.1795,2,1.0,1.0,1,True,1.0,True,53.0
+NVDA,NVIDIA,Technology,2019,1.1406,87.1,0.4,0.2273,2,0.0,1.0,1,True,1.0,True,53.0
+NVDA,NVIDIA,Technology,2020,-0.5066,32.5,0.4,-0.2727,2,1.0,1.0,1,True,1.0,True,53.0
+NVDA,NVIDIA,Technology,2021,-0.7388,24.4,0.3,-0.2791,2,0.0,1.0,1,True,1.0,True,53.0
+NVDA,NVIDIA,Technology,2022,0.5404,68.3,0.1,0.2375,2,0.0,,1,True,1.0,True,53.0
+NVDA,NVIDIA,Technology,2023,-0.7864,23.0,-0.0204,-0.088,2,0.2857,0.0,7,True,1.0,True,522.0
+NVDA,NVIDIA,Technology,2024,-0.6032,30.3,-0.0736,0.0017,2,0.4286,0.0,7,True,1.0,True,304.0
+ORCL,Oracle,Technology,2016,-0.6071,29.7,0.1809,-0.1627,2,0.6667,,6,True,1.0,True,414.0
+ORCL,Oracle,Technology,2017,,,,,0,,,0,True,1.0,True,69.0
+ORCL,Oracle,Technology,2018,,,,,0,,1.0,0,True,1.0,True,66.0
+ORCL,Oracle,Technology,2019,-0.2246,40.9,0.1348,-0.017,2,0.5,,2,True,1.0,False,119.0
+ORCL,Oracle,Technology,2020,-0.43,36.1,0.4584,-0.2869,2,0.75,,4,True,1.0,True,424.0
+ORCL,Oracle,Technology,2021,-0.4214,36.7,0.2236,-0.1337,2,0.5,,2,True,1.0,False,442.0
+ORCL,Oracle,Technology,2022,-1.0484,14.6,-0.2309,-0.0325,2,0.6,,5,True,1.0,True,499.0
+ORCL,Oracle,Technology,2023,-0.6239,29.4,0.0522,-0.0853,2,0.6667,,3,True,1.0,True,372.0
+OXY,Occidental Petroleum,Energy,2016,-0.3424,38.1,0.2412,-0.121,2,0.5,0.0,6,True,1.0,True,368.0
+OXY,Occidental Petroleum,Energy,2017,0.2622,59.1,0.402,-0.0407,2,0.3333,0.0,6,True,1.0,True,359.0
+OXY,Occidental Petroleum,Energy,2018,-0.1554,44.3,0.2309,-0.0577,2,0.6667,0.0,6,True,1.0,True,379.0
+OXY,Occidental Petroleum,Energy,2019,1.835,97.8,0.5196,0.3614,2,0.2,0.0,5,True,1.0,True,166.0
+OXY,Occidental Petroleum,Energy,2020,0.6039,70.3,0.4561,0.0284,2,0.5,,6,True,1.0,True,183.0
+OXY,Occidental Petroleum,Energy,2021,1.2567,90.2,0.7035,0.0678,2,0.5,0.0,6,True,1.0,True,184.0
+OXY,Occidental Petroleum,Energy,2022,1.1919,88.5,0.6617,0.075,2,0.5,0.0,8,True,1.0,True,539.0
+OXY,Occidental Petroleum,Energy,2023,-0.4556,35.0,0.1168,-0.0756,2,0.625,0.0,8,True,1.0,True,539.0
+OXY,Occidental Petroleum,Energy,2024,1.3741,91.3,0.6533,0.1357,2,0.2,0.0,5,True,1.0,True,535.0
+PFE,Pfizer,Healthcare,2016,-0.2282,40.6,0.255,-0.0952,2,0.3333,0.3333,9,True,1.0,True,690.0
+PFE,Pfizer,Healthcare,2017,-0.7138,25.8,0.1168,-0.154,2,0.25,0.3333,8,True,1.0,True,725.0
+PFE,Pfizer,Healthcare,2018,-1.5922,6.2,-0.3091,-0.1474,2,0.5,1.0,4,True,1.0,False,155.0
+PFE,Pfizer,Healthcare,2019,-0.1108,45.4,0.2596,-0.0625,2,0.5,1.0,4,True,1.0,False,154.0
+PFE,Pfizer,Healthcare,2020,-1.6788,5.0,-0.3568,-0.1432,2,0.4,0.6667,5,True,1.0,True,165.0
+PFE,Pfizer,Healthcare,2021,-0.5594,31.7,-0.0441,-0.0039,2,0.3333,0.0,6,True,2.0,True,183.0
+PFE,Pfizer,Healthcare,2022,-0.8281,21.3,-0.4183,0.1545,2,0.1818,0.0,11,True,1.0,False,5794.0
+PFE,Pfizer,Healthcare,2023,-0.0624,47.1,0.0598,0.0803,2,0.3636,0.0,11,True,1.0,False,5960.0
+PFE,Pfizer,Healthcare,2024,-0.48,33.3,0.1291,-0.0909,2,0.5455,,11,True,1.0,False,6065.0
+PSX,Phillips 66,Energy,2016,2.925,100.0,0.6708,0.5952,2,0.0,0.0,2,True,1.0,True,271.0
+PSX,Phillips 66,Energy,2017,1.0408,84.9,0.4671,0.154,2,0.5,0.0,8,True,1.0,True,893.0
+PSX,Phillips 66,Energy,2018,1.2714,90.8,0.5839,0.149,2,0.5,0.0,8,True,1.0,True,893.0
+PSX,Phillips 66,Energy,2019,0.9724,83.5,0.7127,-0.0244,2,0.1429,0.25,7,True,1.0,True,891.0
+PSX,Phillips 66,Energy,2020,1.2559,89.9,0.7127,0.0617,2,0.2857,0.0,7,True,1.0,True,943.0
+PSX,Phillips 66,Energy,2021,0.2762,59.9,0.7396,-0.2529,2,0.375,0.0,8,True,1.0,True,955.0
+PSX,Phillips 66,Energy,2022,1.2269,89.4,0.5836,0.1357,2,0.5714,0.25,7,True,1.0,True,781.0
+PSX,Phillips 66,Energy,2023,1.1892,88.2,0.5689,0.1337,2,0.3333,0.0,6,True,1.0,True,210.0
+PSX,Phillips 66,Energy,2024,0.8479,80.7,0.3776,0.1528,2,0.5,0.25,6,True,1.0,True,210.0
+SBUX,Starbucks,Consumer Discretionary,2016,-1.6806,4.8,-0.1044,-0.3056,2,1.0,,3,True,1.0,True,133.0
+SBUX,Starbucks,Consumer Discretionary,2017,-1.8178,3.6,-0.1451,-0.3211,2,1.0,,3,True,1.0,True,133.0
+SBUX,Starbucks,Consumer Discretionary,2018,-1.2412,9.5,-0.4062,0.0214,2,0.3333,1.0,3,True,1.0,True,133.0
+SBUX,Starbucks,Consumer Discretionary,2019,0.0498,51.8,0.2263,0.0076,2,0.3333,,3,True,1.0,True,133.0
+SBUX,Starbucks,Consumer Discretionary,2020,-0.1941,43.4,0.0754,0.0303,2,0.0,0.6,3,True,1.0,True,133.0
+SBUX,Starbucks,Consumer Discretionary,2021,-0.4293,36.4,0.0174,-0.0039,2,0.0,0.6667,3,True,1.0,True,133.0
+SBUX,Starbucks,Consumer Discretionary,2022,0.6567,72.0,0.6228,-0.0625,2,0.25,0.0,8,True,1.0,True,428.0
+SBUX,Starbucks,Consumer Discretionary,2023,0.7086,75.1,0.5839,-0.0218,2,0.125,0.3333,8,True,1.0,True,428.0
+SBUX,Starbucks,Consumer Discretionary,2024,-0.8904,20.2,0.236,-0.284,2,0.7143,1.0,7,True,1.0,True,428.0
+SCHW,Charles Schwab,Financials,2016,-0.3463,37.5,0.3198,-0.1726,2,0.5,0.0,4,True,1.0,True,403.0
+SCHW,Charles Schwab,Financials,2017,-0.2027,41.7,0.5528,-0.2785,2,0.5,0.0,6,True,1.0,True,723.0
+SCHW,Charles Schwab,Financials,2018,-0.0855,46.5,0.3873,-0.1368,2,0.6667,1.0,3,True,1.0,False,321.0
+SCHW,Charles Schwab,Financials,2019,-1.6272,5.9,0.0645,-0.3977,2,0.6667,1.0,3,True,1.0,False,441.0
+SCHW,Charles Schwab,Financials,2020,-1.5167,6.7,-0.0426,-0.2955,2,1.0,1.0,4,True,1.0,False,768.0
+SCHW,Charles Schwab,Financials,2021,-0.9842,17.9,0.3198,-0.3663,2,0.75,,4,True,1.0,True,784.0
+SCHW,Charles Schwab,Financials,2022,-1.125,11.8,0.1206,-0.2812,2,1.0,,6,True,1.0,True,503.0
+SCHW,Charles Schwab,Financials,2023,0.0562,52.1,0.4587,-0.1395,2,0.2,0.0,5,True,1.0,False,466.0
+SCHW,Charles Schwab,Financials,2024,0.3831,64.4,0.3853,0.0068,2,0.0,0.0,7,True,1.0,False,2893.0
+SLB,SLB (Schlumberger),Energy,2016,-1.2996,8.4,-0.1654,-0.1508,2,0.6667,0.0,6,True,1.0,True,308.0
+SLB,SLB (Schlumberger),Energy,2017,-1.8598,3.1,-0.4184,-0.1585,2,0.6667,,6,True,1.0,True,340.0
+SLB,SLB (Schlumberger),Energy,2018,-1.3167,8.1,-0.1654,-0.156,2,0.6667,0.0,6,True,1.0,True,256.0
+SLB,SLB (Schlumberger),Energy,2019,-0.6304,28.9,0.1849,-0.1723,2,0.6667,0.0,6,True,1.0,True,358.0
+SLB,SLB (Schlumberger),Energy,2020,0.3389,63.0,-0.0503,0.2727,2,0.3333,0.0,6,True,1.0,False,365.0
+SLB,SLB (Schlumberger),Energy,2021,0.2703,59.7,-0.0201,0.2326,2,0.1667,,6,True,1.0,True,367.0
+SLB,SLB (Schlumberger),Energy,2022,0.396,64.7,0.4561,-0.0347,2,0.4444,0.0,9,True,1.0,True,379.0
+SLB,SLB (Schlumberger),Energy,2023,-0.2901,38.9,0.1407,-0.0407,2,0.5,0.0,10,True,1.0,True,578.0
+SLB,SLB (Schlumberger),Energy,2024,1.064,85.2,0.3531,0.2341,2,0.1667,0.3333,6,True,1.0,True,285.0
+TGT,Target,Consumer Discretionary,2016,-2.0437,2.2,-0.4,-0.2262,2,1.0,1.0,1,True,1.0,False,67.0
+TGT,Target,Consumer Discretionary,2017,-2.4277,1.0,-0.4,,1,1.0,,1,False,1.0,False,67.0
+TGT,Target,Consumer Discretionary,2018,-2.4277,1.0,-0.4,,1,1.0,1.0,1,False,1.0,False,67.0
+TGT,Target,Consumer Discretionary,2019,-2.4083,1.4,-0.5,-0.2727,2,1.0,,1,True,1.0,False,67.0
+TGT,Target,Consumer Discretionary,2020,-0.3543,37.3,0.1,-0.0341,2,1.0,,1,True,1.0,False,65.0
+TGT,Target,Consumer Discretionary,2021,-1.0675,13.7,-0.2,-0.0581,2,1.0,,1,True,1.0,False,82.0
+TGT,Target,Consumer Discretionary,2022,-2.0051,2.5,-0.3,,1,1.0,1.0,1,False,1.0,False,82.0
+TGT,Target,Consumer Discretionary,2024,-0.1073,45.7,0.1491,,1,0.5,1.0,2,False,1.0,True,257.0
+TJX,TJX Companies,Consumer Discretionary,2016,-1.7854,3.9,-0.5809,-0.0317,2,0.6667,1.0,3,True,1.0,True,439.0
+TJX,TJX Companies,Consumer Discretionary,2017,-2.7799,0.3,-0.499,-0.3862,2,1.0,1.0,3,True,1.0,True,441.0
+TJX,TJX Companies,Consumer Discretionary,2019,-2.6095,0.6,-0.4004,-0.3977,2,0.6667,1.0,3,True,3.0,True,460.0
+TJX,TJX Companies,Consumer Discretionary,2020,-1.0202,15.7,-0.1915,-0.0492,2,0.6667,1.0,3,True,3.0,True,550.0
+TJX,TJX Companies,Consumer Discretionary,2021,-0.0128,47.9,0.0,0.1337,2,0.25,0.6667,4,True,3.0,True,404.0
+TJX,TJX Companies,Consumer Discretionary,2022,-1.0512,14.3,-0.3317,0.0312,2,0.5,1.0,6,True,3.0,True,604.0
+TJX,TJX Companies,Consumer Discretionary,2023,-2.0724,2.0,-0.3058,-0.2953,2,0.6,0.6667,5,True,1.0,True,322.0
+TJX,TJX Companies,Consumer Discretionary,2024,-1.0679,13.4,-0.005,-0.1833,2,0.4,1.0,5,True,1.0,True,335.0
+TMO,Thermo Fisher Scientific,Healthcare,2016,-1.0957,12.6,-0.4989,0.125,2,0.5,,2,True,1.0,False,72.0
+TMO,Thermo Fisher Scientific,Healthcare,2017,-0.123,45.1,-0.3,0.2927,2,0.0,,1,True,1.0,False,95.0
+TMO,Thermo Fisher Scientific,Healthcare,2018,-0.2799,39.2,-0.2111,0.188,2,0.3333,,6,True,1.0,False,243.0
+TMO,Thermo Fisher Scientific,Healthcare,2019,0.8058,78.7,0.6963,-0.0644,2,0.0,0.3333,3,True,1.0,True,244.0
+TMO,Thermo Fisher Scientific,Healthcare,2020,-0.5656,31.1,0.0,-0.0341,2,0.0,1.0,1,True,1.0,False,65.0
+TMO,Thermo Fisher Scientific,Healthcare,2021,-0.4336,35.9,0.1,-0.0581,2,0.0,1.0,1,True,1.0,False,65.0
+TMO,Thermo Fisher Scientific,Healthcare,2022,-0.5661,30.8,0.2,-0.1625,2,0.0,1.0,1,True,1.0,False,50.0
+TMO,Thermo Fisher Scientific,Healthcare,2023,1.8266,97.5,0.6303,0.2878,2,0.0,1.0,4,True,1.0,False,165.0
+TMO,Thermo Fisher Scientific,Healthcare,2024,-0.6714,27.5,0.1307,-0.15,2,0.4,1.0,5,True,1.0,False,131.0
+TSLA,Tesla,Consumer Discretionary,2016,-0.9789,18.5,-0.2611,0.0079,2,0.6667,1.0,3,True,3.0,True,668.0
+TSLA,Tesla,Consumer Discretionary,2017,0.3368,62.7,0.0,0.2398,2,0.6667,0.5,3,True,3.0,True,623.0
+TSLA,Tesla,Consumer Discretionary,2018,-1.0305,15.4,-0.1765,-0.062,2,0.8333,,6,True,3.0,True,443.0
+TSLA,Tesla,Consumer Discretionary,2019,0.3131,61.6,0.3769,-0.0091,2,0.6,,5,True,3.0,True,506.0
+TSLA,Tesla,Consumer Discretionary,2020,-0.3097,38.7,0.0503,0.0114,2,0.4,0.5,5,True,3.0,True,506.0
+TSLA,Tesla,Consumer Discretionary,2021,-0.3381,38.4,-0.1177,0.1105,2,0.5,0.0,6,True,3.0,True,528.0
+TSLA,Tesla,Consumer Discretionary,2022,-0.6669,27.7,0.1913,-0.1875,2,0.8333,1.0,6,True,3.0,True,528.0
+TSLA,Tesla,Consumer Discretionary,2023,-1.0422,14.8,0.0174,-0.1899,2,0.6667,,3,True,3.0,True,109.0
+TSLA,Tesla,Consumer Discretionary,2024,-0.7801,23.2,0.0928,-0.1587,2,0.6667,1.0,3,True,3.0,True,109.0
+UNH,UnitedHealth Group,Healthcare,2016,-1.8314,3.4,-0.4332,-0.1405,2,0.8,1.0,5,True,1.0,True,295.0
+UNH,UnitedHealth Group,Healthcare,2017,-1.3508,7.3,-0.3424,-0.0528,2,0.6667,1.0,3,True,1.0,True,248.0
+UNH,UnitedHealth Group,Healthcare,2018,-1.2916,8.7,-0.3568,-0.0256,2,0.6,1.0,5,True,1.0,True,242.0
+UNH,UnitedHealth Group,Healthcare,2019,-2.2921,1.7,-0.2147,-0.4205,2,1.0,1.0,3,True,1.0,True,236.0
+UNH,UnitedHealth Group,Healthcare,2020,-1.751,4.2,-0.0959,-0.3324,2,1.0,1.0,4,True,1.0,True,235.0
+UNH,UnitedHealth Group,Healthcare,2021,0.7362,75.9,0.4671,0.0615,2,0.7143,0.5,7,True,1.0,True,209.0
+UNH,UnitedHealth Group,Healthcare,2022,-0.4768,33.6,0.0928,-0.0667,2,0.6667,1.0,3,True,2.0,True,142.0
+UNH,UnitedHealth Group,Healthcare,2023,0.958,83.2,0.3598,0.1977,2,0.0,0.6667,3,True,1.0,False,137.0
+UNH,UnitedHealth Group,Healthcare,2024,-1.5756,6.4,-0.739,0.1333,2,0.4,0.6667,5,True,2.0,False,171.0
+VLO,Valero Energy,Energy,2016,-1.0587,14.0,0.2981,-0.375,2,1.0,,2,True,1.0,True,184.0
+VLO,Valero Energy,Energy,2017,0.984,83.8,0.3,0.2439,2,0.0,1.0,1,True,1.0,True,180.0
+VLO,Valero Energy,Energy,2018,,,,,0,,1.0,0,True,1.0,True,217.0
+VLO,Valero Energy,Energy,2019,,,,,0,,1.0,0,True,1.0,True,223.0
+VLO,Valero Energy,Energy,2020,-0.9811,18.2,0.1324,-0.2451,2,0.8571,,7,True,1.0,True,142.0
+VLO,Valero Energy,Energy,2021,0.6163,70.9,0.4855,0.0133,2,0.5714,0.0,7,True,1.0,True,142.0
+VLO,Valero Energy,Energy,2022,0.8518,81.2,0.4479,0.1089,2,0.2857,0.3333,7,True,1.0,True,149.0
+VLO,Valero Energy,Energy,2023,1.994,98.0,0.4719,0.4402,2,0.1429,0.2,7,True,1.0,True,163.0
+VLO,Valero Energy,Energy,2024,0.746,76.5,0.3237,0.1565,2,0.4286,0.0,7,True,1.0,True,156.0
+WFC,Wells Fargo,Financials,2016,1.4076,92.4,0.5075,,1,0.2,0.0,5,False,1.0,True,325.0
+WFC,Wells Fargo,Financials,2017,-0.6472,28.3,0.0213,,1,0.25,0.6,4,False,1.0,True,330.0
+WFC,Wells Fargo,Financials,2018,0.1079,54.1,0.2,,1,0.0,0.8571,1,False,1.0,False,175.0
+WFC,Wells Fargo,Financials,2019,-0.5334,32.2,0.1393,-0.1136,2,0.3333,0.7143,3,True,1.0,True,456.0
+WFC,Wells Fargo,Financials,2020,0.7162,75.4,0.2582,0.1894,2,0.0,0.6,3,True,1.0,False,153.0
+WFC,Wells Fargo,Financials,2021,-0.6449,28.6,0.0,-0.0581,2,0.0,0.8333,1,True,1.0,False,131.0
+WFC,Wells Fargo,Financials,2022,0.3973,65.0,0.5,-0.0625,2,0.0,0.75,1,True,1.0,False,131.0
+WFC,Wells Fargo,Financials,2023,0.8031,78.4,0.4315,0.1047,2,0.0,0.6667,2,True,1.0,True,298.0
+WFC,Wells Fargo,Financials,2024,-0.094,46.2,0.3,-0.0833,2,0.0,0.8333,1,True,1.0,False,114.0
+XOM,ExxonMobil,Energy,2019,-0.769,23.5,0.1695,-0.2045,2,0.25,0.0,4,True,1.0,True,142.0
+XOM,ExxonMobil,Energy,2020,-0.9885,16.5,0.2384,-0.3153,2,0.5,0.0,4,True,1.0,True,142.0
+XOM,ExxonMobil,Energy,2021,0.241,58.3,0.6332,-0.1953,2,0.4,0.0,5,True,1.0,True,138.0
+XOM,ExxonMobil,Energy,2023,-0.0212,47.6,0.5453,-0.2186,2,0.2,0.0,5,True,1.0,True,439.0
+XOM,ExxonMobil,Energy,2024,-0.4683,33.9,0.3249,-0.213,2,0.3333,0.25,9,True,1.0,True,358.0

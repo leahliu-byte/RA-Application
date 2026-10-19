@@ -1,0 +1,33 @@
+ORGANIZATIONAL AUTHENTICITY INDEX - DISTRIBUTION, VALIDITY AND ROBUSTNESS
+
+Company-years with an index: 357 (both components: 346, one component: 11); companies: 47
+
+1. DISTRIBUTION
+  A_discourse_consistency    n=357 mean= 0.176 sd=0.311 min=-0.739 p25=-0.011 median= 0.200 p75= 0.400 max= 0.837 skew=-0.27
+  B_incentive_backing        n=346 mean= 0.027 sd=0.200 min=-0.420 p25=-0.125 median=-0.001 p75= 0.169 max= 0.702 skew= 0.33
+  OAI_z                      n=357 mean= 0.000 sd=1.000 min=-2.780 p25=-0.724 median= 0.012 p75= 0.709 max= 2.925 skew=-0.03
+  over_claiming              n=357 mean= 0.394 sd=0.311 min= 0.000 p25= 0.111 median= 0.400 p75= 0.600 max= 1.000 skew= 0.32
+  under_claiming             n=325 mean= 0.553 sd=0.426 min= 0.000 p25= 0.000 median= 0.600 p75= 1.000 max= 1.000 skew=-0.21
+  Correlation of components A and B: Spearman rho=0.102 (p=0.059) - low values mean the components capture different facets.
+  Share of variance BETWEEN companies: 45.6%; WITHIN companies over time: 54.4%
+  Mean OAI_z by sector: Consumer Discretionary -0.47, Technology +0.01, Financials +0.08, Healthcare +0.20, Energy +0.24
+  Mean OAI_z by year:   2016 -0.07, 2017 -0.37, 2018 -0.24, 2019 -0.00, 2020 -0.03, 2021 +0.21, 2022 +0.15, 2023 +0.20, 2024 +0.14
+  Sector differences (one-way ANOVA): F=7.02, p=0.000
+
+2. VALIDITY CHECKS
+  (a) Known-group check - Wells Fargo (fake-accounts scandal disclosed Sept 2016; consent orders through 2018):
+      2016-2018: WFC mean +0.29 (n=3) vs other banks -0.26 (n=19)
+      2019-2024: WFC mean +0.11 (n=6) vs other banks +0.25 (n=33)
+      Over-claiming 2016-2018: WFC 0.15 vs other banks 0.40
+  (b) Convergent check - when SAFETY is stated, is it pay-linked? Energy 69% (n=42) vs other sectors 13% (n=31). Expected: higher in Energy, where safety is operationally material.
+  (c) Discriminant check - OAI vs About-page length: rho=0.124 (p=0.020). Near zero means the index is not an artefact of longer pages stating more values.
+      OAI vs number of stated values: rho=0.214 (p=0.000).
+  (d) Face validity - lowest 5 companies (mean OAI_z): Target -1.61; TJX Companies -1.55; UnitedHealth Group -0.99; Broadcom -0.81; EOG Resources -0.72
+      Highest 5 companies: Eli Lilly +1.56; Phillips 66 +1.22; IBM +1.09; Bristol-Myers Squibb +1.08; Marathon Petroleum +1.01
+
+3. ROBUSTNESS (rank correlation of company-year scores with the main index)
+  A only: rho=0.741, n=357
+  B only: rho=0.726, n=346
+  Selection-issue pages (n=109) vs clean pages (n=248): mean OAI_z -0.18 vs +0.08 (Welch t=-2.24, p=0.026). A small difference means page-selection problems add noise rather than systematic bias.
+  Company ranking using clean pages only vs all pages: rho=0.848 (43 companies)
+  Component A, leave-one-category-out: min rho=0.916, mean rho=0.946 (no single category drives the measure if these stay high)

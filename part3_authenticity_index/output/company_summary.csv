@@ -1,0 +1,48 @@
+ticker,company_name,sector,n_years,OAI_z_mean,OAI_z_sd,A_mean,B_mean,over_claiming_mean,under_claiming_mean,OAI_trend_per_year
+TGT,Target,Consumer Discretionary,8,-1.6052,0.9597,-0.2439,-0.1478,0.9375,1.0,0.2486
+TJX,TJX Companies,Consumer Discretionary,8,-1.5499,0.9326,-0.2893,-0.1473,0.5938,0.9167,0.1547
+UNH,UnitedHealth Group,Healthcare,9,-0.9861,1.1502,-0.1402,-0.0718,0.6497,0.8704,0.2101
+AVGO,Broadcom,Technology,2,-0.8087,0.2541,0.0473,-0.1382,0.625,,
+EOG,EOG Resources,Energy,1,-0.7237,,-0.5,0.2386,0.0,,
+PFE,Pfizer,Healthcare,9,-0.6949,0.5932,-0.0342,-0.0514,0.3786,0.4167,0.0338
+SCHW,Charles Schwab,Financials,9,-0.6054,0.7248,0.2851,-0.229,0.587,0.4286,0.0376
+GOOGL,Alphabet,Technology,9,-0.5851,0.6498,-0.0043,-0.0372,0.2889,0.8438,0.1222
+ORCL,Oracle,Technology,6,-0.5592,0.2805,0.1365,-0.1197,0.6139,,-0.0382
+SBUX,Starbucks,Consumer Discretionary,9,-0.5376,0.9367,0.1229,-0.1044,0.4173,0.6,0.2343
+C,Citigroup,Financials,2,-0.5221,0.4534,-0.002,-0.0196,0.4857,0.0,
+TSLA,Tesla,Consumer Discretionary,9,-0.4996,0.5402,0.0193,-0.0264,0.6481,0.6667,-0.0544
+MDT,Medtronic,Healthcare,9,-0.4978,0.5876,0.0291,-0.0321,0.6381,0.5714,0.0167
+F,Ford Motor,Consumer Discretionary,9,-0.4415,0.4538,0.09,-0.0542,0.5788,0.3125,-0.0559
+XOM,ExxonMobil,Energy,5,-0.4012,0.5103,0.3823,-0.2294,0.3367,0.05,0.1094
+SLB,SLB (Schlumberger),Energy,9,-0.3697,0.9753,0.035,0.0029,0.4753,0.0476,0.3082
+HD,Home Depot,Consumer Discretionary,9,-0.3099,0.9284,0.1071,-0.0251,0.3296,1.0,-0.3099
+HAL,Halliburton,Energy,7,-0.2847,0.5514,0.1737,-0.0602,0.7952,0.75,0.0802
+COP,ConocoPhillips,Energy,9,-0.2519,0.958,-0.1267,0.1424,0.4241,0.6852,0.0897
+MS,Morgan Stanley,Financials,9,-0.2181,0.5803,0.2501,-0.089,0.4667,0.0,-0.0212
+NVDA,NVIDIA,Technology,8,-0.207,0.6894,0.2258,-0.07,0.4643,0.7143,-0.0675
+NKE,Nike,Consumer Discretionary,7,-0.1853,0.6683,0.1578,-0.0099,0.519,0.5556,0.1201
+TMO,Thermo Fisher Scientific,Healthcare,9,-0.1225,0.8961,0.083,0.0472,0.137,0.8889,0.0956
+CVX,Chevron,Energy,9,-0.0254,1.0537,0.0778,0.08,0.3836,0.4463,-0.1092
+ABT,Abbott Laboratories,Healthcare,9,-0.0149,0.7085,0.2787,-0.0457,0.6111,0.8333,-0.0183
+GS,Goldman Sachs,Financials,5,-0.0104,0.7596,0.0521,0.101,0.2666,0.3333,0.0798
+CRM,Salesforce,Technology,9,0.0081,0.5223,0.3165,-0.063,0.642,0.0,0.0391
+MCD,McDonald's,Consumer Discretionary,9,0.0106,0.4983,0.0922,0.0817,0.0741,0.8222,-0.0907
+JPM,JPMorgan Chase,Financials,8,0.0234,1.0681,-0.0506,0.1772,0.1562,0.879,0.1692
+AMZN,Amazon,Consumer Discretionary,7,0.0633,0.4201,0.5113,-0.1711,0.1599,0.273,-0.0068
+INTC,Intel,Technology,7,0.0903,1.1955,0.1979,0.0381,0.0714,0.8625,0.3243
+WFC,Wells Fargo,Financials,9,0.1681,0.7231,0.262,-0.0039,0.087,0.6505,-0.0198
+LOW,Lowe's,Consumer Discretionary,8,0.3576,1.3404,0.1612,0.1428,0.5,0.5476,0.3817
+VLO,Valero Energy,Energy,7,0.4503,1.1008,0.3514,0.049,0.4694,0.3067,0.2088
+BLK,BlackRock,Financials,8,0.4679,0.8274,0.3547,0.0521,0.2881,0.0,0.2176
+AXP,American Express,Financials,4,0.4973,0.1991,0.3079,0.091,0.0938,0.2083,0.1457
+MRK,Merck,Healthcare,8,0.5368,0.7436,0.3014,0.1073,0.3704,0.2083,-0.1184
+OXY,Occidental Petroleum,Energy,9,0.6189,0.8359,0.4428,0.0415,0.4472,0.0,0.1138
+MSFT,Microsoft,Technology,9,0.676,0.8986,0.0935,0.3238,0.1296,0.5646,-0.0911
+JNJ,Johnson & Johnson,Healthcare,9,0.8037,0.7204,0.3396,0.1638,0.1975,0.2222,0.0251
+BAC,Bank of America,Financials,7,0.8555,1.0337,0.397,0.1427,0.2514,0.4452,0.2171
+ABBV,AbbVie,Healthcare,9,0.9511,0.4529,0.3509,0.2013,0.3931,0.287,0.04
+MPC,Marathon Petroleum,Energy,8,1.0066,0.5082,0.4099,0.1693,0.3512,0.3333,0.0279
+BMY,Bristol-Myers Squibb,Healthcare,9,1.076,0.5077,0.3336,0.2503,0.1065,0.2759,0.0634
+IBM,IBM,Technology,5,1.0911,0.6324,0.3988,0.2131,0.0833,0.8,-0.341
+PSX,Phillips 66,Energy,9,1.2228,0.7101,0.6019,0.1228,0.3565,0.0833,-0.1441
+LLY,Eli Lilly,Healthcare,5,1.562,0.7842,0.4851,0.3007,0.1333,0.08,0.4861
