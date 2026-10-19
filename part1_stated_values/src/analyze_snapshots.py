@@ -60,10 +60,21 @@ SNAP_CACHE = CACHE_DIR / "snapshot_analysis.jsonl"
 SHIFT_CACHE = CACHE_DIR / "company_shifts.jsonl"
 OUTPUT_CSV = PART_DIR / "output" / "part1_dataset.csv"
 
-MODEL = "claude-opus-5-5"
+# Claude Haiku 5.5: chosen for budget (the project's total API budget is $5).
+# Codebook coding with verbatim evidence is a structured classification task
+# well within a small model's ability, and the quote-verification check below
+# makes weak evidence visible. Estimated cost for all of Part 1: ~$0.50.
+MODEL = "claude-haiku-5-5"
 EFFORT = "medium"           # classification against a codebook; medium is ample
 PROMPT_VERSION = "p1-v1"    # bump when prompts change, so cached results are not mixed
 MAX_WORKERS = 4             # parallel API calls
+
+# Spending cap: the run stops making new API calls once estimated spend
+# reaches this amount (USD). Prices per million tokens for Claude Haiku 5.5
+# (prompts under 100K tokens).
+MAX_COST_USD = 1.50
+PRICE_IN_PER_M, PRICE_OUT_PER_M = 0.10, 0.50
+_spent = {"usd": 0.0}
 
 load_dotenv(REPO_DIR / ".env")
 CODEBOOK = json.loads(CODEBOOK_JSON.read_text())
@@ -180,28 +191,36 @@ SHIFT_SCHEMA = {
 client = anthropic.Anthropic()
 
 
+class BudgetExceeded(RuntimeError):
+    pass
+
+
 def call_llm(system: str, user: str, schema: dict) -> dict:
-    """One structured-output request. `fallbacks: "default"` re-runs the request
-    on Anthropic's recommended fallback model if the primary model's safety
-    classifiers decline it (unlikely for this content, but it keeps a batch run
-    from losing rows to a false-positive refusal)."""
-    response = client.beta.messages.create(
+    """One structured-output request, with the spending cap enforced before the
+    call and actual token usage added to the running total after it."""
+    with _lock:
+        if _spent["usd"] >= MAX_COST_USD:
+            raise BudgetExceeded(f"spending cap ${MAX_COST_USD:.2f} reached")
+    response = client.messages.create(
         model=MODEL,
         max_tokens=16000,
-        betas=["server-side-fallback-2026-07-01"],
-        fallbacks="default",
         system=system,
         output_config={"effort": EFFORT,
                        "format": {"type": "json_schema", "schema": schema}},
         messages=[{"role": "user", "content": user}],
     )
+    cost = (response.usage.input_tokens * PRICE_IN_PER_M
+            + response.usage.output_tokens * PRICE_OUT_PER_M) / 1e6
+    with _lock:
+        _spent["usd"] += cost
     if response.stop_reason == "refusal":
         raise RuntimeError(f"refused: {response.stop_details}")
     if response.stop_reason == "max_tokens":
         raise RuntimeError("output truncated (max_tokens)")
     text = next(b.text for b in response.content if b.type == "text")
     return {"result": json.loads(text), "model": response.model,
-            "usage": {"input": response.usage.input_tokens, "output": response.usage.output_tokens}}
+            "usage": {"input": response.usage.input_tokens, "output": response.usage.output_tokens,
+                      "cost_usd": round(cost, 6)}}
 
 
 # ---- Helpers ---------------------------------------------------------------
@@ -386,8 +405,9 @@ def main() -> None:
             if t in shift_cache:
                 w.writerow([t, shift_cache[t]["result"]["company_summary"]])
 
-    n_ok = sum(1 for r in out_rows if r.get("theme_categories") is not None and r.get("status") == "ok")
+    n_ok = sum(1 for r in out_rows if r.get("change_type"))
     print(f"\nWrote {len(out_rows)} rows ({n_ok} analysed snapshots) -> {OUTPUT_CSV}")
+    print(f"API spend this run: ${_spent['usd']:.3f} (cap ${MAX_COST_USD:.2f})")
 
 
 if __name__ == "__main__":

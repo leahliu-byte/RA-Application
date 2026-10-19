@@ -196,9 +196,13 @@ values stated on S&P 500 websites.
 ## LLM analysis
 
 [src/analyze_snapshots.py](src/analyze_snapshots.py) → [output/part1_dataset.csv](output/part1_dataset.csv).
-Model: Claude Opus 5.5 (`claude-opus-5-5`), structured JSON output enforced by a schema, fixed
+Model: Claude Haiku 5.5 (`claude-haiku-5-5`), structured JSON output enforced by a schema, fixed
 prompts (`PROMPT_VERSION`), and every raw response cached in `output/llm_cache/` for
-reproducibility and resumability.
+reproducibility and resumability. **Model choice was budget-driven:** the project's total API
+budget is $5; the largest model would have cost roughly $14 for Part 1 alone, versus about $0.50
+for Haiku. Codebook classification with verbatim evidence is well within a small model's
+ability, and the quote-verification check makes weak evidence visible. The script enforces a
+hard spending cap (`MAX_COST_USD`) and logs the cost of every call.
 
 - **(a) Changed from prior year.** Two layers. *Non-AI:* each snapshot is compared with the
   company's previous available snapshot (exact match after normalisation, plus a word-level
