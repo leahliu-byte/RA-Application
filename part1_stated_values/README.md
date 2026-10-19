@@ -7,11 +7,11 @@
 I collected one archived snapshot per year (2016–2024) of each sample company's "About Us" page
 from the Wayback Machine, extracted the clean body text, and used an LLM to code each snapshot for
 (a) change from the prior year, (b) value themes from a research-based codebook, and (c) linguistic
-shifts. Every step is a script, every rule is written down, and every gap carries a reason.
+shifts.
 
 | Stage | Script | Output |
 |---|---|---|
-| 1. Discover candidate About pages from archived homepages (rules, no AI) | [src/discover_candidates.py](src/discover_candidates.py), [src/build_candidates.py](src/build_candidates.py) | [output/discovered_candidates.csv](output/discovered_candidates.csv), [data/candidate_urls.csv](data/candidate_urls.csv) |
+| 1. Discover candidate About pages from archived homepages | [src/discover_candidates.py](src/discover_candidates.py), [src/build_candidates.py](src/build_candidates.py) | [output/discovered_candidates.csv](output/discovered_candidates.csv), [data/candidate_urls.csv](data/candidate_urls.csv) |
 | 2. Check each candidate's archive coverage per year (CDX API) | [src/probe_candidates.py](src/probe_candidates.py) | [output/candidate_coverage.csv](output/candidate_coverage.csv) |
 | 3. Select one page per company-year by the rules below | [src/select_pages.py](src/select_pages.py) | [output/selected_pages.csv](output/selected_pages.csv), [output/selection_summary.csv](output/selection_summary.csv) |
 | 4. Download first capture of each year, extract text, quality check | [src/download_pages.py](src/download_pages.py) | [output/snapshots.csv](output/snapshots.csv) |
@@ -21,9 +21,22 @@ shifts. Every step is a script, every rule is written down, and every gap carrie
 1,690 theme codes, 98.3% backed by an evidence quote verified verbatim against the page.
 
 **Reproduce:** from the repo root with the virtual environment active, run the five scripts in
-the order above (stage 5 needs `ANTHROPIC_API_KEY` in `.env`; it costs about $0.35 and reuses
-cached responses on re-runs). [src/make_review_page.py](src/make_review_page.py) builds an
+the order above (stage 5 needs `ANTHROPIC_API_KEY` in `.env`; it cost $0.33 and reuses
+cached responses on re-runs, so re-running is free). [src/make_review_page.py](src/make_review_page.py) builds an
 optional human-audit page.
+
+## Key decisions at a glance
+
+| Decision | Choice | Why | Details |
+|---|---|---|---|
+| Which page counts | The general **About / company overview** page; a mission/values page only if none exists; homepage as last resort | Nearly every company has one, so companies are comparable; it is the company's main public self-description | Rules A–B |
+| How candidate pages are found | **Rules only:** About-type links on each archived homepage, plus a fixed list of standard addresses tried for every company | Repeatable and scalable to all 500 firms; no company-specific guessing | Rule C |
+| Which candidate wins | Best tier, then most years archived; one page for all years where possible | Holding the page constant makes year-to-year change about wording, not page switches | Rule C |
+| Moved pages and redirects | Redirects are **not** followed in the archive; a moved page is "stitched" (old address before the move, new one after) | Redirect hops can be archived on different dates and silently mix years | Rule D |
+| Which snapshot per year | First working capture of the calendar year; a missing year stays missing | Evenly spaced time points; never borrow from another year | Rule E |
+| Quality bar | Under 50 words or an error page counts as missing | Empty JavaScript shells and error pages are not the company's words | Rule F |
+| Value categories | 11-category hybrid codebook (MIT "Big Nine" values + stakeholder/ESG themes + safety), shared with Part 2 | Research-grounded, and identical categories make the Part 3 comparison possible | *Codebook* |
+| LLM | Claude Haiku 5.5, every theme backed by a quote verified by code | Fits a $5 budget; verification makes errors visible | *LLM analysis* |
 
 ## Page selection criteria
 
@@ -69,8 +82,10 @@ dedicated values page; this is noted under Limitations.
   2. **Common-path fallback:** the same fixed list of standard paths (`/about`, `/about-us`,
      `/who-we-are`, `/our-company`, …) tried on every company's homepage, for sites whose menus
      are rendered by JavaScript and so are invisible to discovery.
-  3. **Human inspection (last resort):** if neither source yields a usable page, the archived
-     homepage is inspected by eye and the URL recorded in `data/manual_additions.csv` with a note.
+  3. **Human inspection (last resort, available but not used):** the code accepts URLs found by
+     inspecting an archived homepage by eye (`data/manual_additions.csv`, with a note). It was not
+     used in this run, to keep selection fully rule-based; Intel is the company that would most
+     benefit (see *Known selection issues*).
 - **Rule revision after inspection.** The first discovery run (kept for the record as
   [output/discovered_candidates_v1_loose_rules.csv](output/discovered_candidates_v1_loose_rules.csv))
   accepted any on-site link whose text contained "about", which let through promotional links
@@ -127,54 +142,12 @@ dedicated values page; this is noted under Limitations.
 
 ### F. Post-download quality check
 
-- A snapshot whose cleaned text is under ~50 words, or is clearly an error / "page not found"
-  page, is treated as missing.
-- A random sample of snapshots is checked manually against the archived page.
-
-## Coverage gaps and known selection issues
-
-**Coverage funnel (450 company-years):**
-
-| Step | Remaining | Lost | Reason |
-|---|---|---|---|
-| Page selection | 424 | 26 | No candidate page archived that year (table below) |
-| Download | 423 | 1 | IBM 2016: listed in the archive's index, but the archive returns "not found" for the capture on every attempt |
-| Quality check (rule F) | **402** | 21 | Under 50 words of text after cleaning: Broadcom 2020–24 (2 words each), Intel 2019 & 2021 (0), Lilly 2021–23 (7), ExxonMobil 2016–18 (45), Nike 2023–24, Meta 2016 & 2023, NVIDIA 2016, JPMorgan 2020, Target 2023, TJX 2018. Almost all are **JavaScript-rendered pages**: the archive stored an empty HTML shell whose content only appears when a browser runs the site's code |
-
-Every row of [output/part1_dataset.csv](output/part1_dataset.csv) carries `status` and
-`status_reason`, so each gap is documented at the company-year level.
-
-**Missing at selection (26).** In every case the reason is the same: *no candidate page for
-that company had a usable archived capture in that year* (`note` column in
-[output/selected_pages.csv](output/selected_pages.csv)). Per rule E, no year was filled from an
-adjacent year.
-
-| Company | Missing years | Likely cause |
-|---|---|---|
-| Citigroup (C) | 2016–2022 | Archived 2016 homepage exposed 0 links and 2020 only 8 (JavaScript-rendered navigation), so discovery found only the 2023+ About page |
-| American Express (AXP) | 2021–2024 | The only About-type candidate with captures was archived 2016–2020; no successor page was found by discovery or the standard addresses |
-| EOG Resources (EOG) | 2016–2018 | Only the standard-address fallback `/company` was found, and it was not archived before 2019 |
-| IBM | 2017–2019 | Only the standard-address fallback `/about` was found; not archived in those years |
-| Broadcom (AVGO) | 2017–2018 | Primary page not archived in those years; no alternative captured |
-| Apple, BofA, Goldman Sachs, ExxonMobil, Oracle, Lilly, Halliburton | 1 year each (2019, 2022, 2020, 2022, 2024, 2024, 2024) | Single-year gaps in the archive's captures |
-
-**Known selection issues (pages present but not ideal).** These follow mechanically from the
-rules and were left uncorrected to keep selection fully rule-based:
-
-- **JPMorgan Chase (2016–2023):** two tier-1 candidates tied on coverage (8 years each); the
-  shortest-URL tie-break chose the About page of the *JPMorgan Chase Institute* (the firm's
-  research arm), not the corporate "About Us" page. 2024 uses the corporate `/about` page.
-- **Meta (all years):** the 2016 Facebook homepage's "About" footer link pointed to
-  `facebook.com/facebook`, Facebook's own social-media profile, which has 9 years of captures
-  and so outranks `about.meta.com` (2022–2024 only). Its content is likely a profile/login page;
-  the download-stage quality check (rule F) may reject some years.
-- **Intel (all years) and Berkshire Hathaway (all years):** no About-type candidate was found,
-  so the homepage is used (tier 4, rule B.3). For Berkshire this matches reality (its website
-  has no About page). For Intel it is a limitation: an About page exists, but the archived
-  homepage's navigation is JavaScript-rendered and invisible to discovery.
-- **Apple, IBM, Tesla, EOG:** selected via the standard-address fallback (tier 3); these pages
-  were not linked from the sampled homepages, so their content has not been confirmed to be a
-  general About page.
+- A snapshot whose cleaned text is under 50 words, or that opens with a known error/placeholder
+  phrase ("page not found", "enable JavaScript", …), is treated as missing, with the reason
+  recorded.
+- No manual spot-check of extracted text against the archived pages was carried out; the
+  automated quote verification in the analysis step (98.3% of quotes found verbatim) is the main
+  check on extraction quality. A manual check is listed under *What I would do differently*.
 
 ## Download and text extraction
 
@@ -225,8 +198,7 @@ values stated on S&P 500 websites.
 Model: Claude Haiku 5.5 (`claude-haiku-5-5`), structured JSON output enforced by a schema, fixed
 prompts (`PROMPT_VERSION`), and every raw response cached in `output/llm_cache/` for
 reproducibility and resumability. **Model choice was budget-driven:** the project's total API
-budget is $5; the largest model would have cost roughly $14 for Part 1 alone, versus about $0.50
-for Haiku. Codebook classification with verbatim evidence is well within a small model's
+budget is $5; the largest model would have cost roughly $14 for Part 1 alone; Haiku cost $0.33. Codebook classification with verbatim evidence is well within a small model's
 ability, and the quote-verification check makes weak evidence visible. The script enforces a
 hard spending cap (`MAX_COST_USD`) and logs the cost of every call.
 
@@ -248,6 +220,65 @@ hard spending cap (`MAX_COST_USD`) and logs the cost of every call.
 - **Selection check.** The same call records whether each page reads like a general About page
   (`about_page_check`). This documents the known selection issues (e.g. Meta, JPMorgan) without
   changing the rule-based selection.
+
+## Coverage gaps and known selection issues
+
+**Coverage funnel (450 company-years):**
+
+| Step | Remaining | Lost | Reason |
+|---|---|---|---|
+| Page selection | 424 | 26 | No candidate page archived that year (table below) |
+| Download | 423 | 1 | IBM 2016: listed in the archive's index, but the archive returns "not found" for the capture on every attempt |
+| Quality check (rule F) | **402** | 21 | Under 50 words of text after cleaning: Broadcom 2020–24 (2 words each), Intel 2019 & 2021 (0), Lilly 2021–23 (7), ExxonMobil 2016–18 (45), Nike 2023–24, Meta 2016 & 2023, NVIDIA 2016, JPMorgan 2020, Target 2023, TJX 2018. Almost all are **JavaScript-rendered pages**: the archive stored an empty HTML shell whose content only appears when a browser runs the site's code |
+
+Every row of [output/part1_dataset.csv](output/part1_dataset.csv) carries `status` and
+`status_reason`, so each gap is documented at the company-year level.
+
+**Missing at selection (26).** In every case the reason is the same: *no candidate page for
+that company had a usable archived capture in that year* (`note` column in
+[output/selected_pages.csv](output/selected_pages.csv)). Per rule E, no year was filled from an
+adjacent year.
+
+| Company | Missing years | Likely cause |
+|---|---|---|
+| Citigroup (C) | 2016–2022 | Archived 2016 homepage exposed 0 links and 2020 only 8 (JavaScript-rendered navigation), so discovery found only the 2023+ About page |
+| American Express (AXP) | 2021–2024 | The only About-type candidate with captures was archived 2016–2020; no successor page was found by discovery or the standard addresses |
+| EOG Resources (EOG) | 2016–2018 | Only the standard-address fallback `/company` was found, and it was not archived before 2019 |
+| IBM | 2017–2019 | Only the standard-address fallback `/about` was found; not archived in those years |
+| Broadcom (AVGO) | 2017–2018 | Primary page not archived in those years; no alternative captured |
+| Apple, BofA, Goldman Sachs, ExxonMobil, Oracle, Lilly, Halliburton | 1 year each (2019, 2022, 2020, 2022, 2024, 2024, 2024) | Single-year gaps in the archive's captures |
+
+**Known selection issues (pages present but not ideal).** These follow mechanically from the
+rules and were left uncorrected to keep selection fully rule-based:
+
+- **JPMorgan Chase (2016–2023):** two tier-1 candidates tied on coverage (8 years each); the
+  shortest-URL tie-break chose the About page of the *JPMorgan Chase Institute* (the firm's
+  research arm), not the corporate "About Us" page. 2024 uses the corporate `/about` page.
+- **Meta (all years):** the 2016 Facebook homepage's "About" footer link pointed to
+  `facebook.com/facebook`, Facebook's own social-media profile, which has 9 years of captures
+  and so outranks `about.meta.com` (2022–2024 only). Its content is a profile/login page: the
+  quality check rejected 2016 and 2023, and the remaining years state no values, so Meta has no
+  authenticity score in Part 3.
+- **Intel (all years) and Berkshire Hathaway (all years):** no About-type candidate was found,
+  so the homepage is used (tier 4, rule B.3). For Berkshire this matches reality (its website
+  has no About page). For Intel it is a limitation: an About page exists, but the archived
+  homepage's navigation is JavaScript-rendered and invisible to discovery.
+- **Apple, IBM, Tesla, EOG:** selected via the standard-address fallback (tier 3); these pages
+  were not linked from the sampled homepages, so their content has not been confirmed to be a
+  general About page.
+
+## Data collection notes
+
+- **Rate limiting.** A first run querying the CDX API every ~1.5 s was blocked by the Internet
+  Archive (connection refused) after ~20 requests. The probe script now waits 4 s between
+  requests, backs off 30 s – 5 min on refusals, logs persistent failures instead of crashing,
+  and resumes from where it stopped. These choices are what make the pipeline scale to the full
+  S&P 500 (slower, but unattended and restartable).
+- **Archive refusals.** The Wayback Machine returned HTTP 403 (refused) for 5 of the 180
+  homepage snapshots used in discovery: Nike 2020, Lowe's corporate site 2016 and 2020, Chevron
+  2024, Valero 2016 ([output/discovery_fetch_log.csv](output/discovery_fetch_log.csv)). A 403 from
+  the archive usually reflects an exclusion requested by the site owner. Discovery for these
+  companies relied on their other sample years. Failed fetches are cached so re-runs skip them.
 
 ## Dataset schema — [output/part1_dataset.csv](output/part1_dataset.csv)
 
@@ -278,19 +309,6 @@ changes are substantive), and the mix of stated values shifted toward integrity,
 diversity and safety, while the sharp post-2021 retreat seen in formal disclosures (Part 2) does
 **not** appear on About pages.
 
-## Data collection notes
-
-- **Rate limiting.** A first run querying the CDX API every ~1.5 s was blocked by the Internet
-  Archive (connection refused) after ~20 requests. The probe script now waits 4 s between
-  requests, backs off 30 s – 5 min on refusals, logs persistent failures instead of crashing,
-  and resumes from where it stopped. These choices are what make the pipeline scale to the full
-  S&P 500 (slower, but unattended and restartable).
-- **Archive refusals.** The Wayback Machine returned HTTP 403 (refused) for 5 of the 180
-  homepage snapshots used in discovery: Nike 2020, Lowe's corporate site 2016 and 2020, Chevron
-  2024, Valero 2016 ([output/discovery_fetch_log.csv](output/discovery_fetch_log.csv)). A 403 from
-  the archive usually reflects an exclusion requested by the site owner. Discovery for these
-  companies relied on their other sample years. Failed fetches are cached so re-runs skip them.
-
 ## Assumptions
 
 - `data/homepages.csv` lists each company's main corporate web address (for retailers and some
@@ -317,6 +335,8 @@ diversity and safety, while the sharp post-2021 retreat seen in formal disclosur
 - **Validate the LLM coding against human labels** on a stratified sample (e.g. 20–30 pages across
   sectors and years) and report agreement per category; and re-code a sample with a larger model
   to measure model sensitivity.
+- **Manually spot-check text extraction** on a random sample of snapshots against the rendered
+  archived page.
 - **Archive-timing robustness:** use several captures per year (e.g. January and July) to check
   that the first capture of a year is representative.
 
