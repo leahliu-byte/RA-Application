@@ -1,0 +1,451 @@
+ticker,company_name,sector,year,selected_url,tier,tier_label,source,link_text,status,note
+MSFT,Microsoft,Technology,2016,microsoft.com/en-us/about,1,about page,discovered+pattern,About Microsoft,selected,primary page
+MSFT,Microsoft,Technology,2017,microsoft.com/en-us/about,1,about page,discovered+pattern,About Microsoft,selected,primary page
+MSFT,Microsoft,Technology,2018,microsoft.com/en-us/about,1,about page,discovered+pattern,About Microsoft,selected,primary page
+MSFT,Microsoft,Technology,2019,microsoft.com/en-us/about,1,about page,discovered+pattern,About Microsoft,selected,primary page
+MSFT,Microsoft,Technology,2020,microsoft.com/en-us/about,1,about page,discovered+pattern,About Microsoft,selected,primary page
+MSFT,Microsoft,Technology,2021,microsoft.com/en-us/about,1,about page,discovered+pattern,About Microsoft,selected,primary page
+MSFT,Microsoft,Technology,2022,microsoft.com/en-us/about,1,about page,discovered+pattern,About Microsoft,selected,primary page
+MSFT,Microsoft,Technology,2023,microsoft.com/en-us/about,1,about page,discovered+pattern,About Microsoft,selected,primary page
+MSFT,Microsoft,Technology,2024,microsoft.com/en-us/about,1,about page,discovered+pattern,About Microsoft,selected,primary page
+AAPL,Apple,Technology,2016,apple.com/about,3,standard address (fallback),pattern,,selected,primary page
+AAPL,Apple,Technology,2017,apple.com/about,3,standard address (fallback),pattern,,selected,primary page
+AAPL,Apple,Technology,2018,apple.com/about,3,standard address (fallback),pattern,,selected,primary page
+AAPL,Apple,Technology,2019,,,,,,missing,no candidate captured this year
+AAPL,Apple,Technology,2020,apple.com/about,3,standard address (fallback),pattern,,selected,primary page
+AAPL,Apple,Technology,2021,apple.com/about,3,standard address (fallback),pattern,,selected,primary page
+AAPL,Apple,Technology,2022,apple.com/about,3,standard address (fallback),pattern,,selected,primary page
+AAPL,Apple,Technology,2023,apple.com/about,3,standard address (fallback),pattern,,selected,primary page
+AAPL,Apple,Technology,2024,apple.com/about,3,standard address (fallback),pattern,,selected,primary page
+NVDA,NVIDIA,Technology,2016,nvidia.com/en-us/about-nvidia,1,about page,discovered,About NVIDIA,selected,primary page
+NVDA,NVIDIA,Technology,2017,nvidia.com/object/about-nvidia.html,1,about page,discovered,About NVIDIA,selected,switched (primary page not captured)
+NVDA,NVIDIA,Technology,2018,nvidia.com/en-us/about-nvidia,1,about page,discovered,About NVIDIA,selected,primary page
+NVDA,NVIDIA,Technology,2019,nvidia.com/en-us/about-nvidia,1,about page,discovered,About NVIDIA,selected,primary page
+NVDA,NVIDIA,Technology,2020,nvidia.com/en-us/about-nvidia,1,about page,discovered,About NVIDIA,selected,primary page
+NVDA,NVIDIA,Technology,2021,nvidia.com/en-us/about-nvidia,1,about page,discovered,About NVIDIA,selected,primary page
+NVDA,NVIDIA,Technology,2022,nvidia.com/en-us/about-nvidia,1,about page,discovered,About NVIDIA,selected,primary page
+NVDA,NVIDIA,Technology,2023,nvidia.com/en-us/about-nvidia,1,about page,discovered,About NVIDIA,selected,primary page
+NVDA,NVIDIA,Technology,2024,nvidia.com/en-us/about-nvidia,1,about page,discovered,About NVIDIA,selected,primary page
+GOOGL,Alphabet,Technology,2016,google.com/intl/en/about.html,1,about page,discovered,About,selected,primary page
+GOOGL,Alphabet,Technology,2017,google.com/intl/en/about.html,1,about page,discovered,About,selected,primary page
+GOOGL,Alphabet,Technology,2018,google.com/intl/en/about.html,1,about page,discovered,About,selected,primary page
+GOOGL,Alphabet,Technology,2019,google.com/intl/en/about.html,1,about page,discovered,About,selected,primary page
+GOOGL,Alphabet,Technology,2020,google.com/intl/en/about.html,1,about page,discovered,About,selected,primary page
+GOOGL,Alphabet,Technology,2021,google.com/intl/en/about.html,1,about page,discovered,About,selected,primary page
+GOOGL,Alphabet,Technology,2022,google.com/intl/en/about.html,1,about page,discovered,About,selected,primary page
+GOOGL,Alphabet,Technology,2023,google.com/intl/en/about.html,1,about page,discovered,About,selected,primary page
+GOOGL,Alphabet,Technology,2024,google.com/intl/en/about.html,1,about page,discovered,About,selected,primary page
+META,Meta Platforms,Technology,2016,facebook.com/facebook,1,about page,discovered,About,selected,primary page
+META,Meta Platforms,Technology,2017,facebook.com/facebook,1,about page,discovered,About,selected,primary page
+META,Meta Platforms,Technology,2018,facebook.com/facebook,1,about page,discovered,About,selected,primary page
+META,Meta Platforms,Technology,2019,facebook.com/facebook,1,about page,discovered,About,selected,primary page
+META,Meta Platforms,Technology,2020,facebook.com/facebook,1,about page,discovered,About,selected,primary page
+META,Meta Platforms,Technology,2021,facebook.com/facebook,1,about page,discovered,About,selected,primary page
+META,Meta Platforms,Technology,2022,facebook.com/facebook,1,about page,discovered,About,selected,primary page
+META,Meta Platforms,Technology,2023,facebook.com/facebook,1,about page,discovered,About,selected,primary page
+META,Meta Platforms,Technology,2024,facebook.com/facebook,1,about page,discovered,About,selected,primary page
+AVGO,Broadcom,Technology,2016,broadcom.com/company,1,about page,discovered+pattern,Company Overview,selected,primary page
+AVGO,Broadcom,Technology,2017,,,,,,missing,no candidate captured this year
+AVGO,Broadcom,Technology,2018,,,,,,missing,no candidate captured this year
+AVGO,Broadcom,Technology,2019,broadcom.com/company,1,about page,discovered+pattern,Company Overview,selected,primary page
+AVGO,Broadcom,Technology,2020,broadcom.com/company,1,about page,discovered+pattern,Company Overview,selected,primary page
+AVGO,Broadcom,Technology,2021,broadcom.com/company,1,about page,discovered+pattern,Company Overview,selected,primary page
+AVGO,Broadcom,Technology,2022,broadcom.com/company,1,about page,discovered+pattern,Company Overview,selected,primary page
+AVGO,Broadcom,Technology,2023,broadcom.com/company,1,about page,discovered+pattern,Company Overview,selected,primary page
+AVGO,Broadcom,Technology,2024,broadcom.com/company,1,about page,discovered+pattern,Company Overview,selected,primary page
+CRM,Salesforce,Technology,2016,salesforce.com/company,1,about page,discovered+pattern,About Us,selected,primary page
+CRM,Salesforce,Technology,2017,salesforce.com/company,1,about page,discovered+pattern,About Us,selected,primary page
+CRM,Salesforce,Technology,2018,salesforce.com/company,1,about page,discovered+pattern,About Us,selected,primary page
+CRM,Salesforce,Technology,2019,salesforce.com/company,1,about page,discovered+pattern,About Us,selected,primary page
+CRM,Salesforce,Technology,2020,salesforce.com/company,1,about page,discovered+pattern,About Us,selected,primary page
+CRM,Salesforce,Technology,2021,salesforce.com/company,1,about page,discovered+pattern,About Us,selected,primary page
+CRM,Salesforce,Technology,2022,salesforce.com/company,1,about page,discovered+pattern,About Us,selected,primary page
+CRM,Salesforce,Technology,2023,salesforce.com/company,1,about page,discovered+pattern,About Us,selected,primary page
+CRM,Salesforce,Technology,2024,salesforce.com/company,1,about page,discovered+pattern,About Us,selected,primary page
+ORCL,Oracle,Technology,2016,oracle.com/us/corporate/index.html,1,about page,discovered,About,selected,primary page
+ORCL,Oracle,Technology,2017,oracle.com/us/corporate/index.html,1,about page,discovered,About,selected,primary page
+ORCL,Oracle,Technology,2018,oracle.com/us/corporate/index.html,1,about page,discovered,About,selected,primary page
+ORCL,Oracle,Technology,2019,oracle.com/us/corporate/index.html,1,about page,discovered,About,selected,primary page
+ORCL,Oracle,Technology,2020,oracle.com/us/corporate/index.html,1,about page,discovered,About,selected,primary page
+ORCL,Oracle,Technology,2021,oracle.com/us/corporate/index.html,1,about page,discovered,About,selected,primary page
+ORCL,Oracle,Technology,2022,oracle.com/us/corporate/index.html,1,about page,discovered,About,selected,primary page
+ORCL,Oracle,Technology,2023,oracle.com/us/corporate/index.html,1,about page,discovered,About,selected,primary page
+ORCL,Oracle,Technology,2024,,,,,,missing,no candidate captured this year
+IBM,IBM,Technology,2016,ibm.com/about,3,standard address (fallback),pattern,,selected,primary page
+IBM,IBM,Technology,2017,,,,,,missing,no candidate captured this year
+IBM,IBM,Technology,2018,,,,,,missing,no candidate captured this year
+IBM,IBM,Technology,2019,,,,,,missing,no candidate captured this year
+IBM,IBM,Technology,2020,ibm.com/about,3,standard address (fallback),pattern,,selected,primary page
+IBM,IBM,Technology,2021,ibm.com/about,3,standard address (fallback),pattern,,selected,primary page
+IBM,IBM,Technology,2022,ibm.com/about,3,standard address (fallback),pattern,,selected,primary page
+IBM,IBM,Technology,2023,ibm.com/about,3,standard address (fallback),pattern,,selected,primary page
+IBM,IBM,Technology,2024,ibm.com/about,3,standard address (fallback),pattern,,selected,primary page
+INTC,Intel,Technology,2016,intel.com,4,homepage (last resort),homepage,,selected,primary page
+INTC,Intel,Technology,2017,intel.com,4,homepage (last resort),homepage,,selected,primary page
+INTC,Intel,Technology,2018,intel.com,4,homepage (last resort),homepage,,selected,primary page
+INTC,Intel,Technology,2019,intel.com,4,homepage (last resort),homepage,,selected,primary page
+INTC,Intel,Technology,2020,intel.com,4,homepage (last resort),homepage,,selected,primary page
+INTC,Intel,Technology,2021,intel.com,4,homepage (last resort),homepage,,selected,primary page
+INTC,Intel,Technology,2022,intel.com,4,homepage (last resort),homepage,,selected,primary page
+INTC,Intel,Technology,2023,intel.com,4,homepage (last resort),homepage,,selected,primary page
+INTC,Intel,Technology,2024,intel.com,4,homepage (last resort),homepage,,selected,primary page
+BRK.B,Berkshire Hathaway,Financials,2016,berkshirehathaway.com,4,homepage (last resort),homepage,,selected,primary page
+BRK.B,Berkshire Hathaway,Financials,2017,berkshirehathaway.com,4,homepage (last resort),homepage,,selected,primary page
+BRK.B,Berkshire Hathaway,Financials,2018,berkshirehathaway.com,4,homepage (last resort),homepage,,selected,primary page
+BRK.B,Berkshire Hathaway,Financials,2019,berkshirehathaway.com,4,homepage (last resort),homepage,,selected,primary page
+BRK.B,Berkshire Hathaway,Financials,2020,berkshirehathaway.com,4,homepage (last resort),homepage,,selected,primary page
+BRK.B,Berkshire Hathaway,Financials,2021,berkshirehathaway.com,4,homepage (last resort),homepage,,selected,primary page
+BRK.B,Berkshire Hathaway,Financials,2022,berkshirehathaway.com,4,homepage (last resort),homepage,,selected,primary page
+BRK.B,Berkshire Hathaway,Financials,2023,berkshirehathaway.com,4,homepage (last resort),homepage,,selected,primary page
+BRK.B,Berkshire Hathaway,Financials,2024,berkshirehathaway.com,4,homepage (last resort),homepage,,selected,primary page
+JPM,JPMorgan Chase,Financials,2016,jpmorganchase.com/corporate/institute/about.htm,1,about page,discovered,About,selected,primary page
+JPM,JPMorgan Chase,Financials,2017,jpmorganchase.com/corporate/institute/about.htm,1,about page,discovered,About,selected,primary page
+JPM,JPMorgan Chase,Financials,2018,jpmorganchase.com/corporate/institute/about.htm,1,about page,discovered,About,selected,primary page
+JPM,JPMorgan Chase,Financials,2019,jpmorganchase.com/corporate/institute/about.htm,1,about page,discovered,About,selected,primary page
+JPM,JPMorgan Chase,Financials,2020,jpmorganchase.com/corporate/institute/about.htm,1,about page,discovered,About,selected,primary page
+JPM,JPMorgan Chase,Financials,2021,jpmorganchase.com/corporate/institute/about.htm,1,about page,discovered,About,selected,primary page
+JPM,JPMorgan Chase,Financials,2022,jpmorganchase.com/corporate/institute/about.htm,1,about page,discovered,About,selected,primary page
+JPM,JPMorgan Chase,Financials,2023,jpmorganchase.com/corporate/institute/about.htm,1,about page,discovered,About,selected,primary page
+JPM,JPMorgan Chase,Financials,2024,jpmorganchase.com/about,1,about page,discovered+pattern,Who We Are,selected,switched (primary page 3xx this year)
+BAC,Bank of America,Financials,2016,about.bankofamerica.com,1,about page,discovered,About Us,selected,primary page
+BAC,Bank of America,Financials,2017,about.bankofamerica.com,1,about page,discovered,About Us,selected,primary page
+BAC,Bank of America,Financials,2018,about.bankofamerica.com,1,about page,discovered,About Us,selected,primary page
+BAC,Bank of America,Financials,2019,about.bankofamerica.com,1,about page,discovered,About Us,selected,primary page
+BAC,Bank of America,Financials,2020,about.bankofamerica.com,1,about page,discovered,About Us,selected,primary page
+BAC,Bank of America,Financials,2021,about.bankofamerica.com,1,about page,discovered,About Us,selected,primary page
+BAC,Bank of America,Financials,2022,,,,,,missing,no candidate captured this year
+BAC,Bank of America,Financials,2023,about.bankofamerica.com,1,about page,discovered,About Us,selected,primary page
+BAC,Bank of America,Financials,2024,about.bankofamerica.com,1,about page,discovered,About Us,selected,primary page
+WFC,Wells Fargo,Financials,2016,wellsfargo.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+WFC,Wells Fargo,Financials,2017,wellsfargo.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+WFC,Wells Fargo,Financials,2018,wellsfargo.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+WFC,Wells Fargo,Financials,2019,wellsfargo.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+WFC,Wells Fargo,Financials,2020,wellsfargo.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+WFC,Wells Fargo,Financials,2021,wellsfargo.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+WFC,Wells Fargo,Financials,2022,wellsfargo.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+WFC,Wells Fargo,Financials,2023,wellsfargo.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+WFC,Wells Fargo,Financials,2024,wellsfargo.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+GS,Goldman Sachs,Financials,2016,goldmansachs.com/who-we-are/index.html,1,about page,discovered,Who We Are,selected,primary page
+GS,Goldman Sachs,Financials,2017,goldmansachs.com/who-we-are/index.html,1,about page,discovered,Who We Are,selected,primary page
+GS,Goldman Sachs,Financials,2018,goldmansachs.com/who-we-are/index.html,1,about page,discovered,Who We Are,selected,primary page
+GS,Goldman Sachs,Financials,2019,goldmansachs.com/who-we-are/index.html,1,about page,discovered,Who We Are,selected,primary page
+GS,Goldman Sachs,Financials,2020,,,,,,missing,no candidate captured this year
+GS,Goldman Sachs,Financials,2021,goldmansachs.com/who-we-are/index.html,1,about page,discovered,Who We Are,selected,primary page
+GS,Goldman Sachs,Financials,2022,goldmansachs.com/who-we-are/index.html,1,about page,discovered,Who We Are,selected,primary page
+GS,Goldman Sachs,Financials,2023,goldmansachs.com/who-we-are/index.html,1,about page,discovered,Who We Are,selected,primary page
+GS,Goldman Sachs,Financials,2024,goldmansachs.com/about-us/index.html,1,about page,discovered,About Us,selected,switched (primary page 3xx this year)
+MS,Morgan Stanley,Financials,2016,morganstanley.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+MS,Morgan Stanley,Financials,2017,morganstanley.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+MS,Morgan Stanley,Financials,2018,morganstanley.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+MS,Morgan Stanley,Financials,2019,morganstanley.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+MS,Morgan Stanley,Financials,2020,morganstanley.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+MS,Morgan Stanley,Financials,2021,morganstanley.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+MS,Morgan Stanley,Financials,2022,morganstanley.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+MS,Morgan Stanley,Financials,2023,morganstanley.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+MS,Morgan Stanley,Financials,2024,morganstanley.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+BLK,BlackRock,Financials,2016,blackrock.com/corporate/about-us,1,about page,discovered,WHO WE ARE,selected,primary page
+BLK,BlackRock,Financials,2017,blackrock.com/corporate/about-us,1,about page,discovered,WHO WE ARE,selected,primary page
+BLK,BlackRock,Financials,2018,blackrock.com/corporate/about-us,1,about page,discovered,WHO WE ARE,selected,primary page
+BLK,BlackRock,Financials,2019,blackrock.com/corporate/about-us,1,about page,discovered,WHO WE ARE,selected,primary page
+BLK,BlackRock,Financials,2020,blackrock.com/corporate/about-us,1,about page,discovered,WHO WE ARE,selected,primary page
+BLK,BlackRock,Financials,2021,blackrock.com/corporate/about-us,1,about page,discovered,WHO WE ARE,selected,primary page
+BLK,BlackRock,Financials,2022,blackrock.com/corporate/about-us,1,about page,discovered,WHO WE ARE,selected,primary page
+BLK,BlackRock,Financials,2023,blackrock.com/corporate/about-us,1,about page,discovered,WHO WE ARE,selected,primary page
+BLK,BlackRock,Financials,2024,blackrock.com/corporate/about-us,1,about page,discovered,WHO WE ARE,selected,primary page
+SCHW,Charles Schwab,Financials,2016,aboutschwab.com,1,about page,discovered,About Schwab,selected,primary page
+SCHW,Charles Schwab,Financials,2017,aboutschwab.com,1,about page,discovered,About Schwab,selected,primary page
+SCHW,Charles Schwab,Financials,2018,aboutschwab.com,1,about page,discovered,About Schwab,selected,primary page
+SCHW,Charles Schwab,Financials,2019,aboutschwab.com,1,about page,discovered,About Schwab,selected,primary page
+SCHW,Charles Schwab,Financials,2020,aboutschwab.com,1,about page,discovered,About Schwab,selected,primary page
+SCHW,Charles Schwab,Financials,2021,aboutschwab.com,1,about page,discovered,About Schwab,selected,primary page
+SCHW,Charles Schwab,Financials,2022,aboutschwab.com,1,about page,discovered,About Schwab,selected,primary page
+SCHW,Charles Schwab,Financials,2023,aboutschwab.com,1,about page,discovered,About Schwab,selected,primary page
+SCHW,Charles Schwab,Financials,2024,aboutschwab.com,1,about page,discovered,About Schwab,selected,primary page
+AXP,American Express,Financials,2016,about.americanexpress.com,2,other About-type page,discovered,About American Express,selected,primary page
+AXP,American Express,Financials,2017,about.americanexpress.com,2,other About-type page,discovered,About American Express,selected,primary page
+AXP,American Express,Financials,2018,about.americanexpress.com,2,other About-type page,discovered,About American Express,selected,primary page
+AXP,American Express,Financials,2019,about.americanexpress.com,2,other About-type page,discovered,About American Express,selected,primary page
+AXP,American Express,Financials,2020,about.americanexpress.com,2,other About-type page,discovered,About American Express,selected,primary page
+AXP,American Express,Financials,2021,,,,,,missing,no candidate captured this year
+AXP,American Express,Financials,2022,,,,,,missing,no candidate captured this year
+AXP,American Express,Financials,2023,,,,,,missing,no candidate captured this year
+AXP,American Express,Financials,2024,,,,,,missing,no candidate captured this year
+C,Citigroup,Financials,2016,,,,,,missing,no candidate captured this year
+C,Citigroup,Financials,2017,,,,,,missing,no candidate captured this year
+C,Citigroup,Financials,2018,,,,,,missing,no candidate captured this year
+C,Citigroup,Financials,2019,,,,,,missing,no candidate captured this year
+C,Citigroup,Financials,2020,,,,,,missing,no candidate captured this year
+C,Citigroup,Financials,2021,,,,,,missing,no candidate captured this year
+C,Citigroup,Financials,2022,,,,,,missing,no candidate captured this year
+C,Citigroup,Financials,2023,citigroup.com/global/about-us,1,about page,discovered,About Us,selected,primary page
+C,Citigroup,Financials,2024,citigroup.com/global/about-us,1,about page,discovered,About Us,selected,primary page
+LLY,Eli Lilly,Healthcare,2016,lilly.com/who-we-are,1,about page,discovered+pattern,Who We Are,selected,primary page
+LLY,Eli Lilly,Healthcare,2017,lilly.com/who-we-are,1,about page,discovered+pattern,Who We Are,selected,primary page
+LLY,Eli Lilly,Healthcare,2018,lilly.com/who-we-are,1,about page,discovered+pattern,Who We Are,selected,primary page
+LLY,Eli Lilly,Healthcare,2019,lilly.com/who-we-are,1,about page,discovered+pattern,Who We Are,selected,primary page
+LLY,Eli Lilly,Healthcare,2020,lilly.com/who-we-are,1,about page,discovered+pattern,Who We Are,selected,primary page
+LLY,Eli Lilly,Healthcare,2021,lilly.com/About/default.aspx,1,about page,discovered,about,selected,switched (primary page not captured)
+LLY,Eli Lilly,Healthcare,2022,lilly.com/About/default.aspx,1,about page,discovered,about,selected,switched (primary page 3xx this year)
+LLY,Eli Lilly,Healthcare,2023,lilly.com/About/default.aspx,1,about page,discovered,about,selected,switched (primary page 3xx this year)
+LLY,Eli Lilly,Healthcare,2024,,,,,,missing,no candidate captured this year
+UNH,UnitedHealth Group,Healthcare,2016,unitedhealthgroup.com/About/Default.aspx,1,about page,discovered,About,selected,switched (primary page not captured)
+UNH,UnitedHealth Group,Healthcare,2017,unitedhealthgroup.com/About/Default.aspx,1,about page,discovered,About,selected,switched (primary page not captured)
+UNH,UnitedHealth Group,Healthcare,2018,unitedhealthgroup.com/about.html,1,about page,discovered,About Us,selected,primary page
+UNH,UnitedHealth Group,Healthcare,2019,unitedhealthgroup.com/about.html,1,about page,discovered,About Us,selected,primary page
+UNH,UnitedHealth Group,Healthcare,2020,unitedhealthgroup.com/about.html,1,about page,discovered,About Us,selected,primary page
+UNH,UnitedHealth Group,Healthcare,2021,unitedhealthgroup.com/about.html,1,about page,discovered,About Us,selected,primary page
+UNH,UnitedHealth Group,Healthcare,2022,unitedhealthgroup.com/driven-by-our-mission.html,2,other About-type page,discovered,Driven By Our Mission,selected,switched (primary page 3xx this year)
+UNH,UnitedHealth Group,Healthcare,2023,unitedhealthgroup.com/about.html,1,about page,discovered,About Us,selected,primary page
+UNH,UnitedHealth Group,Healthcare,2024,unitedhealthgroup.com/driven-by-our-mission.html,2,other About-type page,discovered,Driven By Our Mission,selected,switched (primary page 3xx this year)
+JNJ,Johnson & Johnson,Healthcare,2016,jnj.com/about-jnj,1,about page,discovered,Our Company,selected,primary page
+JNJ,Johnson & Johnson,Healthcare,2017,jnj.com/about-jnj,1,about page,discovered,Our Company,selected,primary page
+JNJ,Johnson & Johnson,Healthcare,2018,jnj.com/about-jnj,1,about page,discovered,Our Company,selected,primary page
+JNJ,Johnson & Johnson,Healthcare,2019,jnj.com/about-jnj,1,about page,discovered,Our Company,selected,primary page
+JNJ,Johnson & Johnson,Healthcare,2020,jnj.com/about-jnj,1,about page,discovered,Our Company,selected,primary page
+JNJ,Johnson & Johnson,Healthcare,2021,jnj.com/about-jnj,1,about page,discovered,Our Company,selected,primary page
+JNJ,Johnson & Johnson,Healthcare,2022,jnj.com/about-jnj,1,about page,discovered,Our Company,selected,primary page
+JNJ,Johnson & Johnson,Healthcare,2023,jnj.com/about-jnj,1,about page,discovered,Our Company,selected,primary page
+JNJ,Johnson & Johnson,Healthcare,2024,jnj.com/about-jnj,1,about page,discovered,Our Company,selected,primary page
+ABBV,AbbVie,Healthcare,2016,abbvie.com/about-us/home.html,1,about page,discovered,About Us,selected,switched (primary page not captured)
+ABBV,AbbVie,Healthcare,2017,abbvie.com/our-company.html,1,about page,discovered,Our Company,selected,primary page
+ABBV,AbbVie,Healthcare,2018,abbvie.com/our-company.html,1,about page,discovered,Our Company,selected,primary page
+ABBV,AbbVie,Healthcare,2019,abbvie.com/our-company.html,1,about page,discovered,Our Company,selected,primary page
+ABBV,AbbVie,Healthcare,2020,abbvie.com/our-company.html,1,about page,discovered,Our Company,selected,primary page
+ABBV,AbbVie,Healthcare,2021,abbvie.com/our-company.html,1,about page,discovered,Our Company,selected,primary page
+ABBV,AbbVie,Healthcare,2022,abbvie.com/our-company.html,1,about page,discovered,Our Company,selected,primary page
+ABBV,AbbVie,Healthcare,2023,abbvie.com/our-company.html,1,about page,discovered,Our Company,selected,primary page
+ABBV,AbbVie,Healthcare,2024,abbvie.com/who-we-are.html,1,about page,discovered,Who We Are,selected,switched (primary page 3xx this year)
+MRK,Merck,Healthcare,2016,merck.com/about/home.html,1,about page,discovered,ABOUT US,selected,primary page
+MRK,Merck,Healthcare,2017,merck.com/about/home.html,1,about page,discovered,ABOUT US,selected,primary page
+MRK,Merck,Healthcare,2018,merck.com/about/home.html,1,about page,discovered,ABOUT US,selected,primary page
+MRK,Merck,Healthcare,2019,merck.com/about/home.html,1,about page,discovered,ABOUT US,selected,primary page
+MRK,Merck,Healthcare,2020,merck.com/about/home.html,1,about page,discovered,ABOUT US,selected,primary page
+MRK,Merck,Healthcare,2021,merck.com/about/home.html,1,about page,discovered,ABOUT US,selected,primary page
+MRK,Merck,Healthcare,2022,merck.com/about/home.html,1,about page,discovered,ABOUT US,selected,primary page
+MRK,Merck,Healthcare,2023,merck.com/company-overview,1,about page,discovered,Company overview,selected,switched (primary page 3xx this year)
+MRK,Merck,Healthcare,2024,merck.com/company-overview,1,about page,discovered,Company overview,selected,switched (primary page 3xx this year)
+TMO,Thermo Fisher Scientific,Healthcare,2016,corporate.thermofisher.com,1,about page,discovered,About Us,selected,primary page
+TMO,Thermo Fisher Scientific,Healthcare,2017,corporate.thermofisher.com,1,about page,discovered,About Us,selected,primary page
+TMO,Thermo Fisher Scientific,Healthcare,2018,corporate.thermofisher.com,1,about page,discovered,About Us,selected,primary page
+TMO,Thermo Fisher Scientific,Healthcare,2019,corporate.thermofisher.com,1,about page,discovered,About Us,selected,primary page
+TMO,Thermo Fisher Scientific,Healthcare,2020,corporate.thermofisher.com,1,about page,discovered,About Us,selected,primary page
+TMO,Thermo Fisher Scientific,Healthcare,2021,corporate.thermofisher.com,1,about page,discovered,About Us,selected,primary page
+TMO,Thermo Fisher Scientific,Healthcare,2022,corporate.thermofisher.com,1,about page,discovered,About Us,selected,primary page
+TMO,Thermo Fisher Scientific,Healthcare,2023,corporate.thermofisher.com,1,about page,discovered,About Us,selected,primary page
+TMO,Thermo Fisher Scientific,Healthcare,2024,corporate.thermofisher.com,1,about page,discovered,About Us,selected,primary page
+ABT,Abbott Laboratories,Healthcare,2016,abbott.com/about-abbott.html,1,about page,discovered,About US,selected,primary page
+ABT,Abbott Laboratories,Healthcare,2017,abbott.com/about-abbott.html,1,about page,discovered,About US,selected,primary page
+ABT,Abbott Laboratories,Healthcare,2018,abbott.com/about-abbott.html,1,about page,discovered,About US,selected,primary page
+ABT,Abbott Laboratories,Healthcare,2019,abbott.com/about-abbott.html,1,about page,discovered,About US,selected,primary page
+ABT,Abbott Laboratories,Healthcare,2020,abbott.com/about-abbott.html,1,about page,discovered,About US,selected,primary page
+ABT,Abbott Laboratories,Healthcare,2021,abbott.com/about-abbott.html,1,about page,discovered,About US,selected,primary page
+ABT,Abbott Laboratories,Healthcare,2022,abbott.com/about-abbott.html,1,about page,discovered,About US,selected,primary page
+ABT,Abbott Laboratories,Healthcare,2023,abbott.com/about-abbott.html,1,about page,discovered,About US,selected,primary page
+ABT,Abbott Laboratories,Healthcare,2024,abbott.com/about-abbott.html,1,about page,discovered,About US,selected,primary page
+PFE,Pfizer,Healthcare,2016,pfizer.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+PFE,Pfizer,Healthcare,2017,pfizer.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+PFE,Pfizer,Healthcare,2018,pfizer.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+PFE,Pfizer,Healthcare,2019,pfizer.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+PFE,Pfizer,Healthcare,2020,pfizer.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+PFE,Pfizer,Healthcare,2021,pfizer.com/purpose,2,other About-type page,discovered,Our Purpose,selected,switched (primary page 3xx this year)
+PFE,Pfizer,Healthcare,2022,pfizer.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+PFE,Pfizer,Healthcare,2023,pfizer.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+PFE,Pfizer,Healthcare,2024,pfizer.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+MDT,Medtronic,Healthcare,2016,medtronic.com/us-en/about-3.html,1,about page,discovered,About,selected,primary page
+MDT,Medtronic,Healthcare,2017,medtronic.com/us-en/about/mission.html,2,other About-type page,discovered,Mission,selected,switched (primary page 3xx this year)
+MDT,Medtronic,Healthcare,2018,medtronic.com/us-en/about/mission.html,2,other About-type page,discovered,Mission,selected,switched (primary page not captured)
+MDT,Medtronic,Healthcare,2019,medtronic.com/us-en/about/mission.html,2,other About-type page,discovered,Mission,selected,switched (primary page not captured)
+MDT,Medtronic,Healthcare,2020,medtronic.com/us-en/about/mission.html,2,other About-type page,discovered,Mission,selected,switched (primary page 3xx this year)
+MDT,Medtronic,Healthcare,2021,medtronic.com/us-en/about/mission.html,2,other About-type page,discovered,Mission,selected,switched (primary page 3xx this year)
+MDT,Medtronic,Healthcare,2022,medtronic.com/us-en/about/mission.html,2,other About-type page,discovered,Mission,selected,switched (primary page not captured)
+MDT,Medtronic,Healthcare,2023,medtronic.com/us-en/about/mission.html,2,other About-type page,discovered,Mission,selected,switched (primary page not captured)
+MDT,Medtronic,Healthcare,2024,medtronic.com/us-en/about/mission.html,2,other About-type page,discovered,Mission,selected,switched (primary page 4xx this year)
+BMY,Bristol-Myers Squibb,Healthcare,2016,bms.com/ourcompany,1,about page,discovered,Our Company,selected,switched (primary page not captured)
+BMY,Bristol-Myers Squibb,Healthcare,2017,bms.com/about-us.html,1,about page,discovered,About Us,selected,primary page
+BMY,Bristol-Myers Squibb,Healthcare,2018,bms.com/about-us.html,1,about page,discovered,About Us,selected,primary page
+BMY,Bristol-Myers Squibb,Healthcare,2019,bms.com/about-us.html,1,about page,discovered,About Us,selected,primary page
+BMY,Bristol-Myers Squibb,Healthcare,2020,bms.com/about-us.html,1,about page,discovered,About Us,selected,primary page
+BMY,Bristol-Myers Squibb,Healthcare,2021,bms.com/about-us.html,1,about page,discovered,About Us,selected,primary page
+BMY,Bristol-Myers Squibb,Healthcare,2022,bms.com/about-us.html,1,about page,discovered,About Us,selected,primary page
+BMY,Bristol-Myers Squibb,Healthcare,2023,bms.com/about-us.html,1,about page,discovered,About Us,selected,primary page
+BMY,Bristol-Myers Squibb,Healthcare,2024,bms.com/about-us.html,1,about page,discovered,About Us,selected,primary page
+AMZN,Amazon,Consumer Discretionary,2016,aboutamazon.com,1,about page,discovered,About Amazon,selected,primary page
+AMZN,Amazon,Consumer Discretionary,2017,aboutamazon.com,1,about page,discovered,About Amazon,selected,primary page
+AMZN,Amazon,Consumer Discretionary,2018,aboutamazon.com,1,about page,discovered,About Amazon,selected,primary page
+AMZN,Amazon,Consumer Discretionary,2019,aboutamazon.com,1,about page,discovered,About Amazon,selected,primary page
+AMZN,Amazon,Consumer Discretionary,2020,aboutamazon.com,1,about page,discovered,About Amazon,selected,primary page
+AMZN,Amazon,Consumer Discretionary,2021,aboutamazon.com,1,about page,discovered,About Amazon,selected,primary page
+AMZN,Amazon,Consumer Discretionary,2022,aboutamazon.com,1,about page,discovered,About Amazon,selected,primary page
+AMZN,Amazon,Consumer Discretionary,2023,aboutamazon.com,1,about page,discovered,About Amazon,selected,primary page
+AMZN,Amazon,Consumer Discretionary,2024,aboutamazon.com,1,about page,discovered,About Amazon,selected,primary page
+TSLA,Tesla,Consumer Discretionary,2016,tesla.com/about,3,standard address (fallback),pattern,,selected,primary page
+TSLA,Tesla,Consumer Discretionary,2017,tesla.com/about,3,standard address (fallback),pattern,,selected,primary page
+TSLA,Tesla,Consumer Discretionary,2018,tesla.com/about,3,standard address (fallback),pattern,,selected,primary page
+TSLA,Tesla,Consumer Discretionary,2019,tesla.com/about,3,standard address (fallback),pattern,,selected,primary page
+TSLA,Tesla,Consumer Discretionary,2020,tesla.com/about,3,standard address (fallback),pattern,,selected,primary page
+TSLA,Tesla,Consumer Discretionary,2021,tesla.com/about,3,standard address (fallback),pattern,,selected,primary page
+TSLA,Tesla,Consumer Discretionary,2022,tesla.com/about,3,standard address (fallback),pattern,,selected,primary page
+TSLA,Tesla,Consumer Discretionary,2023,tesla.com/about,3,standard address (fallback),pattern,,selected,primary page
+TSLA,Tesla,Consumer Discretionary,2024,tesla.com/about,3,standard address (fallback),pattern,,selected,primary page
+HD,Home Depot,Consumer Discretionary,2016,corporate.homedepot.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+HD,Home Depot,Consumer Discretionary,2017,corporate.homedepot.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+HD,Home Depot,Consumer Discretionary,2018,corporate.homedepot.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+HD,Home Depot,Consumer Discretionary,2019,corporate.homedepot.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+HD,Home Depot,Consumer Discretionary,2020,corporate.homedepot.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+HD,Home Depot,Consumer Discretionary,2021,corporate.homedepot.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+HD,Home Depot,Consumer Discretionary,2022,corporate.homedepot.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+HD,Home Depot,Consumer Discretionary,2023,corporate.homedepot.com/page/about-us,1,about page,discovered,About Us,selected,switched (primary page 3xx this year)
+HD,Home Depot,Consumer Discretionary,2024,corporate.homedepot.com/about,1,about page,discovered+pattern,About Us,selected,primary page
+MCD,McDonald's,Consumer Discretionary,2016,mcdonalds.com/us/en-us/about-us.html,1,about page,discovered,About Us,selected,primary page
+MCD,McDonald's,Consumer Discretionary,2017,mcdonalds.com/us/en-us/about-us.html,1,about page,discovered,About Us,selected,primary page
+MCD,McDonald's,Consumer Discretionary,2018,mcdonalds.com/us/en-us/about-us.html,1,about page,discovered,About Us,selected,primary page
+MCD,McDonald's,Consumer Discretionary,2019,mcdonalds.com/us/en-us/about-us.html,1,about page,discovered,About Us,selected,primary page
+MCD,McDonald's,Consumer Discretionary,2020,mcdonalds.com/us/en-us/about-us.html,1,about page,discovered,About Us,selected,primary page
+MCD,McDonald's,Consumer Discretionary,2021,mcdonalds.com/us/en-us/about-us.html,1,about page,discovered,About Us,selected,primary page
+MCD,McDonald's,Consumer Discretionary,2022,mcdonalds.com/us/en-us/about-us.html,1,about page,discovered,About Us,selected,primary page
+MCD,McDonald's,Consumer Discretionary,2023,mcdonalds.com/us/en-us/about-us.html,1,about page,discovered,About Us,selected,primary page
+MCD,McDonald's,Consumer Discretionary,2024,mcdonalds.com/us/en-us/about-us.html,1,about page,discovered,About Us,selected,primary page
+NKE,Nike,Consumer Discretionary,2016,about.nike.com,1,about page,discovered,About Nike,selected,primary page
+NKE,Nike,Consumer Discretionary,2017,about.nike.com,1,about page,discovered,About Nike,selected,primary page
+NKE,Nike,Consumer Discretionary,2018,about.nike.com,1,about page,discovered,About Nike,selected,primary page
+NKE,Nike,Consumer Discretionary,2019,about.nike.com,1,about page,discovered,About Nike,selected,primary page
+NKE,Nike,Consumer Discretionary,2020,about.nike.com,1,about page,discovered,About Nike,selected,primary page
+NKE,Nike,Consumer Discretionary,2021,about.nike.com,1,about page,discovered,About Nike,selected,primary page
+NKE,Nike,Consumer Discretionary,2022,about.nike.com,1,about page,discovered,About Nike,selected,primary page
+NKE,Nike,Consumer Discretionary,2023,about.nike.com,1,about page,discovered,About Nike,selected,primary page
+NKE,Nike,Consumer Discretionary,2024,about.nike.com,1,about page,discovered,About Nike,selected,primary page
+SBUX,Starbucks,Consumer Discretionary,2016,starbucks.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+SBUX,Starbucks,Consumer Discretionary,2017,starbucks.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+SBUX,Starbucks,Consumer Discretionary,2018,starbucks.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+SBUX,Starbucks,Consumer Discretionary,2019,starbucks.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+SBUX,Starbucks,Consumer Discretionary,2020,starbucks.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+SBUX,Starbucks,Consumer Discretionary,2021,starbucks.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+SBUX,Starbucks,Consumer Discretionary,2022,starbucks.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+SBUX,Starbucks,Consumer Discretionary,2023,starbucks.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+SBUX,Starbucks,Consumer Discretionary,2024,starbucks.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+TGT,Target,Consumer Discretionary,2016,corporate.target.com/about,1,about page,discovered+pattern,about,selected,primary page
+TGT,Target,Consumer Discretionary,2017,corporate.target.com/about,1,about page,discovered+pattern,about,selected,primary page
+TGT,Target,Consumer Discretionary,2018,corporate.target.com/about,1,about page,discovered+pattern,about,selected,primary page
+TGT,Target,Consumer Discretionary,2019,corporate.target.com/about,1,about page,discovered+pattern,about,selected,primary page
+TGT,Target,Consumer Discretionary,2020,corporate.target.com/about,1,about page,discovered+pattern,about,selected,primary page
+TGT,Target,Consumer Discretionary,2021,corporate.target.com/about,1,about page,discovered+pattern,about,selected,primary page
+TGT,Target,Consumer Discretionary,2022,corporate.target.com/about,1,about page,discovered+pattern,about,selected,primary page
+TGT,Target,Consumer Discretionary,2023,corporate.target.com/about,1,about page,discovered+pattern,about,selected,primary page
+TGT,Target,Consumer Discretionary,2024,corporate.target.com/about,1,about page,discovered+pattern,about,selected,primary page
+LOW,Lowe's,Consumer Discretionary,2016,lowes.com/cd_About+Lowes+Landing+page_567636953_,1,about page,discovered,About Lowe's,selected,switched (primary page not captured)
+LOW,Lowe's,Consumer Discretionary,2017,lowes.com/cd_About+Lowes+Landing+page_567636953_,1,about page,discovered,About Lowe's,selected,switched (primary page not captured)
+LOW,Lowe's,Consumer Discretionary,2018,lowes.com/cd_About+Lowes+Landing+page_567636953_,1,about page,discovered,About Lowe's,selected,switched (primary page not captured)
+LOW,Lowe's,Consumer Discretionary,2019,lowes.com/cd_About+Lowes+Landing+page_567636953_,1,about page,discovered,About Lowe's,selected,switched (primary page not captured)
+LOW,Lowe's,Consumer Discretionary,2020,corporate.lowes.com/who-we-are,1,about page,discovered+pattern,Who We Are,selected,primary page
+LOW,Lowe's,Consumer Discretionary,2021,corporate.lowes.com/who-we-are,1,about page,discovered+pattern,Who We Are,selected,primary page
+LOW,Lowe's,Consumer Discretionary,2022,corporate.lowes.com/who-we-are,1,about page,discovered+pattern,Who We Are,selected,primary page
+LOW,Lowe's,Consumer Discretionary,2023,corporate.lowes.com/who-we-are,1,about page,discovered+pattern,Who We Are,selected,primary page
+LOW,Lowe's,Consumer Discretionary,2024,corporate.lowes.com/who-we-are,1,about page,discovered+pattern,Who We Are,selected,primary page
+TJX,TJX Companies,Consumer Discretionary,2016,tjx.com/about/tjx_company.html,1,about page,discovered,Our Company,selected,primary page
+TJX,TJX Companies,Consumer Discretionary,2017,tjx.com/about/tjx_company.html,1,about page,discovered,Our Company,selected,primary page
+TJX,TJX Companies,Consumer Discretionary,2018,tjx.com/about/tjx_company.html,1,about page,discovered,Our Company,selected,primary page
+TJX,TJX Companies,Consumer Discretionary,2019,tjx.com/company,3,standard address (fallback),pattern,,selected,switched (primary page 3xx this year)
+TJX,TJX Companies,Consumer Discretionary,2020,tjx.com/company,3,standard address (fallback),pattern,,selected,switched (primary page not captured)
+TJX,TJX Companies,Consumer Discretionary,2021,tjx.com/company,3,standard address (fallback),pattern,,selected,switched (primary page not captured)
+TJX,TJX Companies,Consumer Discretionary,2022,tjx.com/company,3,standard address (fallback),pattern,,selected,switched (primary page not captured)
+TJX,TJX Companies,Consumer Discretionary,2023,tjx.com/company/about-tjx,1,about page,discovered,About TJX,selected,switched (primary page 3xx this year)
+TJX,TJX Companies,Consumer Discretionary,2024,tjx.com/company/about-tjx,1,about page,discovered,About TJX,selected,switched (primary page not captured)
+F,Ford Motor,Consumer Discretionary,2016,corporate.ford.com/company.html,1,about page,discovered,About Ford,selected,primary page
+F,Ford Motor,Consumer Discretionary,2017,corporate.ford.com/company.html,1,about page,discovered,About Ford,selected,primary page
+F,Ford Motor,Consumer Discretionary,2018,corporate.ford.com/company.html,1,about page,discovered,About Ford,selected,primary page
+F,Ford Motor,Consumer Discretionary,2019,corporate.ford.com/company.html,1,about page,discovered,About Ford,selected,primary page
+F,Ford Motor,Consumer Discretionary,2020,corporate.ford.com/company.html,1,about page,discovered,About Ford,selected,primary page
+F,Ford Motor,Consumer Discretionary,2021,corporate.ford.com/company.html,1,about page,discovered,About Ford,selected,primary page
+F,Ford Motor,Consumer Discretionary,2022,corporate.ford.com/company.html,1,about page,discovered,About Ford,selected,primary page
+F,Ford Motor,Consumer Discretionary,2023,corporate.ford.com/company.html,1,about page,discovered,About Ford,selected,primary page
+F,Ford Motor,Consumer Discretionary,2024,corporate.ford.com/company.html,1,about page,discovered,About Ford,selected,primary page
+XOM,ExxonMobil,Energy,2016,corporate.exxonmobil.com/en/company/about-us,1,about page,discovered,About us,selected,switched (primary page not captured)
+XOM,ExxonMobil,Energy,2017,corporate.exxonmobil.com/en/company/about-us,1,about page,discovered,About us,selected,switched (primary page not captured)
+XOM,ExxonMobil,Energy,2018,corporate.exxonmobil.com/en/company/about-us,1,about page,discovered,About us,selected,switched (primary page not captured)
+XOM,ExxonMobil,Energy,2019,corporate.exxonmobil.com/Company/Who-we-are,1,about page,discovered,Who we are,selected,primary page
+XOM,ExxonMobil,Energy,2020,corporate.exxonmobil.com/Company/Who-we-are,1,about page,discovered,Who we are,selected,primary page
+XOM,ExxonMobil,Energy,2021,corporate.exxonmobil.com/Company/Who-we-are,1,about page,discovered,Who we are,selected,primary page
+XOM,ExxonMobil,Energy,2022,,,,,,missing,no candidate captured this year
+XOM,ExxonMobil,Energy,2023,corporate.exxonmobil.com/Company/Who-we-are,1,about page,discovered,Who we are,selected,primary page
+XOM,ExxonMobil,Energy,2024,corporate.exxonmobil.com/who-we-are,1,about page,discovered+pattern,Who we are,selected,switched (primary page 3xx this year)
+CVX,Chevron,Energy,2016,chevron.com/about,1,about page,discovered+pattern,About Chevron,selected,primary page
+CVX,Chevron,Energy,2017,chevron.com/about,1,about page,discovered+pattern,About Chevron,selected,primary page
+CVX,Chevron,Energy,2018,chevron.com/about,1,about page,discovered+pattern,About Chevron,selected,primary page
+CVX,Chevron,Energy,2019,chevron.com/about,1,about page,discovered+pattern,About Chevron,selected,primary page
+CVX,Chevron,Energy,2020,chevron.com/about,1,about page,discovered+pattern,About Chevron,selected,primary page
+CVX,Chevron,Energy,2021,chevron.com/about,1,about page,discovered+pattern,About Chevron,selected,primary page
+CVX,Chevron,Energy,2022,chevron.com/about,1,about page,discovered+pattern,About Chevron,selected,primary page
+CVX,Chevron,Energy,2023,chevron.com/about,1,about page,discovered+pattern,About Chevron,selected,primary page
+CVX,Chevron,Energy,2024,chevron.com/who-we-are,3,standard address (fallback),pattern,,selected,switched (primary page 3xx this year)
+COP,ConocoPhillips,Energy,2016,conocophillips.com/who-we-are/Pages/default.aspx,1,about page,discovered,Who We Are,selected,switched (primary page not captured)
+COP,ConocoPhillips,Energy,2017,conocophillips.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+COP,ConocoPhillips,Energy,2018,conocophillips.com/who-we-are/Pages/default.aspx,1,about page,discovered,Who We Are,selected,switched (primary page 3xx this year)
+COP,ConocoPhillips,Energy,2019,conocophillips.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+COP,ConocoPhillips,Energy,2020,conocophillips.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+COP,ConocoPhillips,Energy,2021,conocophillips.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+COP,ConocoPhillips,Energy,2022,conocophillips.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+COP,ConocoPhillips,Energy,2023,conocophillips.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+COP,ConocoPhillips,Energy,2024,conocophillips.com/about-us,1,about page,discovered+pattern,About Us,selected,primary page
+EOG,EOG Resources,Energy,2016,,,,,,missing,no candidate captured this year
+EOG,EOG Resources,Energy,2017,,,,,,missing,no candidate captured this year
+EOG,EOG Resources,Energy,2018,,,,,,missing,no candidate captured this year
+EOG,EOG Resources,Energy,2019,eogresources.com/company,3,standard address (fallback),pattern,,selected,primary page
+EOG,EOG Resources,Energy,2020,eogresources.com/company,3,standard address (fallback),pattern,,selected,primary page
+EOG,EOG Resources,Energy,2021,eogresources.com/company,3,standard address (fallback),pattern,,selected,primary page
+EOG,EOG Resources,Energy,2022,eogresources.com/company,3,standard address (fallback),pattern,,selected,primary page
+EOG,EOG Resources,Energy,2023,eogresources.com/company,3,standard address (fallback),pattern,,selected,primary page
+EOG,EOG Resources,Energy,2024,eogresources.com/company,3,standard address (fallback),pattern,,selected,primary page
+SLB,SLB (Schlumberger),Energy,2016,slb.com/about.aspx,1,about page,discovered,About Us,selected,primary page
+SLB,SLB (Schlumberger),Energy,2017,slb.com/about.aspx,1,about page,discovered,About Us,selected,primary page
+SLB,SLB (Schlumberger),Energy,2018,slb.com/about.aspx,1,about page,discovered,About Us,selected,primary page
+SLB,SLB (Schlumberger),Energy,2019,slb.com/about.aspx,1,about page,discovered,About Us,selected,primary page
+SLB,SLB (Schlumberger),Energy,2020,slb.com/about.aspx,1,about page,discovered,About Us,selected,primary page
+SLB,SLB (Schlumberger),Energy,2021,slb.com/who-we-are,1,about page,discovered+pattern,Who We Are,selected,switched (primary page 3xx this year)
+SLB,SLB (Schlumberger),Energy,2022,slb.com/who-we-are,1,about page,discovered+pattern,Who We Are,selected,switched (primary page 3xx this year)
+SLB,SLB (Schlumberger),Energy,2023,slb.com/about/who-we-are,1,about page,discovered,Who We Are,selected,switched (primary page 3xx this year)
+SLB,SLB (Schlumberger),Energy,2024,slb.com/about.aspx,1,about page,discovered,About Us,selected,primary page
+MPC,Marathon Petroleum,Energy,2016,marathonpetroleum.com/About_MPC,1,about page,discovered,About MPC,selected,switched (primary page not captured)
+MPC,Marathon Petroleum,Energy,2017,marathonpetroleum.com/About_MPC,1,about page,discovered,About MPC,selected,switched (primary page not captured)
+MPC,Marathon Petroleum,Energy,2018,marathonpetroleum.com/About_MPC,1,about page,discovered,About MPC,selected,switched (primary page not captured)
+MPC,Marathon Petroleum,Energy,2019,marathonpetroleum.com/About,1,about page,discovered,About,selected,primary page
+MPC,Marathon Petroleum,Energy,2020,marathonpetroleum.com/About,1,about page,discovered,About,selected,primary page
+MPC,Marathon Petroleum,Energy,2021,marathonpetroleum.com/About,1,about page,discovered,About,selected,primary page
+MPC,Marathon Petroleum,Energy,2022,marathonpetroleum.com/About,1,about page,discovered,About,selected,primary page
+MPC,Marathon Petroleum,Energy,2023,marathonpetroleum.com/About,1,about page,discovered,About,selected,primary page
+MPC,Marathon Petroleum,Energy,2024,marathonpetroleum.com/About,1,about page,discovered,About,selected,primary page
+PSX,Phillips 66,Energy,2016,phillips66.com/EN/about/Company_Overview/Pages/index.aspx,1,about page,discovered,Company Overview,selected,switched (primary page not captured)
+PSX,Phillips 66,Energy,2017,phillips66.com/about,1,about page,discovered+pattern,About,selected,primary page
+PSX,Phillips 66,Energy,2018,phillips66.com/about,1,about page,discovered+pattern,About,selected,primary page
+PSX,Phillips 66,Energy,2019,phillips66.com/about,1,about page,discovered+pattern,About,selected,primary page
+PSX,Phillips 66,Energy,2020,phillips66.com/about,1,about page,discovered+pattern,About,selected,primary page
+PSX,Phillips 66,Energy,2021,phillips66.com/about,1,about page,discovered+pattern,About,selected,primary page
+PSX,Phillips 66,Energy,2022,phillips66.com/about,1,about page,discovered+pattern,About,selected,primary page
+PSX,Phillips 66,Energy,2023,phillips66.com/about,1,about page,discovered+pattern,About,selected,primary page
+PSX,Phillips 66,Energy,2024,phillips66.com/EN/about/Company_Overview/Pages/index.aspx,1,about page,discovered,Company Overview,selected,switched (primary page 3xx this year)
+VLO,Valero Energy,Energy,2016,valero.com/en-us/AboutValero,1,about page,discovered,About Valero,selected,switched (primary page not captured)
+VLO,Valero Energy,Energy,2017,valero.com/en-us/AboutValero,1,about page,discovered,About Valero,selected,switched (primary page not captured)
+VLO,Valero Energy,Energy,2018,valero.com/en-us/AboutValero,1,about page,discovered,About Valero,selected,switched (primary page not captured)
+VLO,Valero Energy,Energy,2019,valero.com/en-us/AboutValero,1,about page,discovered,About Valero,selected,switched (primary page not captured)
+VLO,Valero Energy,Energy,2020,valero.com/about,1,about page,discovered+pattern,About,selected,primary page
+VLO,Valero Energy,Energy,2021,valero.com/about,1,about page,discovered+pattern,About,selected,primary page
+VLO,Valero Energy,Energy,2022,valero.com/about,1,about page,discovered+pattern,About,selected,primary page
+VLO,Valero Energy,Energy,2023,valero.com/about,1,about page,discovered+pattern,About,selected,primary page
+VLO,Valero Energy,Energy,2024,valero.com/about,1,about page,discovered+pattern,About,selected,primary page
+OXY,Occidental Petroleum,Energy,2016,oxy.com/aboutOccidental/Pages/default.aspx,1,about page,discovered,About Occidental,selected,primary page
+OXY,Occidental Petroleum,Energy,2017,oxy.com/aboutOccidental/Pages/default.aspx,1,about page,discovered,About Occidental,selected,primary page
+OXY,Occidental Petroleum,Energy,2018,oxy.com/aboutOccidental/Pages/default.aspx,1,about page,discovered,About Occidental,selected,primary page
+OXY,Occidental Petroleum,Energy,2019,oxy.com/aboutOccidental/Pages/default.aspx,1,about page,discovered,About Occidental,selected,primary page
+OXY,Occidental Petroleum,Energy,2020,oxy.com/aboutOccidental/Pages/default.aspx,1,about page,discovered,About Occidental,selected,primary page
+OXY,Occidental Petroleum,Energy,2021,oxy.com/aboutOccidental/Pages/default.aspx,1,about page,discovered,About Occidental,selected,primary page
+OXY,Occidental Petroleum,Energy,2022,oxy.com/about,1,about page,discovered+pattern,About,selected,switched (primary page 3xx this year)
+OXY,Occidental Petroleum,Energy,2023,oxy.com/about,1,about page,discovered+pattern,About,selected,switched (primary page 3xx this year)
+OXY,Occidental Petroleum,Energy,2024,oxy.com/about,1,about page,discovered+pattern,About,selected,switched (primary page 3xx this year)
+HAL,Halliburton,Energy,2016,halliburton.com/en-US/about-us/default.page,1,about page,discovered,About Us,selected,primary page
+HAL,Halliburton,Energy,2017,halliburton.com/en-US/about-us/default.page,1,about page,discovered,About Us,selected,primary page
+HAL,Halliburton,Energy,2018,halliburton.com/en-US/about-us/default.page,1,about page,discovered,About Us,selected,primary page
+HAL,Halliburton,Energy,2019,halliburton.com/en-US/about-us/default.page,1,about page,discovered,About Us,selected,primary page
+HAL,Halliburton,Energy,2020,halliburton.com/en-US/about-us/default.page,1,about page,discovered,About Us,selected,primary page
+HAL,Halliburton,Energy,2021,halliburton.com/en/about-us.html,1,about page,discovered,Company Overview,selected,switched (primary page not captured)
+HAL,Halliburton,Energy,2022,halliburton.com/en/about-us.html,1,about page,discovered,Company Overview,selected,switched (primary page 3xx this year)
+HAL,Halliburton,Energy,2023,halliburton.com/en/about-us.html,1,about page,discovered,Company Overview,selected,switched (primary page not captured)
+HAL,Halliburton,Energy,2024,,,,,,missing,no candidate captured this year

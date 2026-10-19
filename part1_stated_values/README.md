@@ -70,19 +70,34 @@ dedicated values page; this is noted under Limitations.
 - Each candidate's year-by-year archive coverage is then checked against the Wayback Machine CDX
   index ([src/probe_candidates.py](src/probe_candidates.py)), producing
   [output/candidate_coverage.csv](output/candidate_coverage.csv).
-- Among candidates that satisfy rules A–B, I chose the one with the **most years of successful
-  (HTTP 200) captures** in 2016–2024.
-- **One URL for all years is preferred**, because holding the page constant makes year-over-year
+- **Selection** ([src/select_pages.py](src/select_pages.py)) ranks every usable candidate by:
+  1. **tier** (rule B): 1 = linked from the homepage under an exact About label ("About",
+     "About Us", "About &lt;Company&gt;", "Who We Are", "Our Company", "Company Overview");
+     2 = other About-type homepage link (e.g. "Our Values", "Our Credo"); 3 = standard-address
+     fallback not linked from the homepage; 4 = the homepage itself;
+  2. then **most years with a successful capture** in 2016–2024;
+  3. then discovery score, then shortest URL (a neutral final tie-break).
+- The top-ranked candidate is the company's **primary page**, used in every year it was captured.
+  **One URL for all years is preferred**, because holding the page constant makes year-over-year
   change attributable to the company's wording rather than to a switch between pages.
+- **No manual audit or overrides were applied.** Selection is entirely rule-based; known
+  imperfections are documented under *Coverage gaps and known selection issues* below rather
+  than corrected by hand. (A review page, [src/make_review_page.py](src/make_review_page.py), and
+  an override mechanism exist in the code for future use, but were not used.)
 
 ### D. Redirects and moved pages
 
-- A redirect is **followed** if it lands on another About-type page on the company's own domain;
-  the final URL is recorded.
-- A redirect to the **homepage** or an unrelated page means the page was effectively removed;
-  that year is treated as **missing**.
-- If a company relocated its About page (e.g., Meta: `newsroom.fb.com` → `about.fb.com` →
-  `about.meta.com`), I **switch URLs in the year of the move** and record the switch.
+- **Redirects are not followed through the archive.** Only captures where the URL itself returned
+  HTTP 200 (or an identical "revisit") are used. Each hop of a redirect chain may have been
+  archived on a different date, so following redirects inside the Wayback Machine can silently
+  mix content from different years, violating rule E.
+- **Moved pages are handled by stitching instead.** A move shows up in the coverage table as a
+  `3xx` on the old URL and `200`s on the new one. In any year the primary page has no usable
+  capture, the next-best candidate captured that year is used (same tier first, lower tiers only
+  if none). Every switch is recorded in `note` in
+  [output/selected_pages.csv](output/selected_pages.csv) (e.g. `switched (primary page 3xx this year)`).
+- An old URL that redirects to the **homepage** or an unrelated page is therefore never used
+  for that year; if no other candidate was captured, the year is **missing**.
 
 ### E. Which snapshot within a year
 
@@ -96,6 +111,44 @@ dedicated values page; this is noted under Limitations.
 - A snapshot whose cleaned text is under ~50 words, or is clearly an error / "page not found"
   page, is treated as missing.
 - A random sample of snapshots is checked manually against the archived page.
+
+## Coverage gaps and known selection issues
+
+**Coverage:** a page was selected for **424 of 450 company-years (94%)**. 38 companies have all 9
+years, 7 have 8, and 5 have fewer
+([output/selection_summary.csv](output/selection_summary.csv)).
+
+**Missing company-years (26).** In every case the reason is the same: *no candidate page for
+that company had a usable archived capture in that year* (`note` column in
+[output/selected_pages.csv](output/selected_pages.csv)). Per rule E, no year was filled from an
+adjacent year.
+
+| Company | Missing years | Likely cause |
+|---|---|---|
+| Citigroup (C) | 2016–2022 | Archived 2016 homepage exposed 0 links and 2020 only 8 (JavaScript-rendered navigation), so discovery found only the 2023+ About page |
+| American Express (AXP) | 2021–2024 | The only About-type candidate with captures was archived 2016–2020; no successor page was found by discovery or the standard addresses |
+| EOG Resources (EOG) | 2016–2018 | Only the standard-address fallback `/company` was found, and it was not archived before 2019 |
+| IBM | 2017–2019 | Only the standard-address fallback `/about` was found; not archived in those years |
+| Broadcom (AVGO) | 2017–2018 | Primary page not archived in those years; no alternative captured |
+| Apple, BofA, Goldman Sachs, ExxonMobil, Oracle, Lilly, Halliburton | 1 year each (2019, 2022, 2020, 2022, 2024, 2024, 2024) | Single-year gaps in the archive's captures |
+
+**Known selection issues (pages present but not ideal).** These follow mechanically from the
+rules and were left uncorrected to keep selection fully rule-based:
+
+- **JPMorgan Chase (2016–2023):** two tier-1 candidates tied on coverage (8 years each); the
+  shortest-URL tie-break chose the About page of the *JPMorgan Chase Institute* (the firm's
+  research arm), not the corporate "About Us" page. 2024 uses the corporate `/about` page.
+- **Meta (all years):** the 2016 Facebook homepage's "About" footer link pointed to
+  `facebook.com/facebook`, Facebook's own social-media profile, which has 9 years of captures
+  and so outranks `about.meta.com` (2022–2024 only). Its content is likely a profile/login page;
+  the download-stage quality check (rule F) may reject some years.
+- **Intel (all years) and Berkshire Hathaway (all years):** no About-type candidate was found,
+  so the homepage is used (tier 4, rule B.3). For Berkshire this matches reality (its website
+  has no About page). For Intel it is a limitation: an About page exists, but the archived
+  homepage's navigation is JavaScript-rendered and invisible to discovery.
+- **Apple, IBM, Tesla, EOG:** selected via the standard-address fallback (tier 3); these pages
+  were not linked from the sampled homepages, so their content has not been confirmed to be a
+  general About page.
 
 ## Data collection notes
 
@@ -114,7 +167,8 @@ dedicated values page; this is noted under Limitations.
 
 - `data/homepages.csv` lists each company's main corporate web address (for retailers and some
   others, the corporate site, e.g. `corporate.target.com`, since the shopping site is not where the
-  company describes itself). _TODO: verify each entry by hand and note the date checked._
+  company describes itself). Every entry was verified by hand as the company's official site
+  on 2026-10-19.
 - **Use of AI.** Code was written with AI coding assistance (Claude). Candidate pages are
   **not** AI-generated: an early draft list of candidate URLs written by the AI assistant was
   discarded and is not used anywhere in the pipeline. All candidates now come from the
@@ -123,7 +177,15 @@ dedicated values page; this is noted under Limitations.
 
 ## What I would do differently with more time
 
-_TODO_
+- **Render JavaScript during discovery** (e.g. a headless browser) so sites like Citigroup and
+  Intel expose their navigation links.
+- **Manually audit all 50 selections** against the archived pages and record corrections with
+  reasons (the tooling exists: `make_review_page.py` and `data/manual_overrides.csv`).
+- **Use a content-based tie-break** (e.g. prefer the candidate whose text best matches the
+  company's name and self-description) instead of shortest URL, which would have avoided the
+  JPMorgan Chase Institute pick.
+
+_TODO: more as the pipeline is built._
 
 ## Known limitations
 
