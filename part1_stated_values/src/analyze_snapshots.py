@@ -378,7 +378,9 @@ def main() -> None:
         themes = analysis["themes"]
         page_norm = norm(r["page_text_clean"])
         unverified = sum(1 for t in themes if norm(t["evidence"]) not in page_norm)
-        row["theme_categories"] = ";".join(sorted({t["category"] for t in themes}))
+        # "none" (not blank) when the page was analysed and no value was found,
+        # so it cannot be confused with a missing snapshot.
+        row["theme_categories"] = ";".join(sorted({t["category"] for t in themes})) or "none"
         row["theme_evidence"] = json.dumps({t["category"]: t["evidence"] for t in themes}, ensure_ascii=False)
         row["n_quotes_unverified"] = unverified
         for c in CATEGORY_IDS:

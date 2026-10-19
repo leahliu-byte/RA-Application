@@ -214,7 +214,19 @@ def main() -> None:
                 wide[f"pay_{l['category']}"] = 2 if l["mechanism"] == "quantitative_metric" else 1
         wide_rows.append(wide)
     pd.DataFrame(long_rows).to_csv(PART_DIR / "output" / "pay_links.csv", index=False)
-    pd.DataFrame(wide_rows).to_csv(PART_DIR / "output" / "pay_links_wide.csv", index=False)
+    wide_df = pd.DataFrame(wide_rows)
+    wide_df.to_csv(PART_DIR / "output" / "pay_links_wide.csv", index=False)
+
+    # Merge the pay columns into the main Part 2 dataset (proxy_dataset.csv,
+    # written by mine_proxies.py) so Part 2 has a single analysis-ready table.
+    main_csv = PART_DIR / "output" / "proxy_dataset.csv"
+    if main_csv.exists():
+        main = pd.read_csv(main_csv)
+        pay_cols = [f"pay_{c}" for c in CATEGORY_IDS]
+        main = main.drop(columns=[c for c in pay_cols if c in main.columns])
+        main = main.merge(wide_df[["ticker", "year"] + pay_cols], on=["ticker", "year"], how="left")
+        main.to_csv(main_csv, index=False)
+        print(f"Merged {len(pay_cols)} pay columns into {main_csv.name}")
     total = sum(r.get("cost_usd", 0) for r in cache.values())
     ver = pd.DataFrame(long_rows)["quote_verified"].mean() if long_rows else float("nan")
     print(f"\nDone. Spend this run ${_spent['usd']:.3f}; all cached results ${total:.3f}. "

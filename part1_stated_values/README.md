@@ -258,7 +258,7 @@ One row per company-year (450 rows; analysis fields are blank where `status` is 
 | `ticker`, `company_name`, `sector`, `year` | Identifiers (required) |
 | `page_text_clean` | Extracted visible body text (required) |
 | `changed_from_prior` | `True` if the text differs from the previous available snapshot, `False` if identical, blank for the first snapshot (required) |
-| `theme_categories` | Semicolon-separated codebook categories present (required) |
+| `theme_categories` | Semicolon-separated codebook categories present; `none` if the page was analysed and states no value (required) |
 | `analyst_notes` | LLM note on linguistic shifts versus the prior snapshot (required) |
 | `status`, `status_reason` | `ok`, `missing`, `too_short`, `fetch_failed`, with the reason |
 | `selected_url`, `tier` | Page used and its selection tier (1 = homepage "About" link … 4 = homepage) |

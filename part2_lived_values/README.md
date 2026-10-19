@@ -133,7 +133,10 @@ formula-driven from discretionary plans rather than assuming every plan has metr
 
 ## Dataset schema
 
-### [output/proxy_dataset.csv](output/proxy_dataset.csv): one row per company-year (450)
+### [output/proxy_dataset.csv](output/proxy_dataset.csv): **the main Part 2 dataset**, one row per company-year (450 rows, 79 columns)
+
+Built by `mine_proxies.py`; the 11 `pay_` columns are merged in by `extract_pay_links.py`, so run
+the scripts in pipeline order.
 
 | Column | Meaning | Why included |
 |---|---|---|
@@ -148,6 +151,7 @@ formula-driven from discretionary plans rather than assuming every plan has metr
 | `rate_esg_general` | Matches for the generic ESG label ("ESG", "environmental, social…") | Separates use of the *label* from substance (greenhushing) |
 | `tfidf_similarity_to_prior` | TF-IDF cosine similarity with the previous proxy (1 = same wording) | Within-company language change |
 | `yoy_change_<category>` (11) | Change in `rate_` from the previous year | Within-company change in emphasis |
+| `pay_<category>` (11) | Tied to executive pay: 2 = weighted metric, 1 = qualitative factor, 0 = not linked; blank where no CD&A was found | The strongest "lived" signal: values with money behind them (LLM reading of the CD&A; evidence in `pay_links.csv`) |
 
 ### [output/pay_links.csv](output/pay_links.csv): one row per company-year × pay-linked category
 
@@ -158,8 +162,8 @@ formula-driven from discretionary plans rather than assuming every plan has metr
 
 ### [output/pay_links_wide.csv](output/pay_links_wide.csv): one row per company-year
 
-`pay_<category>` = 2 weighted metric, 1 qualitative factor, 0 not linked; blank where no CD&A was
-found (`cda_found`). The analysis-ready form used in Part 3.
+The same `pay_<category>` columns as in the main dataset, with `cda_found`, kept as a standalone
+file because Part 3 reads it directly.
 
 ### Aggregate outputs
 
