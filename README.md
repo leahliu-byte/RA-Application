@@ -53,9 +53,3 @@ Then run each part's scripts in the order listed in its README. Downloads are po
 Internet Archive and SEC are rate-limited) and resumable; LLM steps reuse cached responses in
 `output/llm_cache/`, so re-running reproduces the same results without new API calls.
 
-## LLM use
-
-Claude Haiku 5.5 is used for the reading tasks the assignment calls for (Part 1 coding; Part 2
-pay-section reading): a small, fast model suited to structured classification at the scale this
-pipeline is designed for (all 500 S&P firms). Every LLM judgement must cite a quote, and quotes are
-verified against the source text by code (Part 1: 98.3%; Part 2: 92.7%).
